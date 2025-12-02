@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 卢仲毅教授研究组 - 中国人民大学物理学院</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 顶部导航 */
+        .site-header {
+            background-color: #fff;
+            border-bottom: 3px solid #b31b1b; /* 人大红 */
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .lab-info h1 {
+            font-size: 1.8rem;
+            color: #b31b1b;
+            margin-bottom: 5px;
+        }
+        
+        .lab-info p {
+            color: #666;
+            font-size: 1rem;
+        }
+        
+        .main-nav {
+            background-color: #2c3e50;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li a {
+            display: block;
+            color: #ecf0f1;
+            padding: 18px 22px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links li a:hover {
+            background-color: #34495e;
+        }
+        
+        .nav-links li a.active {
+            background-color: #b31b1b;
+        }
+        
+        /* 面包屑导航 */
+        .breadcrumb {
+            background-color: #f1f5f9;
+            padding: 15px 0;
+            margin-bottom: 30px;
+        }
+        
+        .breadcrumb-links {
+            list-style: none;
+            display: flex;
+        }
+        
+        .breadcrumb-links li {
+            margin-right: 10px;
+            font-size: 0.95rem;
+        }
+        
+        .breadcrumb-links li a {
+            color: #4a5568;
+        }
+        
+        .breadcrumb-links li a:hover {
+            color: #b31b1b;
+        }
+        
+        .breadcrumb-links li:not(:last-child)::after {
+            content: ">";
+            margin-left: 10px;
+            color: #a0aec0;
+        }
+        
+        /* 页面标题 */
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .page-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* 联系我们主区域 */
+        .contact-main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        /* 联系信息卡片 */
+        .contact-info-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title i {
+            margin-right: 10px;
+            color: #b31b1b;
+        }
+        
+        /* 联系信息列表 */
+        .contact-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            padding: 20px 0;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            color: #b31b1b;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-details {
+            flex-grow: 1;
+        }
+        
+        .contact-label {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        
+        .contact-value {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .contact-link {
+            color: #3498db;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-link:hover {
+            color: #b31b1b;
+            text-decoration: underline;
+        }
+        
+        /* 地图区域 */
+        .map-section {
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .map-placeholder {
+            text-align: center;
+            color: #6c757d;
+        }
+        
+        .map-placeholder i {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #adb5bd;
+        }
+        
+        .map-placeholder h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #495057;
+        }
+        
+        /* 联系表单 */
+        .contact-form-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+        }
+        
+        .form-intro {
+            margin-bottom: 30px;
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .contact-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group.full-width {
+            grid-column: span 2;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #4a5568;
+        }
+        
+        .form-input, .form-textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background-color: #f8f9fa;
+        }
+        
+        .form-input:focus, .form-textarea:focus {
+            outline: none;
+            border-color: #3498db;
+            background-color: white;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+        
+        .form-textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .form-select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 1rem;
+            background-color: #f8f9fa;
+            cursor: pointer;
+        }
+        
+        .form-submit {
+            background-color: #b31b1b;
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            grid-column: span 2;
+            justify-self: center;
+            min-width: 200px;
+        }
+        
+        .form-submit:hover {
+            background-color: #9a1616;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(179, 28, 28, 0.2);
+        }
+        
+        /* 研究组成员 */
+        .team-contact-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+        }
+        
+        .team-intro {
+            margin-bottom: 30px;
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .team-member {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            transition: all 0.3s ease;
+        }
+        
+        .team-member:hover {
+            background-color: #edf2f7;
+            transform: translateY(-5px);
+        }
+        
+        .member-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .member-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: #718096;
+            margin-right: 20px;
+            overflow: hidden;
+        }
+        
+        .member-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .member-info {
+            flex-grow: 1;
+        }
+        
+        .member-name {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .member-role {
+            color: #b31b1b;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .member-contact {
+            margin-top: 15px;
+        }
+        
+        .member-detail {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            color: #4a5568;
+            font-size: 0.9rem;
+        }
+        
+        .member-detail i {
+            margin-right: 10px;
+            color: #718096;
+            width: 20px;
+            text-align: center;
+        }
+        
+        /* 交通指引 */
+        .transport-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+        }
+        
+        .transport-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        
+        .transport-item {
+            padding: 25px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .transport-item:hover {
+            background-color: #edf2f7;
+            transform: translateY(-5px);
+        }
+        
+        .transport-icon {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        
+        .transport-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .transport-desc {
+            color: #718096;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        /* 办公时间 */
+        .hours-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+        }
+        
+        .hours-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .hours-table th {
+            background-color: #f1f5f9;
+            padding: 15px;
+            text-align: left;
+            color: #2c3e50;
+            font-weight: 600;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .hours-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e2e8f0;
+            color: #4a5568;
+        }
+        
+        .hours-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .hours-note {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            color: #718096;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        /* 页脚 */
+        .site-footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h3 {
+            color: #ecf0f1;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #4a6572;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #fff;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+            font-size: 0.9rem;
+            color: #95a5a6;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 992px) {
+            .contact-main {
+                grid-template-columns: 1fr;
+            }
+            
+            .team-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .transport-grid {
+                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .nav-links li a {
+                padding: 12px 15px;
+                font-size: 0.95rem;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-info-section, .contact-form-section, .team-contact-section, .transport-section, .hours-section {
+                padding: 25px;
+            }
+            
+            .contact-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-group.full-width {
+                grid-column: span 1;
+            }
+            
+            .form-submit {
+                grid-column: span 1;
+            }
+            
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .transport-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .contact-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .member-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .member-avatar {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .hours-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 网站头部 -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="lab-info">
+                <h1>卢仲毅教授研究组</h1>
+                <p>中国人民大学物理学院 · 计算物理与量子材料研究</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主导航 -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <ul class="nav-links">
+                <li><a href="./Main.html">首页</a></li>
+                <li><a href="./TuanDuiJieShao.html">团队介绍</a></li>
+                <li><a href="./YanJiuFangXiang.html">研究方向</a></li>
+                <li><a href="./KeYanChengGuo.html">科研成果</a></li>
+                <li><a href="./XueShuFaBiao.html">学术发表</a></li>
+                <li><a href="./XiangMuKeTi.html">项目课题</a></li>
+                <li><a href="./ZhaoShengZhaoPin.html">招生招聘</a></li>
+                <li><a href="./LianXiWoMen.html" class="active">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 面包屑导航 -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb-links">
+                <li><a href="index.html">首页</a></li>
+                <li>联系我们</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 页面主要内容 -->
+    <main class="container">
+        <!-- 页面标题 -->
+        <div class="page-header">
+            <h1>联系我们</h1>
+            <p>欢迎与卢仲毅教授研究组联系！我们期待与同行学者、合作机构以及有志于物理研究的同学们交流。</p>
+        </div>
+
+        <!-- 联系信息与地图 -->
+        <div class="contact-main">
+            <!-- 联系信息 -->
+            <section class="contact-info-section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-address-card"></i> 联系信息
+                    </h2>
+                </div>
+                
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">办公地址</div>
+                            <div class="contact-value">
+                                <p>中国人民大学物理学院</p>
+                                <p>北京市海淀区中关村大街59号</p>
+                                <p>物理楼3层301-310室（卢仲毅教授研究组）</p>
+                                <p>邮编：100872</p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">电子邮箱</div>
+                            <div class="contact-value">
+                                <p><strong>卢仲毅教授：</strong> <a href="mailto:luzhongyi@ruc.edu.cn" class="contact-link">luzhongyi@ruc.edu.cn</a></p>
+                                <p><strong>研究组事务：</strong> <a href="mailto:luzhongyi.group@ruc.edu.cn" class="contact-link">luzhongyi.group@ruc.edu.cn</a></p>
+                                <p><strong>招生咨询：</strong> <a href="mailto:luzhongyi.admission@ruc.edu.cn" class="contact-link">luzhongyi.admission@ruc.edu.cn</a></p>
+                                <p><strong>合作洽谈：</strong> <a href="mailto:luzhongyi.collab@ruc.edu.cn" class="contact-link">luzhongyi.collab@ruc.edu.cn</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">联系电话</div>
+                            <div class="contact-value">
+                                <p><strong>卢仲毅教授办公室：</strong> 010-6251-8306</p>
+                                <p><strong>研究组实验室：</strong> 010-6251-8307</p>
+                                <p><strong>传真：</strong> 010-6251-8308</p>
+                                <p><em>建议优先使用电子邮件联系，我们会在1-3个工作日内回复。</em></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="section-header" style="margin-top: 40px;">
+                    <h2 class="section-title">
+                        <i class="fas fa-external-link-alt"></i> 相关链接
+                    </h2>
+                </div>
+                
+                <div class="contact-value">
+                    <p><a href="http://phy.ruc.edu.cn" class="contact-link" target="_blank">中国人民大学物理学院官网</a></p>
+                    <p><a href="http://www.ruc.edu.cn" class="contact-link" target="_blank">中国人民大学官网</a></p>
+                    <p><a href="https://scholar.google.com/citations?user=XXXXXXX" class="contact-link" target="_blank">卢仲毅教授Google Scholar</a></p>
+                    <p><a href="https://orcid.org/0000-0000-0000-0000" class="contact-link" target="_blank">卢仲毅教授ORCID</a></p>
+                </div>
+            </section>
+            
+            <!-- 地图区域 -->
+            <section class="map-section">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>中国人民大学位置</h3>
+                    <p>北京市海淀区中关村大街59号</p>
+                    <p>点击下方链接查看详细地图</p>
+                    <a href="https://maps.app.goo.gl/XXXXXXX" class="contact-link" target="_blank" style="display: inline-block; margin-top: 15px; padding: 8px 15px; background-color: #3498db; color: white; border-radius: 5px; font-weight: 500;">
+                        <i class="fas fa-map"></i> 查看Google地图
+                    </a>
+                </div>
+                <!-- 实际使用时可以嵌入Google Maps或百度地图 -->
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.234567890123!2d116.31234567890123!3d39.98765432109876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU5JzE1LjQiTiAxMTbCsDE4JzQ1LjYiRQ!5e0!3m2!1szh-CN!2scn!4v1234567890123!5m2!1szh-CN!2scn" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+            </section>
+        </div>
+
+        <!-- 联系表单 -->
+        <section class="contact-form-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-paper-plane"></i> 发送消息
+                </h2>
+            </div>
+            
+            <p class="form-intro">
+                如果您有任何问题、合作意向或想要了解更多信息，请填写以下表单。我们将尽快回复您的消息。
+                对于招生咨询，请直接发送邮件至招生咨询邮箱。
+            </p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name" class="form-label">姓名 *</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">电子邮箱 *</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="affiliation" class="form-label">单位/学校</label>
+                    <input type="text" id="affiliation" name="affiliation" class="form-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject" class="form-label">主题 *</label>
+                    <select id="subject" name="subject" class="form-select" required>
+                        <option value="">请选择主题</option>
+                        <option value="research">学术合作与研究交流</option>
+                        <option value="collaboration">项目合作洽谈</option>
+                        <option value="visit">访问学者/学生申请</option>
+                        <option value="seminar">学术报告邀请</option>
+                        <option value="other">其他事项</option>
+                    </select>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="message" class="form-label">消息内容 *</label>
+                    <textarea id="message" name="message" class="form-textarea" required></textarea>
+                </div>
+                
+                <button type="submit" class="form-submit">
+                    <i class="fas fa-paper-plane"></i> 发送消息
+                </button>
+            </form>
+        </section>
+
+        <!-- 研究组成员联系 -->
+        <section class="team-contact-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-users"></i> 研究组成员
+                </h2>
+            </div>
+            
+            <p class="team-intro">
+                以下是我们研究组的主要成员，您可以根据具体事宜联系相关成员。
+            </p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-header">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="member-info">
+                            <div class="member-name">卢仲毅 教授</div>
+                            <div class="member-role">研究组负责人、博士生导师</div>
+                        </div>
+                    </div>
+                    <div class="member-contact">
+                        <div class="member-detail">
+                            <i class="fas fa-envelope"></i>
+                            <span>luzhongyi@ruc.edu.cn</span>
+                        </div>
+                        <div class="member-detail">
+                            <i class="fas fa-phone"></i>
+                            <span>010-6251-8306</span>
+                        </div>
+                        <div class="member-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>物理楼301室</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-header">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="member-info">
+                            <div class="member-name">王明 副教授</div>
+                            <div class="member-role">研究组副主任</div>
+                        </div>
+                    </div>
+                    <div class="member-contact">
+                        <div class="member-detail">
+                            <i class="fas fa-envelope"></i>
+                            <span>wangming@ruc.edu.cn</span>
+                        </div>
+                        <div class="member-detail">
+                            <i class="fas fa-phone"></i>
+                            <span>010-6251-8309</span>
+                        </div>
+                        <div class="member-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>物理楼303室</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-header">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="member-info">
+                            <div class="member-name">张丽 博士后</div>
+                            <div class="member-role">博士后研究员</div>
+                        </div>
+                    </div>
+                    <div class="member-contact">
+                        <div class="member-detail">
+                            <i class="fas fa-envelope"></i>
+                            <span>zhangli@ruc.edu.cn</span>
+                        </div>
+                        <div class="member-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>物理楼305室</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-header">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <div class="member-name">陈华 博士研究生</div>
+                            <div class="member-role">研究组学生负责人</div>
+                        </div>
+                    </div>
+                    <div class="member-contact">
+                        <div class="member-detail">
+                            <i class="fas fa-envelope"></i>
+                            <span>chenhua@ruc.edu.cn</span>
+                        </div>
+                        <div class="member-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>物理楼307室</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 交通指引 -->
+        <section class="transport-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-directions"></i> 交通指引
+                </h2>
+            </div>
+            
+            <p class="team-intro">
+                前往中国人民大学物理学院的交通方式指引：
+            </p>
+            
+            <div class="transport-grid">
+                <div class="transport-item">
+                    <div class="transport-icon">
+                        <i class="fas fa-subway"></i>
+                    </div>
+                    <div class="transport-title">地铁</div>
+                    <div class="transport-desc">
+                        乘坐地铁4号线至"人民大学站"A1口出，步行约5分钟即可到达物理学院。
+                    </div>
+                </div>
+                
+                <div class="transport-item">
+                    <div class="transport-icon">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <div class="transport-title">公交</div>
+                    <div class="transport-desc">
+                        乘坐公交车至"人民大学站"，可乘运通105、运通106、320、332、355、365、特4、特6等线路。
+                    </div>
+                </div>
+                
+                <div class="transport-item">
+                    <div class="transport-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="transport-title">自驾</div>
+                    <div class="transport-desc">
+                        校内提供访客停车位，请从东门或西门进入，按照指示前往物理学院停车场。
+                    </div>
+                </div>
+                
+                <div class="transport-item">
+                    <div class="transport-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="transport-title">机场/火车站</div>
+                    <div class="transport-desc">
+                        从北京首都国际机场：乘坐机场巴士或出租车约1小时。<br>
+                        从北京西站：乘坐地铁9号线转4号线，约40分钟。
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 办公时间 -->
+        <section class="hours-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-clock"></i> 办公时间
+                </h2>
+            </div>
+            
+            <table class="hours-table">
+                <thead>
+                    <tr>
+                        <th>时间段</th>
+                        <th>周一至周五</th>
+                        <th>周末</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>上午</td>
+                        <td>8:30 - 12:00</td>
+                        <td>预约开放</td>
+                    </tr>
+                    <tr>
+                        <td>下午</td>
+                        <td>14:00 - 17:30</td>
+                        <td>预约开放</td>
+                    </tr>
+                    <tr>
+                        <td>晚上</td>
+                        <td>19:00 - 21:30（实验室）</td>
+                        <td>预约开放</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="hours-note">
+                <p><strong>请注意：</strong></p>
+                <p>1. 寒暑假期间办公时间可能调整，请提前电话或邮件确认。</p>
+                <p>2. 卢仲毅教授通常每周三下午为固定接待时间，其他时间建议提前预约。</p>
+                <p>3. 实验室（物理楼307、309室）在晚间和周末对研究组成员开放。</p>
+                <p>4. 来访前请务必提前预约，以确保我们能为您提供更好的服务。</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- 网站页脚 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>卢仲毅教授研究组</h3>
+                    <p>中国人民大学物理学院</p>
+                    <p>计算物理与量子材料研究</p>
+                    <p>地址：北京市海淀区中关村大街59号</p>
+                    <p>邮编：100872</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="./Main.html">研究组首页</a></li>
+                        <li><a href="./research.html">研究方向</a></li>
+                        <li><a href="./publications.html">学术发表</a></li>
+                        <li><a href="./LianXiWoMen.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>关注我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fab fa-weixin"></i> 微信公众号</a></li>
+                        <li><a href="#"><i class="fab fa-github"></i> GitHub代码库</a></li>
+                        <li><a href="#"><i class="fas fa-rss"></i> 研究组博客</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 中国人民大学物理学院卢仲毅教授研究组. 保留所有权利.</p>
+                <p>最后更新：2023年11月</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 联系表单提交处理
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // 获取表单数据
+                    const formData = {
+                        name: document.getElementById('name').value,
+                        email: document.getElementById('email').value,
+                        affiliation: document.getElementById('affiliation').value,
+                        subject: document.getElementById('subject').value,
+                        message: document.getElementById('message').value
+                    };
+                    
+                    // 简单验证
+                    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+                        alert('请填写所有必填字段！');
+                        return;
+                    }
+                    
+                    // 显示提交成功消息
+                    const submitButton = contactForm.querySelector('.form-submit');
+                    const originalText = submitButton.innerHTML;
+                    
+                    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 发送中...';
+                    submitButton.disabled = true;
+                    
+                    // 模拟表单提交（实际使用时需要替换为真实的API端点）
+                    setTimeout(() => {
+                        alert('消息发送成功！我们将在1-3个工作日内通过电子邮件回复您。');
+                        contactForm.reset();
+                        submitButton.innerHTML = originalText;
+                        submitButton.disabled = false;
+                    }, 1500);
+                });
+            }
+            
+            // 团队成员卡片悬停效果
+            const teamMembers = document.querySelectorAll('.team-member');
+            teamMembers.forEach(member => {
+                member.addEventListener('mouseenter', function() {
+                    this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
+                });
+                
+                member.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = 'none';
+                });
+            });
+            
+            // 交通指引卡片悬停效果
+            const transportItems = document.querySelectorAll('.transport-item');
+            transportItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = 'none';
+                });
+            });
+            
+            // 联系信息卡片悬停效果
+            const contactItems = document.querySelectorAll('.contact-item');
+            contactItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.backgroundColor = '#f8f9fa';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.backgroundColor = 'transparent';
+                });
+            });
+            
+            // 地图区域点击效果
+            const mapPlaceholder = document.querySelector('.map-placeholder');
+            if (mapPlaceholder) {
+                mapPlaceholder.addEventListener('click', function() {
+                    window.open('https://maps.app.goo.gl/XXXXXXX', '_blank');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

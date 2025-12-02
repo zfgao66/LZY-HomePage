@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目课题 - 卢仲毅教授研究组 - 中国人民大学物理学院</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 顶部导航 */
+        .site-header {
+            background-color: #fff;
+            border-bottom: 3px solid #b31b1b; /* 人大红 */
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .lab-info h1 {
+            font-size: 1.8rem;
+            color: #b31b1b;
+            margin-bottom: 5px;
+        }
+        
+        .lab-info p {
+            color: #666;
+            font-size: 1rem;
+        }
+        
+        .main-nav {
+            background-color: #2c3e50;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li a {
+            display: block;
+            color: #ecf0f1;
+            padding: 18px 22px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links li a:hover {
+            background-color: #34495e;
+        }
+        
+        .nav-links li a.active {
+            background-color: #b31b1b;
+        }
+        
+        /* 面包屑导航 */
+        .breadcrumb {
+            background-color: #f1f5f9;
+            padding: 15px 0;
+            margin-bottom: 30px;
+        }
+        
+        .breadcrumb-links {
+            list-style: none;
+            display: flex;
+        }
+        
+        .breadcrumb-links li {
+            margin-right: 10px;
+            font-size: 0.95rem;
+        }
+        
+        .breadcrumb-links li a {
+            color: #4a5568;
+        }
+        
+        .breadcrumb-links li a:hover {
+            color: #b31b1b;
+        }
+        
+        .breadcrumb-links li:not(:last-child)::after {
+            content: ">";
+            margin-left: 10px;
+            color: #a0aec0;
+        }
+        
+        /* 页面标题 */
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .page-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* 项目概览 */
+        .project-overview {
+            background: linear-gradient(135deg, #2c3e50, #4a5568);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .overview-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        
+        .overview-text h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .overview-text p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+        
+        .overview-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 25px 15px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .stat-number {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 5px;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        /* 项目分类筛选 */
+        .filter-section {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+        
+        .filter-title {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .filter-title i {
+            margin-right: 10px;
+            color: #b31b1b;
+        }
+        
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .filter-btn {
+            padding: 10px 20px;
+            background-color: #f1f5f9;
+            border: none;
+            border-radius: 5px;
+            color: #4a5568;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn:hover {
+            background-color: #e2e8f0;
+            color: #2c3e50;
+        }
+        
+        .filter-btn.active {
+            background-color: #b31b1b;
+            color: white;
+        }
+        
+        /* 重点项目展示 */
+        .featured-projects {
+            margin-bottom: 60px;
+        }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title i {
+            margin-right: 10px;
+            color: #b31b1b;
+        }
+        
+        /* 项目卡片网格 */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .project-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        }
+        
+        .project-type {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 2;
+        }
+        
+        .type-nsfc {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .type-moe {
+            background-color: #2ecc71;
+            color: white;
+        }
+        
+        .type-industry {
+            background-color: #f39c12;
+            color: white;
+        }
+        
+        .type-international {
+            background-color: #9b59b6;
+            color: white;
+        }
+        
+        .project-image {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
+        }
+        
+        .project-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .project-title {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .project-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: #718096;
+        }
+        
+        .project-id {
+            color: #4a5568;
+            font-weight: 500;
+            background-color: #f1f5f9;
+            padding: 2px 8px;
+            border-radius: 3px;
+        }
+        
+        .project-period {
+            color: #b31b1b;
+            font-weight: 600;
+        }
+        
+        .project-description {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        
+        .project-details {
+            margin-bottom: 20px;
+        }
+        
+        .detail-item {
+            display: flex;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .detail-label {
+            color: #4a5568;
+            min-width: 80px;
+            font-weight: 500;
+        }
+        
+        .detail-value {
+            color: #2c3e50;
+            flex-grow: 1;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 15px;
+            margin-top: auto;
+        }
+        
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 16px;
+            background-color: #f1f5f9;
+            color: #4a5568;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .project-link:hover {
+            background-color: #e2e8f0;
+            color: #2c3e50;
+        }
+        
+        .project-link.primary {
+            background-color: #e8f4fc;
+            color: #3498db;
+        }
+        
+        .project-link.primary:hover {
+            background-color: #d4eaf9;
+        }
+        
+        /* 项目时间轴 */
+        .timeline-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+        }
+        
+        .timeline-section h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .timeline-section h2 i {
+            margin-right: 10px;
+            color: #b31b1b;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #e2e8f0;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 3px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #b31b1b;
+            border: 4px solid white;
+            border-radius: 50%;
+            top: 20px;
+            z-index: 1;
+        }
+        
+        .timeline-item:nth-child(odd)::after {
+            right: -10px;
+        }
+        
+        .timeline-item:nth-child(even)::after {
+            left: -10px;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .timeline-year {
+            font-weight: 700;
+            color: #b31b1b;
+            margin-bottom: 5px;
+        }
+        
+        .timeline-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        /* 合作单位 */
+        .collaborators-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+        }
+        
+        .collaborators-section h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .collaborators-section h2 i {
+            margin-right: 10px;
+            color: #b31b1b;
+        }
+        
+        .collaborators-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 25px;
+        }
+        
+        .collaborator-item {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .collaborator-item:hover {
+            background-color: #edf2f7;
+            transform: translateY(-5px);
+        }
+        
+        .collaborator-logo {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            font-size: 2rem;
+            color: #3498db;
+        }
+        
+        .collaborator-name {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .collaborator-type {
+            font-size: 0.85rem;
+            color: #718096;
+        }
+        
+        /* 项目成果 */
+        .project-results {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+        }
+        
+        .project-results h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .project-results h2 i {
+            margin-right: 10px;
+            color: #b31b1b;
+        }
+        
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .result-item {
+            padding: 25px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #2ecc71;
+        }
+        
+        .result-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2ecc71;
+            margin-bottom: 10px;
+        }
+        
+        .result-text {
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        
+        /* 页脚 */
+        .site-footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h3 {
+            color: #ecf0f1;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #4a6572;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #fff;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+            font-size: 0.9rem;
+            color: #95a5a6;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 992px) {
+            .overview-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .projects-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .timeline-item::after {
+                left: 21px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .nav-links li a {
+                padding: 12px 15px;
+                font-size: 0.95rem;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .project-overview, .filter-section, .timeline-section, .collaborators-section, .project-results {
+                padding: 25px;
+            }
+            
+            .overview-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .filter-buttons {
+                justify-content: center;
+            }
+            
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            
+            .collaborators-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+            
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .project-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .project-link {
+                text-align: center;
+            }
+            
+            .collaborators-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 网站头部 -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="lab-info">
+                <h1>卢仲毅教授研究组</h1>
+                <p>中国人民大学物理学院 · 计算物理与量子材料研究</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主导航 -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <ul class="nav-links">
+                <li><a href="./Main.html">首页</a></li>
+                <li><a href="./TuanDuiJieShao.html">团队介绍</a></li>
+                <li><a href="./YanJiuFangXiang.html">研究方向</a></li>
+                <li><a href="./KeYanChengGuo.html">科研成果</a></li>
+                <li><a href="./XueShuFaBiao.html">学术发表</a></li>
+                <li><a href="./XiangMuKeTi.html" class="active">项目课题</a></li>
+                <li><a href="./ZhaoShengZhaoPin.html">招生招聘</a></li>
+                <li><a href="./LianXiWoMen.html">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 面包屑导航 -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb-links">
+                <li><a href="index.html">首页</a></li>
+                <li>项目课题</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 页面主要内容 -->
+    <main class="container">
+        <!-- 页面标题 -->
+        <div class="page-header">
+            <h1>项目课题</h1>
+            <p>卢仲毅教授研究组承担了多项国家及省部级科研项目，致力于计算物理、量子材料与强关联电子系统的前沿研究。</p>
+        </div>
+
+        <!-- 项目概览 -->
+        <section class="project-overview">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>科研项目概览</h2>
+                    <p>研究组自成立以来，承担了国家自然科学基金重点项目、面上项目、青年项目以及教育部、科技部等多个重要科研项目。我们的研究工作得到了国内外同行的广泛认可，取得了一系列重要研究成果。</p>
+                    <p>研究组与国内外多所知名高校和研究机构建立了长期合作关系，包括中国科学院物理研究所、清华大学、北京大学、斯坦福大学、麻省理工学院等，共同开展前沿物理研究。</p>
+                </div>
+                
+                <div class="overview-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">在研项目</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">国家级项目</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1200+</div>
+                        <div class="stat-label">万科研经费</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">合作机构</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目分类筛选 -->
+        <section class="filter-section">
+            <div class="filter-title">
+                <i class="fas fa-filter"></i> 项目分类筛选
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">全部项目</button>
+                <button class="filter-btn" data-filter="nsfc">国家自然科学基金</button>
+                <button class="filter-btn" data-filter="moe">教育部项目</button>
+                <button class="filter-btn" data-filter="industry">产学研合作</button>
+                <button class="filter-btn" data-filter="international">国际合作</button>
+            </div>
+        </section>
+
+        <!-- 重点项目展示 -->
+        <section class="featured-projects">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-star"></i> 重点科研项目
+                </h2>
+            </div>
+            
+            <!-- 项目卡片网格 -->
+            <div class="projects-grid" id="projects-container">
+                <!-- 项目1 -->
+                <div class="project-card" data-type="nsfc">
+                    <div class="project-type type-nsfc">国家自然科学基金</div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="量子材料研究">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">强关联电子系统中的拓扑物态与量子相变研究</h3>
+                        <div class="project-meta">
+                            <span class="project-id">项目号: 12034002</span>
+                            <span class="project-period">2021-2025</span>
+                        </div>
+                        <p class="project-description">
+                            本项目旨在研究强关联电子系统中的拓扑物态与量子相变，重点探索新型量子材料的电子结构、磁性和输运性质。通过发展多尺度计算方法，揭示强关联体系中的新奇量子现象及其微观机制。
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">项目类型:</span>
+                                <span class="detail-value">国家自然科学基金重点项目</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">负责人:</span>
+                                <span class="detail-value">卢仲毅 教授</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">经费:</span>
+                                <span class="detail-value">320万元</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link primary">
+                                <i class="fas fa-file-alt"></i> 项目详情
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-newspaper"></i> 相关成果
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 项目2 -->
+                <div class="project-card" data-type="nsfc">
+                    <div class="project-type type-nsfc">国家自然科学基金</div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="计算物理研究">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">低维量子材料的多体效应与器件设计理论研究</h3>
+                        <div class="project-meta">
+                            <span class="project-id">项目号: 11974118</span>
+                            <span class="project-period">2020-2023</span>
+                        </div>
+                        <p class="project-description">
+                            研究低维量子材料中的多体效应，包括电子-电子相互作用、电子-声子耦合等，探索其在新型量子器件中的应用潜力。发展高效的第一性原理计算方法，设计具有特定功能的低维量子材料与器件。
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">项目类型:</span>
+                                <span class="detail-value">国家自然科学基金面上项目</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">负责人:</span>
+                                <span class="detail-value">卢仲毅 教授</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">经费:</span>
+                                <span class="detail-value">65万元</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link primary">
+                                <i class="fas fa-file-alt"></i> 项目详情
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-code"></i> 计算代码
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 项目3 -->
+                <div class="project-card" data-type="international">
+                    <div class="project-type type-international">国际合作</div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="国际合作研究">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">中美合作：拓扑量子材料的计算设计与物性研究</h3>
+                        <div class="project-meta">
+                            <span class="project-id">项目号: 2022YFE0124000</span>
+                            <span class="project-period">2022-2025</span>
+                        </div>
+                        <p class="project-description">
+                            与美国斯坦福大学合作，开展拓扑量子材料的计算设计与物性研究。通过双方研究人员的交流互访和联合研究，探索新型拓扑量子材料的设计原理，揭示其拓扑物态的物理本质。
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">项目类型:</span>
+                                <span class="detail-value">国家重点研发计划国际合作项目</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">中方负责人:</span>
+                                <span class="detail-value">卢仲毅 教授</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">合作方:</span>
+                                <span class="detail-value">斯坦福大学</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link primary">
+                                <i class="fas fa-globe-americas"></i> 合作详情
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-users"></i> 交流动态
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 项目4 -->
+                <div class="project-card" data-type="industry">
+                    <div class="project-type type-industry">产学研合作</div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="产学研合作">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">新型量子材料在信息技术中的应用基础研究</h3>
+                        <div class="project-meta">
+                            <span class="project-id">项目号: 2021-产学研-001</span>
+                            <span class="project-period">2021-2024</span>
+                        </div>
+                        <p class="project-description">
+                            与华为技术有限公司合作，开展新型量子材料在信息技术中的应用基础研究。重点研究量子材料在量子计算、新型存储器件和传感器等领域的应用潜力，推动基础研究成果向实际应用转化。
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">项目类型:</span>
+                                <span class="detail-value">产学研合作项目</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">负责人:</span>
+                                <span class="detail-value">卢仲毅 教授</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">合作企业:</span>
+                                <span class="detail-value">华为技术有限公司</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link primary">
+                                <i class="fas fa-industry"></i> 合作详情
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-file-contract"></i> 合作协议
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目时间轴 -->
+        <section class="timeline-section">
+            <h2><i class="fas fa-history"></i> 项目发展历程</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-title">国家自然科学基金重点项目启动</div>
+                        <p>"强关联电子系统中的拓扑物态与量子相变研究"项目正式启动，研究组在拓扑量子材料领域取得重要进展。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-title">中美合作项目立项</div>
+                        <p>与美国斯坦福大学合作的"拓扑量子材料的计算设计与物性研究"项目获得国家重点研发计划支持。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2021</div>
+                        <div class="timeline-title">产学研合作深化</div>
+                        <p>与华为技术有限公司建立长期合作关系，开展量子材料在信息技术中的应用基础研究。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-title">面上项目结题</div>
+                        <p>"低维量子材料的多体效应与器件设计理论研究"项目顺利结题，发表多篇高水平研究论文。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2019</div>
+                        <div class="timeline-title">青年项目成果突出</div>
+                        <p>研究组青年教师的"二维量子材料的电子结构与物性调控"项目取得重要成果，获评优秀结题项目。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 合作单位 -->
+        <section class="collaborators-section">
+            <h2><i class="fas fa-handshake"></i> 合作单位</h2>
+            <div class="collaborators-grid">
+                <div class="collaborator-item">
+                    <div class="collaborator-logo">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="collaborator-name">中国科学院物理研究所</div>
+                    <div class="collaborator-type">科研合作</div>
+                </div>
+                <div class="collaborator-item">
+                    <div class="collaborator-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="collaborator-name">清华大学物理系</div>
+                    <div class="collaborator-type">学术交流</div>
+                </div>
+                <div class="collaborator-item">
+                    <div class="collaborator-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="collaborator-name">北京大学量子材料中心</div>
+                    <div class="collaborator-type">联合研究</div>
+                </div>
+                <div class="collaborator-item">
+                    <div class="collaborator-logo">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="collaborator-name">斯坦福大学</div>
+                    <div class="collaborator-type">国际合作</div>
+                </div>
+                <div class="collaborator-item">
+                    <div class="collaborator-logo">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="collaborator-name">华为技术有限公司</div>
+                    <div class="collaborator-type">产学研合作</div>
+                </div>
+                <div class="collaborator-item">
+                    <div class="collaborator-logo">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="collaborator-name">麻省理工学院</div>
+                    <div class="collaborator-type">学术交流</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目成果 -->
+        <section class="project-results">
+            <h2><i class="fas fa-trophy"></i> 项目成果</h2>
+            <div class="results-grid">
+                <div class="result-item">
+                    <div class="result-number">50+</div>
+                    <div class="result-text">高水平学术论文</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">5</div>
+                    <div class="result-text">发明专利授权</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">3</div>
+                    <div class="result-text">软件著作权</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">10+</div>
+                    <div class="result-text">研究生培养</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">2</div>
+                    <div class="result-text">省部级奖励</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">15+</div>
+                    <div class="result-text">国际会议报告</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 网站页脚 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>卢仲毅教授研究组</h3>
+                    <p>中国人民大学物理学院</p>
+                    <p>计算物理与量子材料研究</p>
+                    <p>地址：北京市海淀区中关村大街59号</p>
+                    <p>邮编：100872</p>
+                </div>
+                <div class="footer-section">
+                    <h3>相关链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="./Main.html">研究组首页</a></li>
+                        <li><a href="./TuanDuiJieShao.html">团队介绍</a></li>
+                        <li><a href="./YanJiuFangXiang.html">研究方向</a></li>
+                        <li><a href="./XiangMuKeTi.html">项目课题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:luzhongyi@ruc.edu.cn">luzhongyi@ruc.edu.cn</a></li>
+                        <li><a href="#">物理学院3楼301室</a></li>
+                        <li><a href="#">电话: 010-6251-XXXX</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 中国人民大学物理学院卢仲毅教授研究组. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 项目筛选功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            // 筛选按钮点击事件
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // 移除所有按钮的active类
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // 为当前按钮添加active类
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // 显示/隐藏对应的项目卡片
+                    if (filter === 'all') {
+                        projectCards.forEach(card => {
+                            card.style.display = 'flex';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 10);
+                        });
+                    } else {
+                        projectCards.forEach(card => {
+                            if (card.getAttribute('data-type') === filter) {
+                                card.style.display = 'flex';
+                                setTimeout(() => {
+                                    card.style.opacity = '1';
+                                    card.style.transform = 'translateY(0)';
+                                }, 10);
+                            } else {
+                                card.style.opacity = '0';
+                                card.style.transform = 'translateY(20px)';
+                                setTimeout(() => {
+                                    card.style.display = 'none';
+                                }, 300);
+                            }
+                        });
+                    }
+                });
+            });
+            
+            // 项目卡片悬停效果
+            projectCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.zIndex = '10';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.zIndex = '1';
+                });
+            });
+            
+            // 合作单位悬停效果
+            const collaboratorItems = document.querySelectorAll('.collaborator-item');
+            collaboratorItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

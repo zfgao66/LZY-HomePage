@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团队介绍 - 智能计算与数据挖掘实验室</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 顶部导航 */
+        .site-header {
+            background-color: #fff;
+            border-bottom: 3px solid #b31b1b;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .lab-info h1 {
+            font-size: 1.8rem;
+            color: #b31b1b;
+            margin-bottom: 5px;
+        }
+        
+        .lab-info p {
+            color: #666;
+            font-size: 1rem;
+        }
+        
+        .main-nav {
+            background-color: #2c3e50;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li a {
+            display: block;
+            color: #ecf0f1;
+            padding: 18px 22px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links li a:hover {
+            background-color: #34495e;
+        }
+        
+        .nav-links li a.active {
+            background-color: #b31b1b;
+        }
+        
+        /* 面包屑导航 */
+        .breadcrumb {
+            background-color: #f1f5f9;
+            padding: 15px 0;
+            margin-bottom: 30px;
+        }
+        
+        .breadcrumb-links {
+            list-style: none;
+            display: flex;
+        }
+        
+        .breadcrumb-links li {
+            margin-right: 10px;
+            font-size: 0.95rem;
+        }
+        
+        .breadcrumb-links li a {
+            color: #4a5568;
+        }
+        
+        .breadcrumb-links li a:hover {
+            color: #b31b1b;
+        }
+        
+        .breadcrumb-links li:not(:last-child)::after {
+            content: ">";
+            margin-left: 10px;
+            color: #a0aec0;
+        }
+        
+        /* 页面标题 */
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .page-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* 团队介绍部分 */
+        .team-intro {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 50px;
+        }
+        
+        .team-intro h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .team-intro p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        
+        /* 团队成员分类 */
+        .team-category {
+            margin-bottom: 60px;
+        }
+        
+        .category-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .category-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #b31b1b;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            color: white;
+            font-size: 1.2rem;
+        }
+        
+        .category-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+        }
+        
+        /* 成员网格 */
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        /* 成员卡片 */
+        .member-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .member-header {
+            background-color: #2c3e50;
+            padding: 25px 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .member-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid white;
+            background-color: #ecf0f1;
+            margin: 0 auto 15px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: #7f8c8d;
+        }
+        
+        .member-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .member-name {
+            font-size: 1.4rem;
+            color: white;
+            margin-bottom: 5px;
+        }
+        
+        .member-role {
+            font-size: 1rem;
+            color: #bdc3c7;
+            font-weight: 500;
+        }
+        
+        .member-body {
+            padding: 25px;
+        }
+        
+        .member-info {
+            margin-bottom: 20px;
+        }
+        
+        .info-item {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .info-icon {
+            color: #b31b1b;
+            width: 20px;
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+        
+        .info-text {
+            flex: 1;
+        }
+        
+        .member-bio {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .member-links {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .member-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #f1f5f9;
+            color: #4a5568;
+            transition: all 0.3s ease;
+        }
+        
+        .member-link:hover {
+            background-color: #b31b1b;
+            color: white;
+        }
+        
+        /* 往届成员部分 */
+        .alumni-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+        }
+        
+        .alumni-section h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .alumni-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .alumni-item {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .alumni-name {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .alumni-info {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .alumni-period {
+            font-size: 0.85rem;
+            color: #b31b1b;
+            font-weight: 500;
+        }
+        
+        /* 加入我们部分 */
+        .join-us {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            margin-bottom: 60px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .join-us h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .join-us p {
+            font-size: 1.05rem;
+            color: #555;
+            margin-bottom: 25px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .join-button {
+            display: inline-block;
+            background-color: #b31b1b;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+            border: 2px solid #b31b1b;
+        }
+        
+        .join-button:hover {
+            background-color: white;
+            color: #b31b1b;
+        }
+        
+        /* 页脚 */
+        .site-footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h3 {
+            color: #ecf0f1;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #4a6572;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #fff;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+            font-size: 0.9rem;
+            color: #95a5a6;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 992px) {
+            .members-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .alumni-list {
+                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .nav-links li a {
+                padding: 12px 15px;
+                font-size: 0.95rem;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .team-intro, .alumni-section, .join-us {
+                padding: 25px;
+            }
+            
+            .category-title {
+                font-size: 1.5rem;
+            }
+            
+            .member-body {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .members-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .alumni-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 网站头部 -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="lab-info">
+                <h1>智能计算与数据挖掘实验室</h1>
+                <p>ICDM Lab · 中国人民大学信息学院</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主导航 -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <ul class="nav-links">
+                <li><a href="./Main.html" class="active">首页</a></li>
+                <li><a href="./TuanDuiJieShao.html" class="active">团队介绍</a></li>
+                <li><a href="./YanJiuFangXiang.html">研究方向</a></li>
+                <li><a href="./KeYanChengGuo.html">科研成果</a></li>
+                <li><a href="./XueShuFaBiao.html">学术发表</a></li>
+                <li><a href="./XiangMuKeTi.html">项目课题</a></li>
+                <li><a href="./ZhaoShengZhaoPin.html">招生招聘</a></li>
+                <li><a href="./LianXiWoMen.html">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 面包屑导航 -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb-links">
+                <li><a href="index.html">首页</a></li>
+                <li>团队介绍</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 页面主要内容 -->
+    <main class="container">
+        <!-- 页面标题 -->
+        <div class="page-header">
+            <h1>团队介绍</h1>
+            <p>智能计算与数据挖掘实验室汇聚了一批在人工智能、数据科学领域具有丰富研究经验的教师和充满活力的研究生团队。</p>
+        </div>
+
+        <!-- 团队总体介绍 -->
+        <section class="team-intro">
+            <h2>实验室概况</h2>
+            <p>智能计算与数据挖掘实验室（ICDM Lab）成立于2015年，依托中国人民大学信息学院，专注于人工智能、机器学习与数据挖掘领域的前沿研究。实验室致力于解决复杂场景下的智能计算问题，推动人工智能技术在实际应用中的落地。</p>
+            <p>实验室目前有教授2名，副教授3名，博士研究生15名，硕士研究生25名，形成了结构合理、富有创新精神的研究团队。团队成员在国际顶级会议和期刊上发表了200余篇学术论文，承担了国家自然科学基金重点项目、国家重点研发计划等多项国家级科研项目。</p>
+            <p>实验室与国内外多所知名高校和研究机构建立了长期合作关系，包括清华大学、北京大学、MIT、Stanford等，定期开展学术交流与合作研究。</p>
+        </section>
+
+        <!-- 指导教授 -->
+        <section class="team-category">
+            <div class="category-header">
+                <div class="category-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h2 class="category-title">指导教授</h2>
+            </div>
+            
+            <div class="members-grid">
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 class="member-name">张伟 教授</h3>
+                        <p class="member-role">实验室主任，博士生导师</p>
+                    </div>
+                    <div class="member-body">
+                        <div class="member-info">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>研究方向：</strong>机器学习，数据挖掘，人工智能
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>邮箱：</strong>zhangwei@ruc.edu.cn
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>办公室：</strong>信息楼301室
+                                </div>
+                            </div>
+                        </div>
+                        <p class="member-bio">
+                            张伟教授是智能计算与数据挖掘实验室的创始人及主任。2008年于清华大学获得计算机科学博士学位，研究方向为机器学习与数据挖掘。主持国家自然科学基金重点项目3项，在NeurIPS、ICML、KDD等国际顶级会议和期刊发表论文80余篇。
+                        </p>
+                        <div class="member-links">
+                            <a href="#" class="member-link" title="个人主页">
+                                <i class="fas fa-home"></i>
+                            </a>
+                            <a href="#" class="member-link" title="Google Scholar">
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                            <a href="#" class="member-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="member-link" title="发送邮件">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 class="member-name">李华 教授</h3>
+                        <p class="member-role">副主任，博士生导师</p>
+                    </div>
+                    <div class="member-body">
+                        <div class="member-info">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>研究方向：</strong>自然语言处理，知识图谱，深度学习
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>邮箱：</strong>lihua@ruc.edu.cn
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>办公室：</strong>信息楼305室
+                                </div>
+                            </div>
+                        </div>
+                        <p class="member-bio">
+                            李华教授是实验室副主任，2012年于北京大学获得计算机科学博士学位。主要研究方向为自然语言处理与知识图谱。在ACL、EMNLP、AAAI等国际顶级会议发表论文60余篇，获得国家优秀青年科学基金项目资助。
+                        </p>
+                        <div class="member-links">
+                            <a href="#" class="member-link" title="个人主页">
+                                <i class="fas fa-home"></i>
+                            </a>
+                            <a href="#" class="member-link" title="Google Scholar">
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                            <a href="#" class="member-link" title="ResearchGate">
+                                <i class="fab fa-researchgate"></i>
+                            </a>
+                            <a href="#" class="member-link" title="发送邮件">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 博士后与研究员 -->
+        <section class="team-category">
+            <div class="category-header">
+                <div class="category-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h2 class="category-title">博士后与研究员</h2>
+            </div>
+            
+            <div class="members-grid">
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3 class="member-name">王芳</h3>
+                        <p class="member-role">博士后研究员</p>
+                    </div>
+                    <div class="member-body">
+                        <div class="member-info">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>研究方向：</strong>图神经网络，推荐系统
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>邮箱：</strong>wangfang@ruc.edu.cn
+                                </div>
+                            </div>
+                        </div>
+                        <p class="member-bio">
+                            2021年于中国人民大学获得博士学位，主要从事图神经网络与推荐系统研究。在KDD、WWW等国际会议上发表论文10余篇，目前主持国家自然科学基金青年项目1项。
+                        </p>
+                        <div class="member-links">
+                            <a href="#" class="member-link" title="个人主页">
+                                <i class="fas fa-home"></i>
+                            </a>
+                            <a href="#" class="member-link" title="Google Scholar">
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3 class="member-name">刘强</h3>
+                        <p class="member-role">助理研究员</p>
+                    </div>
+                    <div class="member-body">
+                        <div class="member-info">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>研究方向：</strong>联邦学习，隐私计算
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>邮箱：</strong>liuqiang@ruc.edu.cn
+                                </div>
+                            </div>
+                        </div>
+                        <p class="member-bio">
+                            2022年于清华大学获得博士学位，主要研究方向为联邦学习与隐私计算。在ICML、NeurIPS等国际顶级会议上发表论文8篇，参与国家重点研发计划项目2项。
+                        </p>
+                        <div class="member-links">
+                            <a href="#" class="member-link" title="个人主页">
+                                <i class="fas fa-home"></i>
+                            </a>
+                            <a href="#" class="member-link" title="Google Scholar">
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 博士研究生 -->
+        <section class="team-category">
+            <div class="category-header">
+                <div class="category-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h2 class="category-title">博士研究生</h2>
+            </div>
+            
+            <div class="members-grid">
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="member-name">王志刚</h3>
+                        <p class="member-role">博士研究生 (四年级)</p>
+                    </div>
+                    <div class="member-body">
+                        <div class="member-info">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>研究方向：</strong>图神经网络，异常检测
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>邮箱：</strong>wangzhigang@ruc.edu.cn
+                                </div>
+                            </div>
+                        </div>
+                        <p class="member-bio">
+                            2020年入学，主要研究图神经网络在异常检测中的应用。在NeurIPS、KDD等会议上发表论文5篇，曾获国家奖学金、ACM SIGKDD优秀学生奖。
+                        </p>
+                        <div class="member-links">
+                            <a href="#" class="member-link" title="个人主页">
+                                <i class="fas fa-home"></i>
+                            </a>
+                            <a href="#" class="member-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="member-name">刘晓雨</h3>
+                        <p class="member-role">博士研究生 (三年级)</p>
+                    </div>
+                    <div class="member-body">
+                        <div class="member-info">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>研究方向：</strong>自然语言处理，预训练模型
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>邮箱：</strong>liuxiaoyu@ruc.edu.cn
+                                </div>
+                            </div>
+                        </div>
+                        <p class="member-bio">
+                            2021年入学，主要研究自然语言处理中的预训练模型。在ACL、EMNLP等会议上发表论文4篇，参与国家自然科学基金项目2项。
+                        </p>
+                        <div class="member-links">
+                            <a href="#" class="member-link" title="个人主页">
+                                <i class="fas fa-home"></i>
+                            </a>
+                            <a href="#" class="member-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 往届成员 -->
+        <section class="alumni-section">
+            <h2>往届成员</h2>
+            <div class="alumni-list">
+                <div class="alumni-item">
+                    <div class="alumni-name">张明</div>
+                    <div class="alumni-info">博士，2022年毕业</div>
+                    <div class="alumni-period">2017-2022</div>
+                    <div class="alumni-info">现任：华为诺亚方舟实验室研究员</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">李娜</div>
+                    <div class="alumni-info">博士，2021年毕业</div>
+                    <div class="alumni-period">2016-2021</div>
+                    <div class="alumni-info">现任：清华大学博士后</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">陈浩</div>
+                    <div class="alumni-info">硕士，2022年毕业</div>
+                    <div class="alumni-period">2019-2022</div>
+                    <div class="alumni-info">现任：阿里巴巴算法工程师</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">赵静</div>
+                    <div class="alumni-info">硕士，2021年毕业</div>
+                    <div class="alumni-period">2018-2021</div>
+                    <div class="alumni-info">现任：腾讯研究员</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">孙伟</div>
+                    <div class="alumni-info">博士，2020年毕业</div>
+                    <div class="alumni-period">2015-2020</div>
+                    <div class="alumni-info">现任：中国人民大学副教授</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">周琳</div>
+                    <div class="alumni-info">硕士，2020年毕业</div>
+                    <div class="alumni-period">2017-2020</div>
+                    <div class="alumni-info">现任：字节跳动算法工程师</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 加入我们 -->
+        <section class="join-us">
+            <h2>加入我们</h2>
+            <p>智能计算与数据挖掘实验室常年招收对人工智能、机器学习、数据挖掘等领域有浓厚兴趣的博士研究生、硕士研究生、博士后和研究助理。我们提供良好的科研环境、充足的经费支持和广阔的发展空间。</p>
+            <a href="contact.html" class="join-button">了解更多招生信息</a>
+        </section>
+    </main>
+
+    <!-- 网站页脚 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>智能计算与数据挖掘实验室</h3>
+                    <p>中国人民大学信息学院</p>
+                    <p>地址：北京市海淀区中关村大街59号</p>
+                    <p>邮编：100872</p>
+                </div>
+                <div class="footer-section">
+                    <h3>相关链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">实验室首页</a></li>
+                        <li><a href="research.html">研究方向</a></li>
+                        <li><a href="publications.html">学术发表</a></li>
+                        <li><a href="projects.html">科研项目</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:icdm@ruc.edu.cn">icdm@ruc.edu.cn</a></li>
+                        <li><a href="#">微信公众号：RUC_ICDM</a></li>
+                        <li><a href="#">信息楼3层301-310室</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 中国人民大学智能计算与数据挖掘实验室. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的交互效果：成员卡片悬停
+        document.addEventListener('DOMContentLoaded', function() {
+            const memberCards = document.querySelectorAll('.member-card');
+            const alumniItems = document.querySelectorAll('.alumni-item');
+            
+            // 为成员卡片添加悬停效果
+            memberCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.zIndex = '10';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.zIndex = '';
+                });
+            });
+            
+            // 为往届成员项添加悬停效果
+            alumniItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.backgroundColor = '#edf2f7';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.backgroundColor = '#f8f9fa';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
