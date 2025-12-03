@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>团队介绍 - 智能计算与数据挖掘实验室</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* 基础样式 */
         * {
@@ -82,6 +83,8 @@
         .nav-links li a:hover {
             background-color: #34495e;
         }
+        
+        /* .team-logo: moved to styles.css */
         
         .nav-links li a.active {
             background-color: #b31b1b;
@@ -399,59 +402,6 @@
             color: #b31b1b;
         }
         
-        /* 页脚 */
-        .site-footer {
-            background-color: #2c3e50;
-            color: #bdc3c7;
-            padding: 40px 0 20px;
-        }
-        
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-        }
-        
-        .footer-section {
-            flex: 1;
-            min-width: 250px;
-            margin-bottom: 20px;
-        }
-        
-        .footer-section h3 {
-            color: #ecf0f1;
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #4a6572;
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-links a {
-            color: #bdc3c7;
-            transition: color 0.3s;
-        }
-        
-        .footer-links a:hover {
-            color: #fff;
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #34495e;
-            font-size: 0.9rem;
-            color: #95a5a6;
-        }
-        
         /* 响应式设计 */
         @media (max-width: 992px) {
             .members-grid {
@@ -504,26 +454,28 @@
                 flex-direction: column;
                 text-align: center;
             }
+            /* logo responsive rules moved to styles.css */
         }
     </style>
 </head>
 <body>
-    <!-- 网站头部 -->
+    <!-- 头部：校徽与实验室信息 -->
     <header class="site-header">
-        <div class="container header-container">
+        <div class="header-container">
+            <img src="./Main-banner/Logo.png" alt="Team Logo" class="team-logo" onerror="this.style.display='none'">
             <div class="lab-info">
-                <h1>智能计算与数据挖掘实验室</h1>
-                <p>ICDM Lab · 中国人民大学信息学院</p>
+                <h1>卢仲毅 研究组</h1>
+                <p>AI驱动的计算物理与量子材料实验室· 中国人民大学 物理学院</p>
             </div>
         </div>
     </header>
 
     <!-- 主导航 -->
     <nav class="main-nav">
-        <div class="container nav-container">
+        <div class="nav-container">
             <ul class="nav-links">
-                <li><a href="./Main.html" class="active">首页</a></li>
-                <li><a href="./TuanDuiJieShao.html" class="active">团队介绍</a></li>
+                <li><a href="./Main.html">首页</a></li>
+                <li><a href="./TuanDuiJieShao.html">团队介绍</a></li>
                 <li><a href="./YanJiuFangXiang.html">研究方向</a></li>
                 <li><a href="./KeYanChengGuo.html">科研成果</a></li>
                 <li><a href="./XueShuFaBiao.html">学术发表</a></li>
@@ -533,6 +485,16 @@
             </ul>
         </div>
     </nav>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.nav-links a');
+        const current = location.pathname.split('/').pop() || 'Main.html';
+        links.forEach(a => {
+            a.classList.toggle('active', a.getAttribute('href') === current);
+        });
+    });
+    </script>
 
     <!-- 面包屑导航 -->
     <div class="breadcrumb">
@@ -549,34 +511,33 @@
         <!-- 页面标题 -->
         <div class="page-header">
             <h1>团队介绍</h1>
-            <p>智能计算与数据挖掘实验室汇聚了一批在人工智能、数据科学领域具有丰富研究经验的教师和充满活力的研究生团队。</p>
+            <p>AI驱动的计算物理与量子材料实验室汇聚了一批在人工智能材料设计、计算物理和量子材料领域具有深厚研究积累的教师以及充满活力的研究生团队。</p>
         </div>
 
         <!-- 团队总体介绍 -->
         <section class="team-intro">
             <h2>实验室概况</h2>
-            <p>智能计算与数据挖掘实验室（ICDM Lab）成立于2015年，依托中国人民大学信息学院，专注于人工智能、机器学习与数据挖掘领域的前沿研究。实验室致力于解决复杂场景下的智能计算问题，推动人工智能技术在实际应用中的落地。</p>
-            <p>实验室目前有教授2名，副教授3名，博士研究生15名，硕士研究生25名，形成了结构合理、富有创新精神的研究团队。团队成员在国际顶级会议和期刊上发表了200余篇学术论文，承担了国家自然科学基金重点项目、国家重点研发计划等多项国家级科研项目。</p>
-            <p>实验室与国内外多所知名高校和研究机构建立了长期合作关系，包括清华大学、北京大学、MIT、Stanford等，定期开展学术交流与合作研究。</p>
+            <p>AI驱动的计算物理与量子材料实验室由卢仲毅教授牵头成立，依托中国人民大学物理学院建设与发展。实验室面向量子材料科学与智能计算的前沿需求，重点开展人工智能驱动的量子材料结构与性能逆向设计、面向科学实验场景的垂域大语言模型与智能代理训练、量子多体理论方法的发展与应用，以及基于第一性原理的电子结构精确计算等方向的系统研究。团队以交叉融合为特色，致力于通过先进算法、量子理论与高性能计算的深度结合，加速新型量子材料的理论预测与机制揭示，推动材料科学智能化研究范式的形成。</p>
+            <p>实验室目前有教授2名，副教授1名，讲师1名，博士研究生15名，硕士研究生10名，形成了结构合理、富有创新精神的研究团队。团队成员在国际顶级会议和期刊上发表了200余篇学术论文，承担了国家自然科学基金重点项目、国家重点研发计划等多项国家级科研项目。实验室与国内外多所知名高校和研究机构建立了长期合作关系，包括清华大学、北京大学、中国科学院、深势科技等，定期开展学术交流与合作研究。</p>
         </section>
-
         <!-- 指导教授 -->
         <section class="team-category">
             <div class="category-header">
                 <div class="category-icon">
                     <i class="fas fa-user-tie"></i>
                 </div>
-                <h2 class="category-title">指导教授</h2>
+                <h2 class="category-title">实验室带头人</h2>
             </div>
             
             <div class="members-grid">
                 <div class="member-card">
                     <div class="member-header">
                         <div class="member-avatar">
+                            <img src="./people/faculty/zlu.png" alt="卢仲毅 教授" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
                             <i class="fas fa-user-tie"></i>
                         </div>
-                        <h3 class="member-name">张伟 教授</h3>
-                        <p class="member-role">实验室主任，博士生导师</p>
+                        <h3 class="member-name">卢仲毅 教授</h3>
+                        <p class="member-role">博士生导师</p>
                     </div>
                     <div class="member-body">
                         <div class="member-info">
@@ -585,7 +546,7 @@
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="info-text">
-                                    <strong>研究方向：</strong>机器学习，数据挖掘，人工智能
+                                    <strong>研究方向：</strong>计算物理，多体物理，人工智能
                                 </div>
                             </div>
                             <div class="info-item">
@@ -593,7 +554,7 @@
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div class="info-text">
-                                    <strong>邮箱：</strong>zhangwei@ruc.edu.cn
+                                    <strong>邮箱：</strong>zlu@ruc.edu.cn
                                 </div>
                             </div>
                             <div class="info-item">
@@ -601,25 +562,80 @@
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div class="info-text">
-                                    <strong>办公室：</strong>信息楼301室
+                                    <strong>办公室：</strong>物理楼203
                                 </div>
                             </div>
                         </div>
                         <p class="member-bio">
-                            张伟教授是智能计算与数据挖掘实验室的创始人及主任。2008年于清华大学获得计算机科学博士学位，研究方向为机器学习与数据挖掘。主持国家自然科学基金重点项目3项，在NeurIPS、ICML、KDD等国际顶级会议和期刊发表论文80余篇。
+                            中国人民大学物理学院院长、教授、博士生导师，意大利国际高等研究院凝聚态物理学哲学博士。2007年获获国家杰出青年科学基金，2012年入选教育部长江学者特聘教授，2020年以第一完成人获国家自然科学二等奖（铁基超导电子结构与磁相互作用研究） 。研究方向涵盖电子结构计算、分子动力学模拟及强关联材料理论，开发DFT+DMFT开源软件包。
                         </p>
                         <div class="member-links">
-                            <a href="#" class="member-link" title="个人主页">
+                            <a href="http://www.phys.ruc.edu.cn/info/1024/1387.htm" class="member-link" title="个人主页">
                                 <i class="fas fa-home"></i>
                             </a>
                             <a href="#" class="member-link" title="Google Scholar">
                                 <i class="fas fa-graduation-cap"></i>
                             </a>
-                            <a href="#" class="member-link" title="GitHub">
-                                <i class="fab fa-github"></i>
                             </a>
-                            <a href="#" class="member-link" title="发送邮件">
-                                <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+
+
+        </section>
+        <!-- 指导教授 -->
+        <section class="team-category">
+            <div class="category-header">
+                <div class="category-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h2 class="category-title">指导教师</h2>
+            </div>
+            
+            <div class="members-grid">
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="member-avatar">
+                            <img src="./people/faculty/rqh.png" alt="贺荣强 教授" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 class="member-name">贺荣强 教授</h3>
+                        <p class="member-role">博士生导师</p>
+                    </div>
+                    <div class="member-body">
+                        <div class="member-info">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>研究方向：</strong>多体物理，镍基超导
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>邮箱：</strong>rqhe@ruc.edu.cn
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>办公室：</strong>物理楼205A
+                                </div>
+                            </div>
+                        </div>
+                        <p class="member-bio">
+                            中国人民大学物理学院教授。长期从事凝聚态物理与量子材料方向的研究。其工作涵盖拓扑量子态、强关联电子体系、新型量子材料的理论设计与性质研究等前沿领域，在固体能带理论、量子霍尔相关效应以及自旋轨道物理等方面做出了系统性贡献。贺荣强教授承担多项国家级科研项目，发表多篇高水平学术论文，并积极推动交叉学科与青年人才培养，是国内量子材料与凝聚态理论研究的重要学者之一。
+                        </p>
+                        <div class="member-links">
+                            <a href="http://www.phys.ruc.edu.cn/info/1120/1409.htm" class="member-link" title="个人主页">
+                                <i class="fas fa-home"></i>
                             </a>
                         </div>
                     </div>
@@ -628,10 +644,11 @@
                 <div class="member-card">
                     <div class="member-header">
                         <div class="member-avatar">
+                            <img src="./people/faculty/gpj.png" alt="郭朋杰" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
                             <i class="fas fa-user-tie"></i>
                         </div>
-                        <h3 class="member-name">李华 教授</h3>
-                        <p class="member-role">副主任，博士生导师</p>
+                        <h3 class="member-name">郭朋杰 副教授</h3>
+                        <p class="member-role">硕士生导师</p>
                     </div>
                     <div class="member-body">
                         <div class="member-info">
@@ -640,7 +657,7 @@
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="info-text">
-                                    <strong>研究方向：</strong>自然语言处理，知识图谱，深度学习
+                                    <strong>研究方向：</strong>计算物理，量子磁性，拓扑超导
                                 </div>
                             </div>
                             <div class="info-item">
@@ -648,7 +665,7 @@
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div class="info-text">
-                                    <strong>邮箱：</strong>lihua@ruc.edu.cn
+                                    <strong>邮箱：</strong>guopengjie@ruc.edu.cn
                                 </div>
                             </div>
                             <div class="info-item">
@@ -656,25 +673,66 @@
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div class="info-text">
-                                    <strong>办公室：</strong>信息楼305室
+                                    <strong>办公室：</strong>物理楼307B
                                 </div>
                             </div>
                         </div>
                         <p class="member-bio">
-                            李华教授是实验室副主任，2012年于北京大学获得计算机科学博士学位。主要研究方向为自然语言处理与知识图谱。在ACL、EMNLP、AAAI等国际顶级会议发表论文60余篇，获得国家优秀青年科学基金项目资助。
+                            中国人民大学物理学院副教授、中国人民大学青年学者，主要从事凝聚态物理与量子材料方向的研究，关注电子结构理论、新型量子态物质的物性机理以及相关计算方法的发展。郭朋杰副教授积极参与科研与教学工作，在学术研究、研究生培养和学科建设中发挥着重要作用。
                         </p>
                         <div class="member-links">
-                            <a href="#" class="member-link" title="个人主页">
+                            <a href="http://www.phys.ruc.edu.cn/info/1119/2353.htm" class="member-link" title="个人主页">
                                 <i class="fas fa-home"></i>
                             </a>
-                            <a href="#" class="member-link" title="Google Scholar">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="member-avatar">
+                            <img src="./people/faculty/gzf.png" alt="高泽峰" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 class="member-name">高泽峰 讲师</h3>
+                        <p class="member-role">硕士生导师</p>
+                    </div>
+                    <div class="member-body">
+                        <div class="member-info">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>研究方向：</strong>人工智能，大语言模型，模型压缩
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>邮箱：</strong>zfgao@ruc.edu.cn
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>办公室：</strong>物理楼307B
+                                </div>
+                            </div>
+                        </div>
+                        <p class="member-bio">
+                            中国人民大学物理学院讲师、副研究员，中国人民大学青年英才。研究方向包括量子物理数值方法、预训练模型压缩以及AI辅助功能性晶体材料发现与生成。围绕矩阵乘积算符表示，开展了神经网络结构设计、语音增强模型压缩与小型化、预训练模型轻量化微调与扩容等研究，并探索利用人工智能加速功能性新材料发现。已发表论文二十余篇，涵盖ACL、NeurIPS、EMNLP、COLING等国际顶会及NSR、Nature Computational Science等重要期刊。相关成果包括获ACL2023最佳论文提名、AI辅助交错磁性材料研究入选WOS高被引与最受关注论文等，成果被剑桥大学、斯坦福大学、Meta等机构专家引用。主持多项科研项目，包括国自然青年、面上、重点项目（子课题）、重点研发计划专项（子课题）、北京市自然科学基金重点项目（子课题）及多项横向课题。
+                        </p>
+                        <div class="member-links">
+                            <a href="http://www.phys.ruc.edu.cn/info/1304/2128.htm" class="member-link" title="个人主页">
+                                <i class="fas fa-home"></i>
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=vB64k4IAAAAJ&hl=zh-CN&oi=ao" class="member-link" title="Google Scholar">
                                 <i class="fas fa-graduation-cap"></i>
-                            </a>
-                            <a href="#" class="member-link" title="ResearchGate">
-                                <i class="fab fa-researchgate"></i>
-                            </a>
-                            <a href="#" class="member-link" title="发送邮件">
-                                <i class="fas fa-envelope"></i>
                             </a>
                         </div>
                     </div>
@@ -697,7 +755,7 @@
                         <div class="member-avatar">
                             <i class="fas fa-user-graduate"></i>
                         </div>
-                        <h3 class="member-name">王芳</h3>
+                        <h3 class="member-name">王佳琦</h3>
                         <p class="member-role">博士后研究员</p>
                     </div>
                     <div class="member-body">
@@ -707,7 +765,7 @@
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="info-text">
-                                    <strong>研究方向：</strong>图神经网络，推荐系统
+                                    <strong>研究方向：</strong>多体物理
                                 </div>
                             </div>
                             <div class="info-item">
@@ -715,64 +773,16 @@
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div class="info-text">
-                                    <strong>邮箱：</strong>wangfang@ruc.edu.cn
+                                    <strong>邮箱：</strong>wangjiaqi@ruc.edu.cn
                                 </div>
                             </div>
                         </div>
                         <p class="member-bio">
-                            2021年于中国人民大学获得博士学位，主要从事图神经网络与推荐系统研究。在KDD、WWW等国际会议上发表论文10余篇，目前主持国家自然科学基金青年项目1项。
+                            2025年于中国人民大学获得博士学位，主要从事量子多体物理与机器学习方面的研究。
                         </p>
-                        <div class="member-links">
-                            <a href="#" class="member-link" title="个人主页">
-                                <i class="fas fa-home"></i>
-                            </a>
-                            <a href="#" class="member-link" title="Google Scholar">
-                                <i class="fas fa-graduation-cap"></i>
-                            </a>
-                        </div>
                     </div>
                 </div>
                 
-                <div class="member-card">
-                    <div class="member-header">
-                        <div class="member-avatar">
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                        <h3 class="member-name">刘强</h3>
-                        <p class="member-role">助理研究员</p>
-                    </div>
-                    <div class="member-body">
-                        <div class="member-info">
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <div class="info-text">
-                                    <strong>研究方向：</strong>联邦学习，隐私计算
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="info-text">
-                                    <strong>邮箱：</strong>liuqiang@ruc.edu.cn
-                                </div>
-                            </div>
-                        </div>
-                        <p class="member-bio">
-                            2022年于清华大学获得博士学位，主要研究方向为联邦学习与隐私计算。在ICML、NeurIPS等国际顶级会议上发表论文8篇，参与国家重点研发计划项目2项。
-                        </p>
-                        <div class="member-links">
-                            <a href="#" class="member-link" title="个人主页">
-                                <i class="fas fa-home"></i>
-                            </a>
-                            <a href="#" class="member-link" title="Google Scholar">
-                                <i class="fas fa-graduation-cap"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -789,10 +799,11 @@
                 <div class="member-card">
                     <div class="member-header">
                         <div class="member-avatar">
+                            <img src="./people/PhD/hanxiaoqi.png" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
                             <i class="fas fa-user"></i>
                         </div>
-                        <h3 class="member-name">王志刚</h3>
-                        <p class="member-role">博士研究生 (四年级)</p>
+                        <h3 class="member-name">韩小琪</h3>
+                        <p class="member-role">博士研究生</p>
                     </div>
                     <div class="member-body">
                         <div class="member-info">
@@ -801,7 +812,7 @@
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="info-text">
-                                    <strong>研究方向：</strong>图神经网络，异常检测
+                                    <strong>研究方向：</strong>图神经网络，材料结构设计
                                 </div>
                             </div>
                             <div class="info-item">
@@ -809,18 +820,18 @@
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div class="info-text">
-                                    <strong>邮箱：</strong>wangzhigang@ruc.edu.cn
+                                    <strong>邮箱：</strong>hanxiaoqi@ruc.edu.cn
                                 </div>
                             </div>
                         </div>
                         <p class="member-bio">
-                            2020年入学，主要研究图神经网络在异常检测中的应用。在NeurIPS、KDD等会议上发表论文5篇，曾获国家奖学金、ACM SIGKDD优秀学生奖。
+                            2024年入学，主要研究AI驱动的功能性材料逆向设计。在PRB、CPL等期刊上发表论文6篇，开发InvDesFlow等一些列AI方法加速新材料发现。
                         </p>
                         <div class="member-links">
                             <a href="#" class="member-link" title="个人主页">
                                 <i class="fas fa-home"></i>
                             </a>
-                            <a href="#" class="member-link" title="GitHub">
+                            <a href="https://github.com/xqh19970407" class="member-link" title="GitHub">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
@@ -830,10 +841,11 @@
                 <div class="member-card">
                     <div class="member-header">
                         <div class="member-avatar">
+                            <img src="./people/PhD/wangxinde.png" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
                             <i class="fas fa-user"></i>
                         </div>
-                        <h3 class="member-name">刘晓雨</h3>
-                        <p class="member-role">博士研究生 (三年级)</p>
+                        <h3 class="member-name">王馨德</h3>
+                        <p class="member-role">博士研究生</p>
                     </div>
                     <div class="member-body">
                         <div class="member-info">
@@ -842,7 +854,7 @@
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="info-text">
-                                    <strong>研究方向：</strong>自然语言处理，预训练模型
+                                    <strong>研究方向：</strong>大语言模型，偏微分方程
                                 </div>
                             </div>
                             <div class="info-item">
@@ -850,18 +862,15 @@
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div class="info-text">
-                                    <strong>邮箱：</strong>liuxiaoyu@ruc.edu.cn
+                                    <strong>邮箱：</strong>xdwang618@ruc.edu.cn
                                 </div>
                             </div>
                         </div>
                         <p class="member-bio">
-                            2021年入学，主要研究自然语言处理中的预训练模型。在ACL、EMNLP等会议上发表论文4篇，参与国家自然科学基金项目2项。
+                            2022年入学，主要研究针对材料设计的垂域大语言模型与偏微分方程求解。
                         </p>
                         <div class="member-links">
-                            <a href="#" class="member-link" title="个人主页">
-                                <i class="fas fa-home"></i>
-                            </a>
-                            <a href="#" class="member-link" title="GitHub">
+                            <a href="https://github.com/WD928" class="member-link" title="GitHub">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
@@ -875,40 +884,40 @@
             <h2>往届成员</h2>
             <div class="alumni-list">
                 <div class="alumni-item">
-                    <div class="alumni-name">张明</div>
-                    <div class="alumni-info">博士，2022年毕业</div>
-                    <div class="alumni-period">2017-2022</div>
-                    <div class="alumni-info">现任：华为诺亚方舟实验室研究员</div>
+                    <div class="alumni-name">高淼</div>
+                    <div class="alumni-info">博士，2014年毕业</div>
+                    <div class="alumni-period">2010-2014</div>
+                    <div class="alumni-info">现任：宁波大学物理学院 教授</div>
                 </div>
                 <div class="alumni-item">
-                    <div class="alumni-name">李娜</div>
-                    <div class="alumni-info">博士，2021年毕业</div>
-                    <div class="alumni-period">2016-2021</div>
-                    <div class="alumni-info">现任：清华大学博士后</div>
+                    <div class="alumni-name">闫循旺</div>
+                    <div class="alumni-info">博士，2015年毕业</div>
+                    <div class="alumni-period">2011-2015</div>
+                    <div class="alumni-info">现任：曲阜师范大学 教授</div>
                 </div>
                 <div class="alumni-item">
-                    <div class="alumni-name">陈浩</div>
-                    <div class="alumni-info">硕士，2022年毕业</div>
-                    <div class="alumni-period">2019-2022</div>
-                    <div class="alumni-info">现任：阿里巴巴算法工程师</div>
+                    <div class="alumni-name">邬汉青</div>
+                    <div class="alumni-info">博士，2020年毕业</div>
+                    <div class="alumni-period">2016-2020</div>
+                    <div class="alumni-info">现任：中山大学 副教授</div>
                 </div>
                 <div class="alumni-item">
-                    <div class="alumni-name">赵静</div>
-                    <div class="alumni-info">硕士，2021年毕业</div>
-                    <div class="alumni-period">2018-2021</div>
-                    <div class="alumni-info">现任：腾讯研究员</div>
-                </div>
-                <div class="alumni-item">
-                    <div class="alumni-name">孙伟</div>
+                    <div class="alumni-name">何院耀</div>
                     <div class="alumni-info">博士，2020年毕业</div>
                     <div class="alumni-period">2015-2020</div>
-                    <div class="alumni-info">现任：中国人民大学副教授</div>
+                    <div class="alumni-info">现任：西北大学 教授</div>
                 </div>
                 <div class="alumni-item">
-                    <div class="alumni-name">周琳</div>
-                    <div class="alumni-info">硕士，2020年毕业</div>
-                    <div class="alumni-period">2017-2020</div>
-                    <div class="alumni-info">现任：字节跳动算法工程师</div>
+                    <div class="alumni-name">龚本超</div>
+                    <div class="alumni-info">博士，2021年毕业</div>
+                    <div class="alumni-period">2016-2021</div>
+                    <div class="alumni-info">现任：江苏科技大学 副教授</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">高炎</div>
+                    <div class="alumni-info">博士，2022年毕业</div>
+                    <div class="alumni-period">2018-2022</div>
+                    <div class="alumni-info">现任：燕山大学 副教授</div>
                 </div>
             </div>
         </section>
@@ -916,41 +925,39 @@
         <!-- 加入我们 -->
         <section class="join-us">
             <h2>加入我们</h2>
-            <p>智能计算与数据挖掘实验室常年招收对人工智能、机器学习、数据挖掘等领域有浓厚兴趣的博士研究生、硕士研究生、博士后和研究助理。我们提供良好的科研环境、充足的经费支持和广阔的发展空间。</p>
-            <a href="contact.html" class="join-button">了解更多招生信息</a>
+            <p>卢仲毅教授课题组长期招收对人工智能材料设计、计算物理与量子多体理论等方向感兴趣的博士研究生、硕士研究生、博士后和研究助理。团队提供良好的科研条件、充足的项目支持以及自由开放的学术氛围，欢迎加入共同探索量子材料与智能计算的前沿。</p>
+            <a href="./LianXiWoMen.html" class="join-button">了解更多招生信息</a>
         </section>
     </main>
 
     <!-- 网站页脚 -->
     <footer class="site-footer">
-        <div class="container">
+        <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>智能计算与数据挖掘实验室</h3>
-                    <p>中国人民大学信息学院</p>
+                    <h3>AI驱动的计算物理与量子材料实验室</h3>
+                    <p>中国人民大学物理学院</p>
                     <p>地址：北京市海淀区中关村大街59号</p>
                     <p>邮编：100872</p>
                 </div>
                 <div class="footer-section">
                     <h3>相关链接</h3>
                     <ul class="footer-links">
-                        <li><a href="index.html">实验室首页</a></li>
-                        <li><a href="research.html">研究方向</a></li>
-                        <li><a href="publications.html">学术发表</a></li>
-                        <li><a href="projects.html">科研项目</a></li>
+                        <li><a href="https://www.ruc.edu.cn">中国人民大学</a></li>
+                        <li><a href="https://www.phys.ruc.edu.cn">物理学院</a></li>
+                        <li><a href="https://lib.ruc.edu.cn">图书馆资源</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>联系我们</h3>
+                    <h3>关注我们</h3>
                     <ul class="footer-links">
-                        <li><a href="mailto:icdm@ruc.edu.cn">icdm@ruc.edu.cn</a></li>
-                        <li><a href="#">微信公众号：RUC_ICDM</a></li>
-                        <li><a href="#">信息楼3层301-310室</a></li>
+                        <li><a href="https://github.com/zfgao66"><i class="fab fa-github"></i> GitHub</a></li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>© 2023 中国人民大学智能计算与数据挖掘实验室. 保留所有权利.</p>
+                <p>© 2025 中国人民大学AI驱动的计算物理与量子材料实验室. 保留所有权利.</p>
+                <p>网站维护：AI-Driven QMR Lab | 推荐使用Chrome、Firefox浏览器访问</p>
             </div>
         </div>
     </footer>

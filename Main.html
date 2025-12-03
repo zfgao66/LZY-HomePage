@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>欢迎访问卢仲毅教授研究组-人工智能量子材料设计实验室</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* 基础样式 */
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -16,66 +17,7 @@
         }
         a { text-decoration: none; color: inherit; }
 
-        /* 顶部栏 - 校徽与实验室名称 */
-        .site-header {
-            background-color: #fff;
-            border-bottom: 3px solid #b31b1b; /* 人大红 */
-            padding: 15px 0;
-        }
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            padding: 0 20px;
-        }
-        .ruc-logo {
-            height: 60px;
-            margin-right: 20px;
-        }
-        .lab-info {
-            flex-grow: 1;
-            border-left: 2px solid #eee;
-            padding-left: 20px;
-        }
-        .lab-info h1 {
-            font-size: 1.8rem;
-            color: #b31b1b;
-            margin-bottom: 5px;
-            font-weight: 600;
-        }
-        .lab-info p {
-            color: #666;
-            font-size: 1rem;
-        }
-
-        /* 导航栏 */
-        .main-nav {
-            background-color: #2c3e50;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        .nav-links li a {
-            display: block;
-            color: #ecf0f1;
-            padding: 16px 22px;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-        .nav-links li a:hover,
-        .nav-links li a.active {
-            background-color: #34495e;
-            color: #fff;
-        }
+        /* Header / Nav 样式已移动至 styles.css */
 
         /* 页面主体内容容器 */
         .main-container {
@@ -284,60 +226,19 @@
             padding-left: 20px;
         }
 
-        /* 页脚 */
-        .site-footer {
-            background-color: #2c3e50;
-            color: #bdc3c7;
-            padding: 40px 0 20px;
-            margin-top: 50px;
-        }
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-        }
-        .footer-section { flex: 1; min-width: 250px; margin-bottom: 20px; }
-        .footer-section h3 {
-            color: #ecf0f1;
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #4a6572;
-        }
-        .footer-links { list-style: none; }
-        .footer-links li { margin-bottom: 10px; }
-        .footer-links a {
-            color: #bdc3c7;
-            transition: color 0.3s;
-        }
-        .footer-links a:hover { color: #fff; }
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #34495e;
-            font-size: 0.9rem;
-            color: #95a5a6;
-        }
-
         /* 响应式设计 */
         @media (max-width: 992px) {
             .main-container { flex-direction: column; }
             .research-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
         }
         @media (max-width: 768px) {
-            .header-container { flex-direction: column; text-align: center; }
-            .lab-info { border-left: none; border-top: 2px solid #eee; padding-left: 0; padding-top: 15px; margin-top: 15px; }
+            /* header / lab-info responsive rules now in styles.css */
             .nav-links { flex-wrap: wrap; justify-content: center; }
             .nav-links li a { padding: 12px 15px; font-size: 0.95rem; }
             .lab-carousel { height: 280px; }
             .carousel-text h2 { font-size: 2rem; }
             .member-list { justify-content: center; }
+            /* logo responsive rules moved to styles.css */
         }
     </style>
 </head>
@@ -345,7 +246,7 @@
     <!-- 头部：校徽与实验室信息 -->
     <header class="site-header">
         <div class="header-container">
-            <img src="https://www.ruc.edu.cn/images/logo.png" alt="中国人民大学校徽" class="ruc-logo" onerror="this.style.display='none'">
+            <img src="./Main-banner/Logo.png" alt="Team Logo" class="team-logo" onerror="this.style.display='none'">
             <div class="lab-info">
                 <h1>卢仲毅 研究组</h1>
                 <p>AI驱动的计算物理与量子材料实验室· 中国人民大学 物理学院</p>
@@ -410,24 +311,24 @@
                 <div class="block-body">
                     <ul class="news-list">
                         <li class="news-item">
-                            <a href="#" class="news-title">实验室博士生xxxx在NeurIPS 2025发表关于图神经网络的论文</a>
+                            <a href="https://www.nature.com/articles/s41524-025-01830-z" class="news-title">实验室博士生韩小琪在npj Computational Materials发表InvDesFlow-AL的论文</a>
                             <span class="news-date">2025-11-20</span>
                         </li>
                         <li class="news-item">
-                            <a href="#" class="news-title">与阿里巴巴合作项目“大规模异常检测”通过中期验收</a>
+                            <a href="http://www.phys.ruc.edu.cn/info/1059/2489.htm" class="news-title">卢仲毅教授获得教育部“物态调控”项目立项</a>
                             <span class="news-date">2025-11-15</span>
                         </li>
                         <li class="news-item">
-                            <a href="#" class="news-title">卢仲毅教授受邀在IJCAI 2025做“联邦学习前沿进展”主题报告</a>
-                            <span class="news-date">2025-11-10</span>
+                            <a href="https://ccmp2025.ioply.cn/?page=559581&" class="news-title">高泽峰受邀在CCMP2025做邀请报告</a>
+                            <span class="news-date">2025-8-20</span>
                         </li>
                         <li class="news-item">
-                            <a href="#" class="news-title">2024年春季学期招收博士后与研究助理通知</a>
-                            <span class="news-date">2024-11-05</span>
+                            <a href="#" class="news-title">2025年春季学期招收博士后与研究助理通知</a>
+                            <span class="news-date">2025-11-05</span>
                         </li>
                         <li class="news-item">
-                            <a href="#" class="news-title">实验室组队参加Kaggle竞赛并获得全球Top 5%成绩</a>
-                            <span class="news-date">2024-10-28</span>
+                            <a href="http://gaozefeng.tech/pdfs/award/OpenLam.jpg" class="news-title">实验室组队参加OpenLAM竞赛并获得一等奖</a>
+                            <span class="news-date">2025-1-28</span>
                         </li>
                     </ul>
                 </div>
@@ -442,19 +343,19 @@
                     <div class="research-grid">
                         <div class="research-topic">
                             <h3><i class="fas fa-project-diagram"></i> AI驱动的材料逆向设计</h3>
-                            <p>研究图神经网络、网络表示学习及其在社会网络分析、推荐系统等领域的应用。</p>
+                            <p>研究利用人工智能从目标性能出发自动推断并生成满足要求的材料结构与成分方案。</p>
                         </div>
                         <div class="research-topic">
-                            <h3><i class="fas fa-shield-alt"></i> 可信人工智能</h3>
-                            <p>探索AI模型的可解释性、公平性、鲁棒性与隐私保护，构建安全可靠的AI系统。</p>
+                            <h3><i class="fas fa-shield-alt"></i> 量子多体物理</h3>
+                            <p>研究大量相互作用粒子在量子力学规律下的集体行为及其由此产生的新奇物质状态。</p>
                         </div>
                         <div class="research-topic">
-                            <h3><i class="fas fa-users"></i> 联邦学习</h3>
-                            <p>在数据隐私保护前提下，实现跨设备、跨机构的分布式机器学习模型训练。</p>
+                            <h3><i class="fas fa-users"></i> 计算物理</h3>
+                            <p>研究利用数值算法和计算手段模拟、求解并预测复杂物理系统的行为。</p>
                         </div>
                         <div class="research-topic">
-                            <h3><i class="fas fa-chart-line"></i> 时序数据挖掘</h3>
-                            <p>针对金融、物联网等领域的高维时序数据进行预测、异常检测与模式发现。</p>
+                            <h3><i class="fas fa-chart-line"></i> 量子磁性</h3>
+                            <p>研究量子力学下自旋体系的相互作用与集体行为及其产生的特殊磁性现象。</p>
                         </div>
                     </div>
                 </div>
@@ -496,7 +397,7 @@
                                 <img src="./people/faculty/gzf.png" alt="高泽峰" onerror="this.src='https://via.placeholder.com/150?text=avatar'">
                             </div>
                             <div class="member-name">高泽峰</div>
-                            <div class="member-role">讲 师</div>
+                            <div class="member-role">讲师</div>
                         </div>
                     </div>
                 </div>
@@ -540,7 +441,7 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>人工智能量子材料设计实验室</h3>
+                    <h3>AI驱动的计算物理与量子材料实验室</h3>
                     <p>中国人民大学物理学院</p>
                     <p>地址：北京市海淀区中关村大街59号</p>
                     <p>邮编：100872</p>
@@ -564,7 +465,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>© 2023 中国人民大学人工智能量子材料设计实验室. 保留所有权利.</p>
+                <p>© 2025 中国人民大学AI驱动的计算物理与量子材料实验室. 保留所有权利.</p>
                 <p>网站维护：AI-Driven QMR Lab | 推荐使用Chrome、Firefox浏览器访问</p>
             </div>
         </div>

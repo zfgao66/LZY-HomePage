@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>科研成果 - 智能计算与数据挖掘实验室</title>
+    <title>科研成果 - AI驱动的计算物理与量子材料实验室</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* 基础样式 */
         * {
@@ -265,36 +266,6 @@
             box-shadow: 0 15px 30px rgba(0,0,0,0.12);
         }
         
-        .achievement-type {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            z-index: 2;
-        }
-        
-        .type-publication {
-            background-color: #3498db;
-            color: white;
-        }
-        
-        .type-project {
-            background-color: #2ecc71;
-            color: white;
-        }
-        
-        .type-patent {
-            background-color: #f39c12;
-            color: white;
-        }
-        
-        .type-award {
-            background-color: #e74c3c;
-            color: white;
-        }
         
         .achievement-image {
             height: 200px;
@@ -570,7 +541,7 @@
         .demo-card:hover .demo-image img {
             transform: scale(1.05);
         }
-        
+        /* .team-logo: moved to styles.css */
         .demo-content {
             padding: 20px;
         }
@@ -605,58 +576,7 @@
             transform: translateX(5px);
         }
         
-        /* 页脚 */
-        .site-footer {
-            background-color: #2c3e50;
-            color: #bdc3c7;
-            padding: 40px 0 20px;
-        }
         
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-        }
-        
-        .footer-section {
-            flex: 1;
-            min-width: 250px;
-            margin-bottom: 20px;
-        }
-        
-        .footer-section h3 {
-            color: #ecf0f1;
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #4a6572;
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-links a {
-            color: #bdc3c7;
-            transition: color 0.3s;
-        }
-        
-        .footer-links a:hover {
-            color: #fff;
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #34495e;
-            font-size: 0.9rem;
-            color: #95a5a6;
-        }
         
         /* 响应式设计 */
         @media (max-width: 992px) {
@@ -737,28 +657,30 @@
             .achievement-link {
                 text-align: center;
             }
+            /* logo responsive rules moved to styles.css */
         }
     </style>
 </head>
 <body>
-    <!-- 网站头部 -->
+    <!-- 头部：校徽与实验室信息 -->
     <header class="site-header">
-        <div class="container header-container">
+        <div class="header-container">
+            <img src="./Main-banner/Logo.png" alt="Team Logo" class="team-logo" onerror="this.style.display='none'">
             <div class="lab-info">
-                <h1>智能计算与数据挖掘实验室</h1>
-                <p>ICDM Lab · 中国人民大学信息学院</p>
+                <h1>卢仲毅 研究组</h1>
+                <p>AI驱动的计算物理与量子材料实验室· 中国人民大学 物理学院</p>
             </div>
         </div>
     </header>
 
     <!-- 主导航 -->
     <nav class="main-nav">
-        <div class="container nav-container">
+        <div class="nav-container">
             <ul class="nav-links">
                 <li><a href="./Main.html">首页</a></li>
                 <li><a href="./TuanDuiJieShao.html">团队介绍</a></li>
                 <li><a href="./YanJiuFangXiang.html">研究方向</a></li>
-                <li><a href="./KeYanChengGuo.html" class="active">科研成果</a></li>
+                <li><a href="./KeYanChengGuo.html">科研成果</a></li>
                 <li><a href="./XueShuFaBiao.html">学术发表</a></li>
                 <li><a href="./XiangMuKeTi.html">项目课题</a></li>
                 <li><a href="./ZhaoShengZhaoPin.html">招生招聘</a></li>
@@ -767,74 +689,59 @@
         </div>
     </nav>
 
-    <!-- 面包屑导航 -->
-    <div class="breadcrumb">
-        <div class="container">
-            <ul class="breadcrumb-links">
-                <li><a href="index.html">首页</a></li>
-                <li>科研成果</li>
-            </ul>
-        </div>
-    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.nav-links a');
+        const current = location.pathname.split('/').pop() || 'Main.html';
+        links.forEach(a => {
+            a.classList.toggle('active', a.getAttribute('href') === current);
+        });
+    });
+    </script>
+
+    
 
     <!-- 页面主要内容 -->
     <main class="container">
         <!-- 页面标题 -->
         <div class="page-header">
-            <h1>科研成果</h1>
-            <p>智能计算与数据挖掘实验室在人工智能、机器学习与数据科学领域取得了丰硕的研究成果，包括高水平学术论文、科研项目、专利和软件系统等。</p>
-        </div>
-
-        <!-- 成果概览 -->
-        <section class="achievement-overview">
-            <div class="overview-content">
-                <div class="overview-text">
-                    <h2>研究成果概览</h2>
-                    <p>实验室自成立以来，在人工智能与数据科学领域持续开展创新研究，取得了一系列具有重要学术价值和实际应用价值的成果。我们的研究工作得到了国内外同行的广泛认可，并在多个实际场景中得到了成功应用。</p>
-                    <p>实验室成员在NeurIPS、ICML、KDD、AAAI等人工智能顶级会议和TKDE、TPAMI、JMLR等国际顶级期刊上发表了大量高水平论文，承担了国家自然科学基金重点项目、国家重点研发计划等多项国家级科研项目。</p>
+            <!-- 网站页脚（统一自 Main.html 模板） -->
+            <footer class="site-footer">
+                <div class="footer-container">
+                    <div class="footer-content">
+                        <div class="footer-section">
+                            <h3>AI驱动的计算物理与量子材料实验室</h3>
+                            <p>中国人民大学物理学院</p>
+                            <p>地址：北京市海淀区中关村大街59号</p>
+                            <p>邮编：100872</p>
+                        </div>
+                        <div class="footer-section">
+                            <h3>相关链接</h3>
+                            <ul class="footer-links">
+                                <li><a href="https://www.ruc.edu.cn">中国人民大学</a></li>
+                                <li><a href="https://www.phys.ruc.edu.cn">物理学院</a></li>
+                                <li><a href="https://lib.ruc.edu.cn">图书馆资源</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3>关注我们</h3>
+                            <ul class="footer-links">
+                                <li><a href="https://github.com/zfgao66"><i class="fab fa-github"></i> GitHub</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>© 2025 中国人民大学AI驱动的计算物理与量子材料实验室. 保留所有权利.</p>
+                        <p>网站维护：AI-Driven QMR Lab | 推荐使用Chrome、Firefox浏览器访问</p>
+                    </div>
                 </div>
-                
-                <div class="overview-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">200+</div>
-                        <div class="stat-label">学术论文发表</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">国家级项目</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-label">发明专利授权</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">5+</div>
-                        <div class="stat-label">重要奖项</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 成果分类筛选 -->
-        <section class="filter-section">
-            <div class="filter-title">
-                <i class="fas fa-filter"></i> 成果分类筛选
-            </div>
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">全部成果</button>
-                <button class="filter-btn" data-filter="publication">学术论文</button>
-                <button class="filter-btn" data-filter="project">科研项目</button>
-                <button class="filter-btn" data-filter="patent">发明专利</button>
-                <button class="filter-btn" data-filter="award">获奖荣誉</button>
-                <button class="filter-btn" data-filter="demo">系统演示</button>
-            </div>
-        </section>
+            </footer>
+        
 
         <!-- 成果展示网格 -->
         <section class="achievements-grid" id="achievements-container">
             <!-- 学术论文成果1 -->
             <div class="achievement-card" data-type="publication">
-                <div class="achievement-type type-publication">学术论文</div>
                 <div class="achievement-image">
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="联邦学习研究">
                 </div>
@@ -860,7 +767,6 @@
             
             <!-- 学术论文成果2 -->
             <div class="achievement-card" data-type="publication">
-                <div class="achievement-type type-publication">学术论文</div>
                 <div class="achievement-image">
                     <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="图神经网络研究">
                 </div>
@@ -886,7 +792,6 @@
             
             <!-- 科研项目成果 -->
             <div class="achievement-card" data-type="project">
-                <div class="achievement-type type-project">科研项目</div>
                 <div class="achievement-image">
                     <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="国家重点研发计划">
                 </div>
@@ -912,7 +817,6 @@
             
             <!-- 发明专利成果 -->
             <div class="achievement-card" data-type="patent">
-                <div class="achievement-type type-patent">发明专利</div>
                 <div class="achievement-image">
                     <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="专利技术">
                 </div>
@@ -938,7 +842,6 @@
             
             <!-- 获奖荣誉成果 -->
             <div class="achievement-card" data-type="award">
-                <div class="achievement-type type-award">获奖荣誉</div>
                 <div class="achievement-image">
                     <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="奖项荣誉">
                 </div>
@@ -964,7 +867,6 @@
             
             <!-- 系统演示成果 -->
             <div class="achievement-card" data-type="demo">
-                <div class="achievement-type type-publication">系统演示</div>
                 <div class="achievement-image">
                     <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="系统演示">
                 </div>

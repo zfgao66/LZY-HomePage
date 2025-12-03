@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>项目课题 - 卢仲毅教授研究组 - 中国人民大学物理学院</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* 基础样式 */
         * {
@@ -63,40 +64,6 @@
         .nav-container {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-links li a {
-            display: block;
-            color: #ecf0f1;
-            padding: 18px 22px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        .nav-links li a:hover {
-            background-color: #34495e;
-        }
-        
-        .nav-links li a.active {
-            background-color: #b31b1b;
-        }
-        
-        /* 面包屑导航 */
-        .breadcrumb {
-            background-color: #f1f5f9;
-            padding: 15px 0;
-            margin-bottom: 30px;
-        }
-        
-        .breadcrumb-links {
-            list-style: none;
-            display: flex;
         }
         
         .breadcrumb-links li {
@@ -155,6 +122,8 @@
             gap: 40px;
         }
         
+        /* .team-logo: moved to styles.css */
+
         .overview-text h2 {
             font-size: 2rem;
             margin-bottom: 20px;
@@ -294,16 +263,6 @@
             box-shadow: 0 15px 30px rgba(0,0,0,0.12);
         }
         
-        .project-type {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            z-index: 2;
-        }
         
         .type-nsfc {
             background-color: #3498db;
@@ -649,58 +608,7 @@
             font-weight: 500;
         }
         
-        /* 页脚 */
-        .site-footer {
-            background-color: #2c3e50;
-            color: #bdc3c7;
-            padding: 40px 0 20px;
-        }
         
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-        }
-        
-        .footer-section {
-            flex: 1;
-            min-width: 250px;
-            margin-bottom: 20px;
-        }
-        
-        .footer-section h3 {
-            color: #ecf0f1;
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #4a6572;
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-links a {
-            color: #bdc3c7;
-            transition: color 0.3s;
-        }
-        
-        .footer-links a:hover {
-            color: #fff;
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #34495e;
-            font-size: 0.9rem;
-            color: #95a5a6;
-        }
         
         /* 响应式设计 */
         @media (max-width: 992px) {
@@ -795,16 +703,18 @@
             .collaborators-grid {
                 grid-template-columns: 1fr;
             }
+            /* logo responsive rules moved to styles.css */
         }
     </style>
 </head>
 <body>
-    <!-- 网站头部 -->
+    <!-- 头部：校徽与实验室信息 -->
     <header class="site-header">
-        <div class="container header-container">
+        <div class="header-container">
+            <img src="./Main-banner/Logo.png" alt="Team Logo" class="team-logo" onerror="this.style.display='none'">
             <div class="lab-info">
-                <h1>卢仲毅教授研究组</h1>
-                <p>中国人民大学物理学院 · 计算物理与量子材料研究</p>
+                <h1>卢仲毅 研究组</h1>
+                <p>AI驱动的计算物理与量子材料实验室· 中国人民大学 物理学院</p>
             </div>
         </div>
     </header>
@@ -818,7 +728,7 @@
                 <li><a href="./YanJiuFangXiang.html">研究方向</a></li>
                 <li><a href="./KeYanChengGuo.html">科研成果</a></li>
                 <li><a href="./XueShuFaBiao.html">学术发表</a></li>
-                <li><a href="./XiangMuKeTi.html" class="active">项目课题</a></li>
+                <li><a href="./XiangMuKeTi.html">项目课题</a></li>
                 <li><a href="./ZhaoShengZhaoPin.html">招生招聘</a></li>
                 <li><a href="./LianXiWoMen.html">联系我们</a></li>
             </ul>
@@ -899,7 +809,6 @@
             <div class="projects-grid" id="projects-container">
                 <!-- 项目1 -->
                 <div class="project-card" data-type="nsfc">
-                    <div class="project-type type-nsfc">国家自然科学基金</div>
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="量子材料研究">
                     </div>
@@ -939,7 +848,6 @@
                 
                 <!-- 项目2 -->
                 <div class="project-card" data-type="nsfc">
-                    <div class="project-type type-nsfc">国家自然科学基金</div>
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="计算物理研究">
                     </div>
@@ -979,7 +887,6 @@
                 
                 <!-- 项目3 -->
                 <div class="project-card" data-type="international">
-                    <div class="project-type type-international">国际合作</div>
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="国际合作研究">
                     </div>
@@ -1019,7 +926,6 @@
                 
                 <!-- 项目4 -->
                 <div class="project-card" data-type="industry">
-                    <div class="project-type type-industry">产学研合作</div>
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="产学研合作">
                     </div>
@@ -1283,6 +1189,13 @@
                 item.addEventListener('mouseleave', function() {
                     this.style.boxShadow = 'none';
                 });
+            });
+
+            // 动态导航高亮（根据当前路径设置active类）
+            const navLinks = document.querySelectorAll('.nav-links a');
+            const currentFile = location.pathname.split('/').pop() || 'Main.html';
+            navLinks.forEach(a => {
+                a.classList.toggle('active', a.getAttribute('href') === currentFile);
             });
         });
     </script>
