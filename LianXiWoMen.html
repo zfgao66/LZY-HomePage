@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>联系我们 - 卢仲毅教授研究组 - 中国人民大学物理学院</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* 基础样式 */
         * {
@@ -31,62 +32,7 @@
             padding: 0 20px;
         }
         
-        /* 顶部导航 */
-        .site-header {
-            background-color: #fff;
-            border-bottom: 3px solid #b31b1b; /* 人大红 */
-            padding: 15px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        
-        .header-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .lab-info h1 {
-            font-size: 1.8rem;
-            color: #b31b1b;
-            margin-bottom: 5px;
-        }
-        
-        .lab-info p {
-            color: #666;
-            font-size: 1rem;
-        }
-        
-        .main-nav {
-            background-color: #2c3e50;
-        }
-        
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-links li a {
-            display: block;
-            color: #ecf0f1;
-            padding: 18px 22px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        .nav-links li a:hover {
-            background-color: #34495e;
-        }
-        
-        .nav-links li a.active {
-            background-color: #b31b1b;
-        }
-        
+        /* Header/nav styles moved to styles.css */
         /* 面包屑导航 */
         .breadcrumb {
             background-color: #f1f5f9;
@@ -540,59 +486,7 @@
             line-height: 1.6;
         }
         
-        /* 页脚 */
-        .site-footer {
-            background-color: #2c3e50;
-            color: #bdc3c7;
-            padding: 40px 0 20px;
-        }
-        
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-        }
-        
-        .footer-section {
-            flex: 1;
-            min-width: 250px;
-            margin-bottom: 20px;
-        }
-        
-        .footer-section h3 {
-            color: #ecf0f1;
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #4a6572;
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-links a {
-            color: #bdc3c7;
-            transition: color 0.3s;
-        }
-        
-        .footer-links a:hover {
-            color: #fff;
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #34495e;
-            font-size: 0.9rem;
-            color: #95a5a6;
-        }
-        
+        /* Footer styles moved to styles.css */
         /* 响应式设计 */
         @media (max-width: 992px) {
             .contact-main {
@@ -684,17 +578,18 @@
 <body>
     <!-- 网站头部 -->
     <header class="site-header">
-        <div class="container header-container">
+        <div class="header-container">
+            <img src="./Main-banner/Logo.png" alt="Team Logo" class="team-logo" onerror="this.style.display='none'">
             <div class="lab-info">
-                <h1>卢仲毅教授研究组</h1>
-                <p>中国人民大学物理学院 · 计算物理与量子材料研究</p>
+                <h1>卢仲毅 研究组</h1>
+                <p>AI驱动的计算物理与量子材料实验室· 中国人民大学 物理学院</p>
             </div>
         </div>
     </header>
 
     <!-- 主导航 -->
     <nav class="main-nav">
-        <div class="container nav-container">
+        <div class="nav-container">
             <ul class="nav-links">
                 <li><a href="./Main.html">首页</a></li>
                 <li><a href="./TuanDuiJieShao.html">团队介绍</a></li>
@@ -702,7 +597,7 @@
                 <li><a href="./XueShuFaBiao.html">学术发表</a></li>
                 <li><a href="./XiangMuKeTi.html">项目课题</a></li>
                 <li><a href="./ZhaoShengZhaoPin.html">招生招聘</a></li>
-                <li><a href="./LianXiWoMen.html" class="active">联系我们</a></li>
+                <li><a href="./LianXiWoMen.html">联系我们</a></li>
             </ul>
         </div>
     </nav>
@@ -1078,42 +973,46 @@
 
     <!-- 网站页脚 -->
     <footer class="site-footer">
-        <div class="container">
+        <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>卢仲毅教授研究组</h3>
+                    <h3>AI驱动的计算物理与量子材料实验室</h3>
                     <p>中国人民大学物理学院</p>
-                    <p>计算物理与量子材料研究</p>
                     <p>地址：北京市海淀区中关村大街59号</p>
                     <p>邮编：100872</p>
                 </div>
                 <div class="footer-section">
-                    <h3>快速链接</h3>
+                    <h3>相关链接</h3>
                     <ul class="footer-links">
-                        <li><a href="./Main.html">研究组首页</a></li>
-                        <li><a href="./research.html">研究方向</a></li>
-                        <li><a href="./publications.html">学术发表</a></li>
-                        <li><a href="./LianXiWoMen.html">联系我们</a></li>
+                        <li><a href="https://www.ruc.edu.cn">中国人民大学</a></li>
+                        <li><a href="https://www.phys.ruc.edu.cn">物理学院</a></li>
+                        <li><a href="https://lib.ruc.edu.cn">图书馆资源</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>关注我们</h3>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fab fa-weixin"></i> 微信公众号</a></li>
-                        <li><a href="#"><i class="fab fa-github"></i> GitHub代码库</a></li>
-                        <li><a href="#"><i class="fas fa-rss"></i> 研究组博客</a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="https://github.com/zfgao66"><i class="fab fa-github"></i> GitHub</a></li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>© 2023 中国人民大学物理学院卢仲毅教授研究组. 保留所有权利.</p>
-                <p>最后更新：2023年11月</p>
+                <p>© 2025 中国人民大学AI驱动的计算物理与量子材料实验室. 保留所有权利.</p>
+                <p>网站维护：AI-Driven QMR Lab | 推荐使用Chrome、Firefox浏览器访问</p>
             </div>
         </div>
     </footer>
 
     <script>
+        // 导航高亮设置
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('.nav-links a');
+            const current = location.pathname.split('/').pop() || 'Main.html';
+            links.forEach(a => {
+                a.classList.toggle('active', a.getAttribute('href') === './' + current || a.getAttribute('href') === current);
+            });
+        });
+
         // 联系表单提交处理
         document.addEventListener('DOMContentLoaded', function() {
             const contactForm = document.getElementById('contactForm');
