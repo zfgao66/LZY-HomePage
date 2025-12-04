@@ -356,6 +356,125 @@
             }
             /* logo responsive rules moved to styles.css */
         }
+
+        /* 博士研究生卡片样式 */
+        .phd-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        
+        .phd-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .phd-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 4px solid white;
+            background-color: #ecf0f1;
+            margin: 0 auto 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #7f8c8d;
+        }
+        
+        .phd-info {
+            padding: 15px;
+        }
+        
+        .phd-name {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .phd-field {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        .phd-email {
+            font-size: 0.9rem;
+            color: #3498db;
+        }
+
+        @media (max-width: 768px) {
+            .phd-card {
+                width: calc(33.333% - 20px);
+                margin: 0 10px 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .phd-card {
+                width: 100%;
+            }
+        }
+
+        /* 博士生卡片专用样式 */
+        .phd-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        .phd-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 18px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 0;
+        }
+        .phd-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            background: #f1f5f9;
+        }
+        .phd-info {
+            text-align: center;
+        }
+        .phd-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 4px;
+        }
+        .phd-field {
+            font-size: 0.95rem;
+            color: #4a5568;
+            margin-bottom: 4px;
+        }
+        .phd-email {
+            font-size: 0.92rem;
+            color: #3498db;
+            word-break: break-all;
+        }
+        @media (max-width: 900px) {
+            .phd-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .phd-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -835,85 +954,37 @@
                 <h2 class="category-title">博士研究生</h2>
             </div>
             
-            <div class="members-grid">
-                <div class="member-card">
-                    <div class="member-header">
-                        <div class="member-avatar">
-                            <img src="./people/PhD/hanxiaoqi.png" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <h3 class="member-name">韩小琪</h3>
-                        <p class="member-role">博士研究生</p>
-                    </div>
-                    <div class="member-body">
-                        <div class="member-info">
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <div class="info-text">
-                                    <strong>研究方向：</strong>图神经网络，材料结构设计
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="info-text">
-                                    <strong>邮箱：</strong>hanxiaoqi@ruc.edu.cn
-                                </div>
-                            </div>
-                        </div>
-                        <p class="member-bio">
-                            2024年入学，主要研究AI驱动的功能性材料逆向设计。在PRB、CPL等期刊上发表论文6篇，开发InvDesFlow等一些列AI方法加速新材料发现。
-                        </p>
-                        <div class="member-links">
-                            <a href="#" class="member-link" title="个人主页">
-                                <i class="fas fa-home"></i>
-                            </a>
-                            <a href="https://github.com/xqh19970407" class="member-link" title="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
+            <div class="members-grid phd-grid">
+                <div class="phd-card">
+                    <img src="./people/PhD/hanxiaoqi.png" alt="韩小琪" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">韩小琪</div>
+                        <div class="phd-field">图神经网络，材料结构设计</div>
+                        <div class="phd-email">hanxiaoqi@ruc.edu.cn</div>
                     </div>
                 </div>
-                
-                <div class="member-card">
-                    <div class="member-header">
-                        <div class="member-avatar">
-                            <img src="./people/PhD/wangxinde.png" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <h3 class="member-name">王馨德</h3>
-                        <p class="member-role">博士研究生</p>
+                <div class="phd-card">
+                    <img src="./people/PhD/wangxinde.png" alt="王馨德" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">王馨德</div>
+                        <div class="phd-field">大语言模型，偏微分方程</div>
+                        <div class="phd-email">xdwang618@ruc.edu.cn</div>
                     </div>
-                    <div class="member-body">
-                        <div class="member-info">
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <div class="info-text">
-                                    <strong>研究方向：</strong>大语言模型，偏微分方程
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="info-text">
-                                    <strong>邮箱：</strong>xdwang618@ruc.edu.cn
-                                </div>
-                            </div>
-                        </div>
-                        <p class="member-bio">
-                            2022年入学，主要研究针对材料设计的垂域大语言模型与偏微分方程求解。
-                        </p>
-                        <div class="member-links">
-                            <a href="https://github.com/WD928" class="member-link" title="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
+                </div>
+                <div class="phd-card">
+                    <img src="./people/PhD/wangjiaqi.png" alt="王佳琪" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">王佳琪</div>
+                        <div class="phd-field">多体物理</div>
+                        <div class="phd-email">wangjiaqi@ruc.edu.cn</div>
+                    </div>
+                </div>
+                <div class="phd-card">
+                    <img src="./people/PhD/wangjiaqi.png" alt="王佳琪" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">王佳琪</div>
+                        <div class="phd-field">多体物理</div>
+                        <div class="phd-email">wangjiaqi@ruc.edu.cn</div>
                     </div>
                 </div>
             </div>
