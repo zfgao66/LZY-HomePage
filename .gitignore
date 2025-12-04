@@ -1,0 +1,7 @@
+# 忽略临时文件和本地环境
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+.env
+*.log
