@@ -33,6 +33,7 @@
         }
         
         /* Header/nav styles moved to styles.css */
+        /* 不在页面内重复定义 nav 样式，已统一到 styles.css */
         /* 面包屑导航 */
         .breadcrumb {
             background-color: #f1f5f9;
@@ -503,15 +504,7 @@
         }
         
         @media (max-width: 768px) {
-            .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            
-            .nav-links li a {
-                padding: 12px 15px;
-                font-size: 0.95rem;
-            }
+            /* nav 样式在 styles.css 中维护 */
             
             .page-header h1 {
                 font-size: 2rem;
@@ -597,7 +590,7 @@
                 <li><a href="./XueShuFaBiao.html">学术发表</a></li>
                 <li><a href="./XiangMuKeTi.html">项目课题</a></li>
                 <li><a href="./ZhaoShengZhaoPin.html">招生招聘</a></li>
-                <li><a href="./LianXiWoMen.html">联系我们</a></li>
+                <li><a href="./LianXiWoMen.html" class="active">联系我们</a></li>
             </ul>
         </div>
     </nav>
@@ -617,358 +610,59 @@
         <!-- 页面标题 -->
         <div class="page-header">
             <h1>联系我们</h1>
-            <p>欢迎与卢仲毅教授研究组联系！我们期待与同行学者、合作机构以及有志于物理研究的同学们交流。</p>
+            <p>欢迎对我们小组感兴趣的同学、老师、合作伙伴通过邮件与我们联系。科研之路很难，但你的收获永远值得你的付出。选择本该纠结，但来到这里必将让你不虚此行。</p>
         </div>
 
-        <!-- 联系信息与地图 -->
+        <!-- 联系信息与寄语 -->
         <div class="contact-main">
-            <!-- 联系信息 -->
             <section class="contact-info-section">
                 <div class="section-header">
                     <h2 class="section-title">
-                        <i class="fas fa-address-card"></i> 联系信息
+                        <i class="fas fa-envelope"></i> 联系方式
                     </h2>
                 </div>
-                
                 <ul class="contact-list">
                     <li class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-user"></i>
                         </div>
                         <div class="contact-details">
-                            <div class="contact-label">办公地址</div>
+                            <div class="contact-label">负责人邮箱</div>
                             <div class="contact-value">
-                                <p>中国人民大学物理学院</p>
-                                <p>北京市海淀区中关村大街59号</p>
-                                <p>物理楼3层301-310室（卢仲毅教授研究组）</p>
-                                <p>邮编：100872</p>
-                            </div>
-                        </div>
-                    </li>
-                    
-                    <li class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <div class="contact-label">电子邮箱</div>
-                            <div class="contact-value">
-                                <p><strong>卢仲毅教授：</strong> <a href="mailto:luzhongyi@ruc.edu.cn" class="contact-link">luzhongyi@ruc.edu.cn</a></p>
-                                <p><strong>研究组事务：</strong> <a href="mailto:luzhongyi.group@ruc.edu.cn" class="contact-link">luzhongyi.group@ruc.edu.cn</a></p>
-                                <p><strong>招生咨询：</strong> <a href="mailto:luzhongyi.admission@ruc.edu.cn" class="contact-link">luzhongyi.admission@ruc.edu.cn</a></p>
-                                <p><strong>合作洽谈：</strong> <a href="mailto:luzhongyi.collab@ruc.edu.cn" class="contact-link">luzhongyi.collab@ruc.edu.cn</a></p>
-                            </div>
-                        </div>
-                    </li>
-                    
-                    <li class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <div class="contact-label">联系电话</div>
-                            <div class="contact-value">
-                                <p><strong>卢仲毅教授办公室：</strong> 010-6251-8306</p>
-                                <p><strong>研究组实验室：</strong> 010-6251-8307</p>
-                                <p><strong>传真：</strong> 010-6251-8308</p>
-                                <p><em>建议优先使用电子邮件联系，我们会在1-3个工作日内回复。</em></p>
+                                <p><strong>卢仲毅：</strong> <a href="mailto:zlu@ruc.edu.cn" class="contact-link">zlu@ruc.edu.cn</a></p>
+                                <p><strong>高泽峰：</strong> <a href="mailto:zfgao@ruc.edu.cn" class="contact-link">zfgao@ruc.edu.cn</a></p>
+                                <p><strong>贺荣强：</strong> <a href="mailto:rqhe@ruc.edu.cn" class="contact-link">rqhe@ruc.edu.cn</a></p>
+                                <p><strong>郭朋杰：</strong> <a href="mailto:guopengjie@ruc.edu.cn" class="contact-link">guopengjie@ruc.edu.cn</a></p>
+                                
                             </div>
                         </div>
                     </li>
                 </ul>
-                
                 <div class="section-header" style="margin-top: 40px;">
                     <h2 class="section-title">
-                        <i class="fas fa-external-link-alt"></i> 相关链接
+                        <i class="fas fa-lightbulb"></i> 温馨提示
                     </h2>
                 </div>
-                
                 <div class="contact-value">
-                    <p><a href="http://phy.ruc.edu.cn" class="contact-link" target="_blank">中国人民大学物理学院官网</a></p>
-                    <p><a href="http://www.ruc.edu.cn" class="contact-link" target="_blank">中国人民大学官网</a></p>
-                    <p><a href="https://scholar.google.com/citations?user=XXXXXXX" class="contact-link" target="_blank">卢仲毅教授Google Scholar</a></p>
-                    <p><a href="https://orcid.org/0000-0000-0000-0000" class="contact-link" target="_blank">卢仲毅教授ORCID</a></p>
+                    <p>请优先通过邮件联系，我们会尽快回复。科研之路没有捷径，但每一步都值得！</p>
                 </div>
             </section>
-            
-            <!-- 地图区域 -->
             <section class="map-section">
                 <div class="map-placeholder">
-                    <i class="fas fa-map-marked-alt"></i>
-                    <h3>中国人民大学位置</h3>
-                    <p>北京市海淀区中关村大街59号</p>
-                    <p>点击下方链接查看详细地图</p>
-                    <a href="https://maps.app.goo.gl/XXXXXXX" class="contact-link" target="_blank" style="display: inline-block; margin-top: 15px; padding: 8px 15px; background-color: #3498db; color: white; border-radius: 5px; font-weight: 500;">
-                        <i class="fas fa-map"></i> 查看Google地图
-                    </a>
+                    <img src="./Main-banner/pic2.png" alt="DQMLab" style="max-width:100%;border-radius:8px;box-shadow:0 5px 15px rgba(0,0,0,0.08);margin-bottom:20px;">
+
                 </div>
-                <!-- 实际使用时可以嵌入Google Maps或百度地图 -->
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.234567890123!2d116.31234567890123!3d39.98765432109876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU5JzE1LjQiTiAxMTbCsDE4JzQ1LjYiRQ!5e0!3m2!1szh-CN!2scn!4v1234567890123!5m2!1szh-CN!2scn" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
             </section>
         </div>
-
-        <!-- 联系表单 -->
-        <section class="contact-form-section">
+        <!-- 精简表单（可选保留） -->
+        <!-- <section class="contact-form-section">
             <div class="section-header">
                 <h2 class="section-title">
                     <i class="fas fa-paper-plane"></i> 发送消息
                 </h2>
             </div>
-            
-            <p class="form-intro">
-                如果您有任何问题、合作意向或想要了解更多信息，请填写以下表单。我们将尽快回复您的消息。
-                对于招生咨询，请直接发送邮件至招生咨询邮箱。
-            </p>
-            
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <label for="name" class="form-label">姓名 *</label>
-                    <input type="text" id="name" name="name" class="form-input" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email" class="form-label">电子邮箱 *</label>
-                    <input type="email" id="email" name="email" class="form-input" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="affiliation" class="form-label">单位/学校</label>
-                    <input type="text" id="affiliation" name="affiliation" class="form-input">
-                </div>
-                
-                <div class="form-group">
-                    <label for="subject" class="form-label">主题 *</label>
-                    <select id="subject" name="subject" class="form-select" required>
-                        <option value="">请选择主题</option>
-                        <option value="research">学术合作与研究交流</option>
-                        <option value="collaboration">项目合作洽谈</option>
-                        <option value="visit">访问学者/学生申请</option>
-                        <option value="seminar">学术报告邀请</option>
-                        <option value="other">其他事项</option>
-                    </select>
-                </div>
-                
-                <div class="form-group full-width">
-                    <label for="message" class="form-label">消息内容 *</label>
-                    <textarea id="message" name="message" class="form-textarea" required></textarea>
-                </div>
-                
-                <button type="submit" class="form-submit">
-                    <i class="fas fa-paper-plane"></i> 发送消息
-                </button>
-            </form>
-        </section>
-
-        <!-- 研究组成员联系 -->
-        <section class="team-contact-section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <i class="fas fa-users"></i> 研究组成员
-                </h2>
-            </div>
-            
-            <p class="team-intro">
-                以下是我们研究组的主要成员，您可以根据具体事宜联系相关成员。
-            </p>
-            
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-header">
-                        <div class="member-avatar">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <div class="member-info">
-                            <div class="member-name">卢仲毅 教授</div>
-                            <div class="member-role">研究组负责人、博士生导师</div>
-                        </div>
-                    </div>
-                    <div class="member-contact">
-                        <div class="member-detail">
-                            <i class="fas fa-envelope"></i>
-                            <span>luzhongyi@ruc.edu.cn</span>
-                        </div>
-                        <div class="member-detail">
-                            <i class="fas fa-phone"></i>
-                            <span>010-6251-8306</span>
-                        </div>
-                        <div class="member-detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>物理楼301室</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <div class="member-header">
-                        <div class="member-avatar">
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                        <div class="member-info">
-                            <div class="member-name">王明 副教授</div>
-                            <div class="member-role">研究组副主任</div>
-                        </div>
-                    </div>
-                    <div class="member-contact">
-                        <div class="member-detail">
-                            <i class="fas fa-envelope"></i>
-                            <span>wangming@ruc.edu.cn</span>
-                        </div>
-                        <div class="member-detail">
-                            <i class="fas fa-phone"></i>
-                            <span>010-6251-8309</span>
-                        </div>
-                        <div class="member-detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>物理楼303室</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <div class="member-header">
-                        <div class="member-avatar">
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                        <div class="member-info">
-                            <div class="member-name">张丽 博士后</div>
-                            <div class="member-role">博士后研究员</div>
-                        </div>
-                    </div>
-                    <div class="member-contact">
-                        <div class="member-detail">
-                            <i class="fas fa-envelope"></i>
-                            <span>zhangli@ruc.edu.cn</span>
-                        </div>
-                        <div class="member-detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>物理楼305室</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <div class="member-header">
-                        <div class="member-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="member-info">
-                            <div class="member-name">陈华 博士研究生</div>
-                            <div class="member-role">研究组学生负责人</div>
-                        </div>
-                    </div>
-                    <div class="member-contact">
-                        <div class="member-detail">
-                            <i class="fas fa-envelope"></i>
-                            <span>chenhua@ruc.edu.cn</span>
-                        </div>
-                        <div class="member-detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>物理楼307室</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 交通指引 -->
-        <section class="transport-section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <i class="fas fa-directions"></i> 交通指引
-                </h2>
-            </div>
-            
-            <p class="team-intro">
-                前往中国人民大学物理学院的交通方式指引：
-            </p>
-            
-            <div class="transport-grid">
-                <div class="transport-item">
-                    <div class="transport-icon">
-                        <i class="fas fa-subway"></i>
-                    </div>
-                    <div class="transport-title">地铁</div>
-                    <div class="transport-desc">
-                        乘坐地铁4号线至"人民大学站"A1口出，步行约5分钟即可到达物理学院。
-                    </div>
-                </div>
-                
-                <div class="transport-item">
-                    <div class="transport-icon">
-                        <i class="fas fa-bus"></i>
-                    </div>
-                    <div class="transport-title">公交</div>
-                    <div class="transport-desc">
-                        乘坐公交车至"人民大学站"，可乘运通105、运通106、320、332、355、365、特4、特6等线路。
-                    </div>
-                </div>
-                
-                <div class="transport-item">
-                    <div class="transport-icon">
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <div class="transport-title">自驾</div>
-                    <div class="transport-desc">
-                        校内提供访客停车位，请从东门或西门进入，按照指示前往物理学院停车场。
-                    </div>
-                </div>
-                
-                <div class="transport-item">
-                    <div class="transport-icon">
-                        <i class="fas fa-plane"></i>
-                    </div>
-                    <div class="transport-title">机场/火车站</div>
-                    <div class="transport-desc">
-                        从北京首都国际机场：乘坐机场巴士或出租车约1小时。<br>
-                        从北京西站：乘坐地铁9号线转4号线，约40分钟。
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 办公时间 -->
-        <section class="hours-section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <i class="fas fa-clock"></i> 办公时间
-                </h2>
-            </div>
-            
-            <table class="hours-table">
-                <thead>
-                    <tr>
-                        <th>时间段</th>
-                        <th>周一至周五</th>
-                        <th>周末</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>上午</td>
-                        <td>8:30 - 12:00</td>
-                        <td>预约开放</td>
-                    </tr>
-                    <tr>
-                        <td>下午</td>
-                        <td>14:00 - 17:30</td>
-                        <td>预约开放</td>
-                    </tr>
-                    <tr>
-                        <td>晚上</td>
-                        <td>19:00 - 21:30（实验室）</td>
-                        <td>预约开放</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <div class="hours-note">
-                <p><strong>请注意：</strong></p>
-                <p>1. 寒暑假期间办公时间可能调整，请提前电话或邮件确认。</p>
-                <p>2. 卢仲毅教授通常每周三下午为固定接待时间，其他时间建议提前预约。</p>
-                <p>3. 实验室（物理楼307、309室）在晚间和周末对研究组成员开放。</p>
-                <p>4. 来访前请务必提前预约，以确保我们能为您提供更好的服务。</p>
-            </div>
-        </section>
+            <p class="form-intro">如有问题请直接邮件联系，我们会尽快回复。</p>
+        </section> -->
     </main>
 
     <!-- 网站页脚 -->
@@ -1003,100 +697,5 @@
         </div>
     </footer>
 
-    <script>
-        // 导航高亮设置
-        document.addEventListener('DOMContentLoaded', function() {
-            const links = document.querySelectorAll('.nav-links a');
-            const current = location.pathname.split('/').pop() || 'Main.html';
-            links.forEach(a => {
-                a.classList.toggle('active', a.getAttribute('href') === './' + current || a.getAttribute('href') === current);
-            });
-        });
-
-        // 联系表单提交处理
-        document.addEventListener('DOMContentLoaded', function() {
-            const contactForm = document.getElementById('contactForm');
-            
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // 获取表单数据
-                    const formData = {
-                        name: document.getElementById('name').value,
-                        email: document.getElementById('email').value,
-                        affiliation: document.getElementById('affiliation').value,
-                        subject: document.getElementById('subject').value,
-                        message: document.getElementById('message').value
-                    };
-                    
-                    // 简单验证
-                    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-                        alert('请填写所有必填字段！');
-                        return;
-                    }
-                    
-                    // 显示提交成功消息
-                    const submitButton = contactForm.querySelector('.form-submit');
-                    const originalText = submitButton.innerHTML;
-                    
-                    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 发送中...';
-                    submitButton.disabled = true;
-                    
-                    // 模拟表单提交（实际使用时需要替换为真实的API端点）
-                    setTimeout(() => {
-                        alert('消息发送成功！我们将在1-3个工作日内通过电子邮件回复您。');
-                        contactForm.reset();
-                        submitButton.innerHTML = originalText;
-                        submitButton.disabled = false;
-                    }, 1500);
-                });
-            }
-            
-            // 团队成员卡片悬停效果
-            const teamMembers = document.querySelectorAll('.team-member');
-            teamMembers.forEach(member => {
-                member.addEventListener('mouseenter', function() {
-                    this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
-                });
-                
-                member.addEventListener('mouseleave', function() {
-                    this.style.boxShadow = 'none';
-                });
-            });
-            
-            // 交通指引卡片悬停效果
-            const transportItems = document.querySelectorAll('.transport-item');
-            transportItems.forEach(item => {
-                item.addEventListener('mouseenter', function() {
-                    this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
-                });
-                
-                item.addEventListener('mouseleave', function() {
-                    this.style.boxShadow = 'none';
-                });
-            });
-            
-            // 联系信息卡片悬停效果
-            const contactItems = document.querySelectorAll('.contact-item');
-            contactItems.forEach(item => {
-                item.addEventListener('mouseenter', function() {
-                    this.style.backgroundColor = '#f8f9fa';
-                });
-                
-                item.addEventListener('mouseleave', function() {
-                    this.style.backgroundColor = 'transparent';
-                });
-            });
-            
-            // 地图区域点击效果
-            const mapPlaceholder = document.querySelector('.map-placeholder');
-            if (mapPlaceholder) {
-                mapPlaceholder.addEventListener('click', function() {
-                    window.open('https://maps.app.goo.gl/XXXXXXX', '_blank');
-                });
-            }
-        });
-    </script>
 </body>
 </html>

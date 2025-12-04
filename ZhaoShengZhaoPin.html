@@ -57,67 +57,9 @@
             font-size: 1rem;
         }
         
-        .main-nav {
-            background-color: #2c3e50;
-        }
+        /* 顶部导航样式已统一到 styles.css：不要在页面内重复定义 */
         
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-links li a {
-            display: block;
-            color: #ecf0f1;
-            padding: 18px 22px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        .nav-links li a:hover {
-            background-color: #34495e;
-        }
-        
-        .nav-links li a.active {
-            background-color: #b31b1b;
-        }
-        
-        /* 面包屑导航 */
-        .breadcrumb {
-            background-color: #f1f5f9;
-            padding: 15px 0;
-            margin-bottom: 30px;
-        }
-        
-        .breadcrumb-links {
-            list-style: none;
-            display: flex;
-        }
-        
-        .breadcrumb-links li {
-            margin-right: 10px;
-            font-size: 0.95rem;
-        }
-        
-        .breadcrumb-links li a {
-            color: #4a5568;
-        }
-        
-        .breadcrumb-links li a:hover {
-            color: #b31b1b;
-        }
-        
-        .breadcrumb-links li:not(:last-child)::after {
-            content: ">";
-            margin-left: 10px;
-            color: #a0aec0;
-        }
+        /* breadcrumb 样式在 styles.css 中维护 */
         
         /* 页面标题 */
         .page-header {
@@ -691,15 +633,7 @@
         }
         
         @media (max-width: 768px) {
-            .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            
-            .nav-links li a {
-                padding: 12px 15px;
-                font-size: 0.95rem;
-            }
+            /* nav 样式在 styles.css 中维护 */
             
             .page-header h1 {
                 font-size: 2rem;
@@ -778,7 +712,7 @@
                 <li><a href="./YanJiuFangXiang.html">研究方向</a></li>
                 <li><a href="./XueShuFaBiao.html">学术发表</a></li>
                 <li><a href="./XiangMuKeTi.html">项目课题</a></li>
-                <li><a href="./ZhaoShengZhaoPin.html">招生招聘</a></li>
+                <li><a href="./ZhaoShengZhaoPin.html" class="active">招生招聘</a></li>
                 <li><a href="./LianXiWoMen.html">联系我们</a></li>
             </ul>
         </div>
@@ -799,7 +733,7 @@
         <!-- 页面标题 -->
         <div class="page-header">
             <h1>招生招聘</h1>
-            <p>卢仲毅教授研究组诚邀对计算物理、量子材料和强关联电子系统研究有浓厚兴趣的优秀学生和研究人员加入！</p>
+            <p>卢仲毅教授研究组诚邀对计算物理、人工智能、量子材料和强关联电子系统研究有浓厚兴趣的优秀学生和研究人员加入！</p>
         </div>
 
         <!-- 欢迎横幅 -->
@@ -807,7 +741,7 @@
             <div class="welcome-content">
                 <h2>加入我们，探索物理前沿</h2>
                 <p>
-                    卢仲毅教授研究组致力于计算物理、量子材料和强关联电子系统的前沿研究。我们拥有国际一流的研究平台、
+                    卢仲毅教授研究组致力于计算物理、人工智能、量子材料和强关联电子系统的前沿研究。我们拥有国际一流的研究平台、
                     充足的科研经费和活跃的学术氛围，为研究生和研究人员提供卓越的成长环境和发展机会。
                 </p>
                 <div class="welcome-stats">
@@ -947,13 +881,6 @@
                     </div>
                 </div>
                 
-                <div class="apply-section">
-                    <h3>准备加入我们？</h3>
-                    <p>如果您对博士研究生项目感兴趣并符合申请要求，请准备相关材料并与我们联系。</p>
-                    <a href="mailto:luzhongyi@ruc.edu.cn?subject=博士研究生申请" class="apply-button">
-                        立即申请
-                    </a>
-                </div>
             </section>
             
             <!-- 硕士研究生招生 -->
@@ -1053,13 +980,6 @@
                     </div>
                 </div>
                 
-                <div class="apply-section">
-                    <h3>欢迎申请硕士研究生</h3>
-                    <p>中国人民大学硕士研究生招生信息请关注学校研究生院官网，同时欢迎提前与我们联系。</p>
-                    <a href="mailto:luzhongyi@ruc.edu.cn?subject=硕士研究生咨询" class="apply-button">
-                        咨询详情
-                    </a>
-                </div>
             </section>
             
             <!-- 博士后招聘 -->
@@ -1160,13 +1080,6 @@
                     </div>
                 </div>
                 
-                <div class="apply-section">
-                    <h3>加入我们的研究团队</h3>
-                    <p>请将个人简历、研究陈述、代表性论文和三位推荐人联系方式发送至指定邮箱。</p>
-                    <a href="mailto:luzhongyi@ruc.edu.cn?subject=博士后申请" class="apply-button">
-                        提交申请
-                    </a>
-                </div>
             </section>
         </div>
 
@@ -1230,8 +1143,8 @@
                         <i class="fas fa-envelope"></i> 申请邮箱
                     </div>
                     <div class="contact-details">
-                        <p>博士/硕士研究生申请：<br><strong>luzhongyi@ruc.edu.cn</strong></p>
-                        <p>博士后/研究人员申请：<br><strong>luzhongyi@ruc.edu.cn</strong></p>
+                        <p>博士/硕士研究生申请：<br><strong>zlu@ruc.edu.cn</strong></p>
+                        <p>博士后/研究人员申请：<br><strong>zlu@ruc.edu.cn</strong></p>
                         <p>请在邮件主题中注明申请职位类型</p>
                     </div>
                 </div>
@@ -1242,7 +1155,7 @@
                     <div class="contact-details">
                         <p><strong>中国人民大学物理学院</strong></p>
                         <p>北京市海淀区中关村大街59号</p>
-                        <p>物理楼3层301室（卢仲毅教授办公室）</p>
+                        <p>物理楼2层203室（卢仲毅教授办公室）</p>
                         <p>邮编：100872</p>
                     </div>
                 </div>
@@ -1251,8 +1164,8 @@
                         <i class="fas fa-phone"></i> 联系电话
                     </div>
                     <div class="contact-details">
-                        <p>卢仲毅教授办公室：<br><strong>010-6251-XXXX</strong></p>
-                        <p>研究组秘书：<br><strong>010-6251-XXXX</strong></p>
+                        <p>卢仲毅教授办公室：<br><strong>010-6251-2407</strong></p>
+                        <p>研究组秘书：<br><strong>010-6251-7997</strong></p>
                         <p>建议优先通过电子邮件联系</p>
                     </div>
                 </div>
@@ -1293,12 +1206,103 @@
     </footer>
 
     <script>
-        // 导航高亮设置
+        // 招生招聘导航功能
         document.addEventListener('DOMContentLoaded', function() {
-            const links = document.querySelectorAll('.nav-links a');
-            const current = location.pathname.split('/').pop() || 'Main.html';
-            links.forEach(a => {
-                a.classList.toggle('active', a.getAttribute('href') === './' + current || a.getAttribute('href') === current);
+            const recruitButtons = document.querySelectorAll('.recruit-btn');
+            const recruitSections = document.querySelectorAll('.recruit-section');
+            
+            // 导航按钮点击事件
+            recruitButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // 移除所有按钮的active类
+                    recruitButtons.forEach(btn => btn.classList.remove('active'));
+                    // 为当前按钮添加active类
+                    this.classList.add('active');
+                    
+                    const target = this.getAttribute('data-target');
+                    
+                    // 显示/隐藏对应的内容区域
+                    recruitSections.forEach(section => {
+                        section.classList.remove('active');
+                        if (section.id === target) {
+                            section.classList.add('active');
+                        }
+                    });
+                    
+                    // 如果是FAQ部分，初始化FAQ功能
+                    if (target === 'faq') {
+                        initFAQ();
+                    }
+                });
+            });
+            
+            // FAQ功能
+            function initFAQ() {
+                const faqItems = document.querySelectorAll('.faq-item');
+                
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question');
+                    const answer = item.querySelector('.faq-answer');
+                    const toggle = item.querySelector('.faq-toggle');
+                    
+                    question.addEventListener('click', function() {
+                        // 如果当前项是激活的，则关闭它
+                        if (item.classList.contains('active')) {
+                            item.classList.remove('active');
+                            answer.classList.remove('show');
+                        } else {
+                            // 关闭所有其他FAQ项
+                            faqItems.forEach(otherItem => {
+                                if (otherItem !== item) {
+                                    otherItem.classList.remove('active');
+                                    otherItem.querySelector('.faq-answer').classList.remove('show');
+                                }
+                            });
+                            
+                            // 打开当前项
+                            item.classList.add('active');
+                            answer.classList.add('show');
+                        }
+                    });
+                });
+            }
+            
+            // 初始化FAQ功能（如果页面加载时就在FAQ部分）
+            const currentSection = document.querySelector('.recruit-section.active');
+            if (currentSection && currentSection.id === 'faq') {
+                initFAQ();
+            }
+            
+            // 处理页面URL中的锚点
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                const targetButton = document.querySelector(`.recruit-btn[data-target="${hash}"]`);
+                if (targetButton) {
+                    targetButton.click();
+                    
+                    // 如果是FAQ，初始化FAQ功能
+                    if (hash === 'faq') {
+                        setTimeout(initFAQ, 100);
+                    }
+                }
+            }
+            
+            // 为所有申请按钮添加点击事件
+            const applyButtons = document.querySelectorAll('.apply-button');
+            applyButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    // 这里可以添加申请表单的逻辑
+                    console.log('申请按钮被点击');
+                });
+            });
+            
+            // 欢迎统计项动画
+            const welcomeStats = document.querySelectorAll('.welcome-stat');
+            welcomeStats.forEach((stat, index) => {
+                setTimeout(() => {
+                    stat.style.opacity = '1';
+                    stat.style.transform = 'translateY(0)';
+                }, index * 200);
             });
         });
     </script>

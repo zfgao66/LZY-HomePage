@@ -32,94 +32,9 @@
             padding: 0 20px;
         }
         
-        /* 顶部导航 */
-        .site-header {
-            background-color: #fff;
-            border-bottom: 3px solid #b31b1b;
-            padding: 15px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
+        /* 顶部导航样式已统一到 styles.css：不要在页面内重复定义 */
         
-        .header-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .lab-info h1 {
-            font-size: 1.8rem;
-            color: #b31b1b;
-            margin-bottom: 5px;
-        }
-        
-        .lab-info p {
-            color: #666;
-            font-size: 1rem;
-        }
-        
-        .main-nav {
-            background-color: #2c3e50;
-        }
-        
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-links li a {
-            display: block;
-            color: #ecf0f1;
-            padding: 18px 22px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        .nav-links li a:hover {
-            background-color: #34495e;
-        }
-        
-        /* .team-logo: moved to styles.css */
-        
-        .nav-links li a.active {
-            background-color: #b31b1b;
-        }
-        
-        /* 面包屑导航 */
-        .breadcrumb {
-            background-color: #f1f5f9;
-            padding: 15px 0;
-            margin-bottom: 30px;
-        }
-        
-        .breadcrumb-links {
-            list-style: none;
-            display: flex;
-        }
-        
-        .breadcrumb-links li {
-            margin-right: 10px;
-            font-size: 0.95rem;
-        }
-        
-        .breadcrumb-links li a {
-            color: #4a5568;
-        }
-        
-        .breadcrumb-links li a:hover {
-            color: #b31b1b;
-        }
-        
-        .breadcrumb-links li:not(:last-child)::after {
-            content: ">";
-            margin-left: 10px;
-            color: #a0aec0;
-        }
+        /* breadcrumb 样式在 styles.css 中维护 */
         
         /* 页面标题 */
         .page-header {
@@ -414,28 +329,13 @@
         }
         
         @media (max-width: 768px) {
-            .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            
-            .nav-links li a {
-                padding: 12px 15px;
-                font-size: 0.95rem;
-            }
+            /* nav 样式在 styles.css 中维护 */
             
             .page-header h1 {
                 font-size: 2rem;
             }
-            
-            .team-intro, .alumni-section, .join-us {
-                padding: 25px;
-            }
-            
-            .category-title {
-                font-size: 1.5rem;
-            }
-            
+                /* nav 样式在 styles.css 中维护 */
+                /* nav 样式在 styles.css 中维护 */
             .member-body {
                 padding: 20px;
             }
@@ -475,7 +375,7 @@
         <div class="nav-container">
             <ul class="nav-links">
                 <li><a href="./Main.html">首页</a></li>
-                <li><a href="./TuanDuiJieShao.html">团队介绍</a></li>
+                <li><a href="./TuanDuiJieShao.html" class="active">团队介绍</a></li>
                 <li><a href="./YanJiuFangXiang.html">研究方向</a></li>
                 <li><a href="./XueShuFaBiao.html">学术发表</a></li>
                 <li><a href="./XiangMuKeTi.html">项目课题</a></li>
@@ -484,16 +384,6 @@
             </ul>
         </div>
     </nav>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const links = document.querySelectorAll('.nav-links a');
-        const current = location.pathname.split('/').pop() || 'Main.html';
-        links.forEach(a => {
-            a.classList.toggle('active', a.getAttribute('href') === current);
-        });
-    });
-    </script>
 
     <!-- 面包屑导航 -->
     <div class="breadcrumb">

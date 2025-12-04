@@ -57,69 +57,9 @@
             font-size: 1rem;
         }
         
-        .main-nav {
-            background-color: #2c3e50;
-        }
+        /* 顶部导航样式已统一到 styles.css：不要在页面内重复定义 */
         
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        /* .team-logo: moved to styles.css */
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-links li a {
-            display: block;
-            color: #ecf0f1;
-            padding: 18px 22px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        .nav-links li a:hover {
-            background-color: #34495e;
-        }
-        
-        .nav-links li a.active {
-            background-color: #b31b1b;
-        }
-        
-        /* 面包屑导航 */
-        .breadcrumb {
-            background-color: #f1f5f9;
-            padding: 15px 0;
-            margin-bottom: 30px;
-        }
-        
-        .breadcrumb-links {
-            list-style: none;
-            display: flex;
-        }
-        
-        .breadcrumb-links li {
-            margin-right: 10px;
-            font-size: 0.95rem;
-        }
-        
-        .breadcrumb-links li a {
-            color: #4a5568;
-        }
-        
-        .breadcrumb-links li a:hover {
-            color: #b31b1b;
-        }
-        
-        .breadcrumb-links li:not(:last-child)::after {
-            content: ">";
-            margin-left: 10px;
-            color: #a0aec0;
-        }
+        /* breadcrumb 样式在 styles.css 中维护 */
         
         /* 页面标题 */
         .page-header {
@@ -589,15 +529,7 @@
         }
         
         @media (max-width: 768px) {
-            .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            
-            .nav-links li a {
-                padding: 12px 15px;
-                font-size: 0.95rem;
-            }
+            /* nav 样式在 styles.css 中维护 */
             
             .page-header h1 {
                 font-size: 2rem;
@@ -655,7 +587,7 @@
             <ul class="nav-links">
                 <li><a href="./Main.html">首页</a></li>
                 <li><a href="./TuanDuiJieShao.html">团队介绍</a></li>
-                <li><a href="./YanJiuFangXiang.html">研究方向</a></li>
+                <li><a href="./YanJiuFangXiang.html" class="active">研究方向</a></li>
                 <li><a href="./XueShuFaBiao.html">学术发表</a></li>
                 <li><a href="./XiangMuKeTi.html">项目课题</a></li>
                 <li><a href="./ZhaoShengZhaoPin.html">招生招聘</a></li>
@@ -663,16 +595,6 @@
             </ul>
         </div>
     </nav>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const links = document.querySelectorAll('.nav-links a');
-        const current = location.pathname.split('/').pop() || 'Main.html';
-        links.forEach(a => {
-            a.classList.toggle('active', a.getAttribute('href') === current);
-        });
-    });
-    </script>
 
     <!-- 面包屑导航 -->
     <div class="breadcrumb">
@@ -705,7 +627,7 @@
                 
                 <div class="overview-stats">
                     <div class="stat-item">
-                        <div class="stat-number">4</div>
+                        <div class="stat-number">6</div>
                         <div class="stat-label">主要研究方向</div>
                     </div>
                     <div class="stat-item">
@@ -717,7 +639,7 @@
                         <div class="stat-label">国家级项目</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">10+</div>
+                        <div class="stat-number">8+</div>
                         <div class="stat-label">应用场景</div>
                     </div>
                 </div>
@@ -781,18 +703,15 @@
                         </p>
                         <div class="research-features">
                             <ul class="feature-list">
-                                <li>机器学习模型的可解释性</li>
-                                <li>公平性约束下的算法设计</li>
-                                <li>对抗攻击与防御机制</li>
-                                <li>差分隐私与安全计算</li>
+                                <li>自旋液体与拓扑序材料</li>
+                                <li>拓扑磁振子与热霍尔效应</li>
+                                <li>交错磁性材料</li>
+                                <li>磁性掺杂与反常量子化</li>
                             </ul>
                         </div>
                         <div class="research-links">
                             <a href="#" class="research-link paper-link">
                                 <i class="fas fa-file-alt"></i> 代表性论文
-                            </a>
-                            <a href="#" class="research-link">
-                                <i class="fas fa-book"></i> 研究综述
                             </a>
                         </div>
                     </div>
@@ -804,27 +723,24 @@
                         <div class="research-icon">
                             <i class="fas fa-users"></i>
                         </div>
-                        <h3 class="research-title">联邦学习</h3>
-                        <p class="research-subtitle">Federated Learning</p>
+                        <h3 class="research-title">自然轨道重整化群</h3>
+                        <p class="research-subtitle">Natural orbit renormalization group</p>
                     </div>
                     <div class="research-body">
                         <p class="research-description">
-                            在数据隐私保护前提下，实现跨设备、跨机构的分布式机器学习模型训练。研究联邦优化算法、通信效率、个性化联邦学习等关键问题。
+                            研究自然轨道重整化群（NORG）方法，聚焦以自然轨道为基底的多体态压缩与高效求解。重点解决强关联体系的有效子空间构建、能谱与基态精确计算、相关性分析以及面向大规模量子多体问题的可扩展算法设计等问题。
                         </p>
                         <div class="research-features">
                             <ul class="feature-list">
-                                <li>分布式联邦优化算法</li>
-                                <li>异构数据联邦学习</li>
-                                <li>联邦学习中的隐私保护</li>
-                                <li>个性化联邦学习</li>
+                                <li>自洽自然轨道优化</li>
+                                <li>自然轨道占据数截断</li>
+                                <li>单杂质与多杂质安德森模型</li>
+                                <li>强关联系统的能谱求解</li>
                             </ul>
                         </div>
                         <div class="research-links">
                             <a href="#" class="research-link paper-link">
                                 <i class="fas fa-file-alt"></i> 代表性论文
-                            </a>
-                            <a href="#" class="research-link project-link">
-                                <i class="fas fa-code-branch"></i> 开源代码
                             </a>
                         </div>
                     </div>
@@ -836,19 +752,19 @@
                         <div class="research-icon">
                             <i class="fas fa-chart-line"></i>
                         </div>
-                        <h3 class="research-title">时序数据挖掘</h3>
-                        <p class="research-subtitle">Time Series Mining</p>
+                        <h3 class="research-title">材料发现的垂域大模型</h3>
+                        <p class="research-subtitle">Materials Discovery with Domain-specific Large Models</p>
                     </div>
                     <div class="research-body">
                         <p class="research-description">
-                            针对金融、物联网、医疗等领域的高维时序数据进行预测、异常检测与模式发现。研究深度时序模型、多变量时序分析等技术。
+                            在材料科学这一特定领域构建具备知识理解、结构生成、性能预测与实验建议等能力的专用大模型体系。其核心目标是将材料数据库、量子化学计算、实验数据与文献知识整合，通过多模态预训练、物理引导的模型结构以及生成式推断技术，加速新材料的设计、筛选与验证。该类模型强调跨尺度知识融合、从目标性能反推材料结构的逆向设计能力，以及与高通量计算和自主实验平台的协同，从而形成面向材料创新的智能化闭环。
                         </p>
                         <div class="research-features">
                             <ul class="feature-list">
-                                <li>深度时序预测模型</li>
-                                <li>时序异常检测</li>
-                                <li>多变量时序分析</li>
-                                <li>时序模式挖掘</li>
+                                <li>材料大模型</li>
+                                <li>生成式材料设计</li>
+                                <li>自动化材料发现</li>
+                                <li>结构–性能关系</li>
                             </ul>
                         </div>
                         <div class="research-links">
@@ -936,97 +852,45 @@
                     <div class="application-icon">
                         <i class="fas fa-comments-dollar"></i>
                     </div>
-                    <div class="application-title">金融科技</div>
-                    <div class="application-desc">金融风险预测、智能投顾、信用评估、反欺诈检测</div>
+                    <div class="application-title">钙钛矿太阳能电池</div>
+                    <div class="application-desc">钙钛矿成分与结构逆向设计、能带与缺陷态预测、稳定性与降解机理建模、高通量筛选与性能预测</div>
                 </div>
                 <div class="application-item">
                     <div class="application-icon">
                         <i class="fas fa-heartbeat"></i>
                     </div>
-                    <div class="application-title">智慧医疗</div>
-                    <div class="application-desc">疾病诊断、医疗影像分析、药物发现、健康管理</div>
+                    <div class="application-title">铁磁催化</div>
+                    <div class="application-desc">铁磁催化活性位点识别、自旋极化电子结构分析、铁磁‐反应物界面耦合建模、磁性调控</div>
                 </div>
                 <div class="application-item">
                     <div class="application-icon">
                         <i class="fas fa-car"></i>
                     </div>
-                    <div class="application-title">智能交通</div>
-                    <div class="application-desc">交通流量预测、自动驾驶、路径规划、智能调度</div>
+                    <div class="application-title">过渡金属氧化物</div>
+                    <div class="application-desc">电子关联与自旋轨道耦合、过渡金属价态与晶体场调控、氧空位与缺陷工程、金属–绝缘体相变</div>
                 </div>
                 <div class="application-item">
                     <div class="application-icon">
                         <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <div class="application-title">电子商务</div>
-                    <div class="application-desc">个性化推荐、用户行为分析、供应链优化、智能客服</div>
+                    <div class="application-title">高熵合金</div>
+                    <div class="application-desc">多主元成分设计、高熵固溶体稳定机制、晶格畸变与力学性能、扩散行为与高温稳定性</div>
                 </div>
                 <div class="application-item">
                     <div class="application-icon">
                         <i class="fas fa-industry"></i>
                     </div>
-                    <div class="application-title">智能制造</div>
-                    <div class="application-desc">质量控制、预测性维护、生产优化、供应链管理</div>
+                    <div class="application-title">BCS超导体</div>
+                    <div class="application-desc">声子介导的库珀对形成、电子–声子耦合强度分析、超导能隙与临界温度预测、费米面与能带结构特征</div>
                 </div>
                 <div class="application-item">
                     <div class="application-icon">
                         <i class="fas fa-city"></i>
                     </div>
-                    <div class="application-title">智慧城市</div>
-                    <div class="application-desc">城市管理、环境监测、公共安全、能源优化</div>
+                    <div class="application-title">交错磁性材料</div>
+                    <div class="application-desc">交错自旋序与反铁磁耦合、自旋翻转与磁各向异性、晶体对称性与磁群分析、自旋输运与磁电耦合效应</div>  
                 </div>
             </div>
-        </section>
-
-        <!-- 代表性成果 -->
-        <section class="publications-section">
-            <h2>代表性成果</h2>
-            <ul class="publications-list">
-                <li class="publication-item">
-                    <div class="publication-title">FedAvg: Communication-Efficient Federated Learning with Adaptive Local Updates</div>
-                    <div class="publication-authors">Zhang, W., Li, H., Wang, Z., & Liu, X.</div>
-                    <div class="publication-venue">NeurIPS 2023</div>
-                    <span class="publication-year">2023</span>
-                    <div class="publication-links">
-                        <a href="#" class="publication-link">
-                            <i class="fas fa-file-pdf"></i> PDF
-                        </a>
-                        <a href="#" class="publication-link">
-                            <i class="fas fa-code"></i> Code
-                        </a>
-                        <a href="#" class="publication-link">
-                            <i class="fas fa-quote-right"></i> BibTeX
-                        </a>
-                    </div>
-                </li>
-                <li class="publication-item">
-                    <div class="publication-title">Graph Neural Networks with Adaptive Receptive Fields for Anomaly Detection</div>
-                    <div class="publication-authors">Wang, Z., Zhang, W., Li, H., & Chen, Y.</div>
-                    <div class="publication-venue">KDD 2023</div>
-                    <span class="publication-year">2023</span>
-                    <div class="publication-links">
-                        <a href="#" class="publication-link">
-                            <i class="fas fa-file-pdf"></i> PDF
-                        </a>
-                        <a href="#" class="publication-link">
-                            <i class="fas fa-code"></i> Code
-                        </a>
-                    </div>
-                </li>
-                <li class="publication-item">
-                    <div class="publication-title">Interpretable Time Series Forecasting with Attention-Based Explainable Models</div>
-                    <div class="publication-authors">Liu, X., Zhang, W., Wang, F., & Zhao, L.</div>
-                    <div class="publication-venue">ICML 2023</div>
-                    <span class="publication-year">2023</span>
-                    <div class="publication-links">
-                        <a href="#" class="publication-link">
-                            <i class="fas fa-file-pdf"></i> PDF
-                        </a>
-                        <a href="#" class="publication-link">
-                            <i class="fas fa-database"></i> Data
-                        </a>
-                    </div>
-                </li>
-            </ul>
         </section>
 
         <!-- 研究设施 -->
@@ -1034,36 +898,38 @@
             <h2>研究设施与平台</h2>
             <div class="facilities-content">
                 <div>
-                    <p>实验室配备先进的计算设备和软件平台，为研究工作提供强有力的技术支持：</p>
+                    <p>实验室配备先进的计算设备和软件平台，为研究工作提供技术支持：</p>
+                    <br>
                     <ul class="facilities-list">
                         <li class="facility-item">
                             <div class="facility-name">高性能计算集群</div>
-                            <div class="facility-desc">配备NVIDIA A100/A40 GPU服务器，提供强大的深度学习计算能力</div>
+                            <div class="facility-desc">配备8张NVIDIA H100/12张3090/12张4090的高性能GPU服务器，提供强大的深度学习计算能力</div>
                         </li>
                         <li class="facility-item">
-                            <div class="facility-name">大数据处理平台</div>
+                            <div class="facility-name">数据处理平台</div>
                             <div class="facility-desc">基于Hadoop/Spark的大数据处理环境，支持PB级数据存储与处理</div>
                         </li>
                         <li class="facility-item">
                             <div class="facility-name">实验数据集</div>
-                            <div class="facility-desc">收集整理多个领域的大规模实验数据集，涵盖图像、文本、图结构数据等</div>
+                            <div class="facility-desc">收集整理多个领域的数据集，涵盖超导、量子磁性与晶体图结构数据等</div>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <p>实验室开发的软件工具与平台：</p>
+                    <br>
                     <ul class="facilities-list">
                         <li class="facility-item">
-                            <div class="facility-name">联邦学习框架FedLab</div>
-                            <div class="facility-desc">开源联邦学习框架，支持多种联邦学习算法与实验</div>
+                            <div class="facility-name">材料逆向设计平台InvDesFlow</div>
+                            <div class="facility-desc">开源AI驱动的材料逆向设计平台，支持多种材料结构预测算法</div>
                         </li>
                         <li class="facility-item">
-                            <div class="facility-name">图机器学习工具包GraphKit</div>
-                            <div class="facility-desc">图神经网络研究与应用的集成工具包</div>
+                            <div class="facility-name">自然轨道重整化群工具包</div>
+                            <div class="facility-desc">多体物理研究中应用NORG方法的集成工具包</div>
                         </li>
                         <li class="facility-item">
-                            <div class="facility-name">时序分析平台TimeFlow</div>
-                            <div class="facility-desc">时序数据分析、预测与异常检测的一体化平台</div>
+                            <div class="facility-name">材料领域垂域模型API</div>
+                            <div class="facility-desc">针对钙钛矿钝化缺陷领域的垂域模型</div>
                         </li>
                     </ul>
                 </div>
