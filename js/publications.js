@@ -4,7 +4,546 @@ document.addEventListener('DOMContentLoaded', function() {
     // 1. 论文数据定义
     // ==============================
     const publications = [
-
+        {
+            id: 1,
+            title: "Low-energy interband Kondo bound states in orbital-selective Mott phases",
+            authors: "Jia-Ming Wang, Yin Chen, Yi-Heng Tian, Rong-Qiang He, and Zhong-Yi Lu",
+            year: "2025",
+            journal: "Physical Review B",
+            volume: "111(15), 155107 (2025)",
+            category: "prb",
+            abstract: "本研究基于两轨道哈伯德模型，重新审视OSMP中低能激发的物理机制。计算结果表明，传统的holon-doublon束缚态描述并不完整，真正的低能激发由宽带中的类Kondo态与窄带中的双占据态共同构成，即“带间Kondo样束缚态”。随着两带宽度趋于接近，还会在宽带中出现异常的新型束缚态。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.111.155107",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 2,
+            title: "High-temperature superconductivity in Li<sub>2</sub>AuH<sub>6</sub> mediated by strong electron-phonon coupling under ambient pressure",
+            authors: "Zhenfeng Ouyang, Bo-Wen Yao, Xiao-Qi Han, Peng-Jie Guo, Ze-Feng Gao, and Zhong-Yi Lu",
+            year: "2025",
+            journal: "Physical Review B",
+            volume: "111(14), L140501 (2025)",
+            category: "prb",
+            abstract: "本研究利用自主开发的InvDesFlow搜索引擎发现了在常压下稳定的立方结构Li<sub>2</sub>AuH<sub>6</sub>，并给出了可行的实验合成路径。第一性原理分析表明该材料在常压下具有约140 K的高超导转变温度，其关键机制来自H-1s电子与Au–H八面体及Li振动模式的强电子-声子耦合。研究强调应关注具有强EPC的多声子模式，并提出通过向氢化物中引入其他原子以产生更多强EPC模式，是寻找高温超导体的有效策略。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.111.L140501",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 3,
+            title: "AI-accelerated discovery of altermagnetic materials",
+            authors: "Ze-Feng Gao, Shuai Qu, Bocheng Zeng, Yang Liu, Ji-Rong Wen, Hao Sun, Peng-Jie Guo, and Zhong-Yi Lu",
+            year: "2025",
+            journal: "National Science Review",
+            volume: "12(4), nwaf066 (2025)",
+            category: "National Science Review",
+            abstract: "本工作提出一种由人工智能搜索引擎驱动的自动化发现流程，通过预训练图神经网络学习晶体结构特征并在少量正样本上微调分类器，从而高效预测材料的altermagnetism属性。研究成功发现了50种新的交变磁材料，覆盖金属、半导体与绝缘体，其中包括首次报道的四种i-wave altermagnets。新材料展现出丰富的新奇物性，如反常霍尔效应、反常克尔效应及拓扑特性，体现了AI在加速功能材料发现方面的巨大潜力。",
+            links: {
+                pdf: "https://academic.oup.com/nsr/article-pdf/12/4/nwaf066/62054665/nwaf066.pdf",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 4,
+            title: "Ab initio dynamical mean field theory with natural orbitals renormalization group impurity solver",
+            authors: "Jia-Ming Wang, Jing-Xuan Wang, Rong-Qiang He, Li Huang, and Zhong-Yi Lu",
+            year: "2025",
+            journal: "npj Computational Materials",
+            volume: "11(1), 86 (2025)",
+            category: "Computational Materials Science",
+            abstract: "本研究提出了名为 Zen 的从头算多体计算工具包，将DFT与单点DMFT无缝结合，并配备零温的自然轨道重整化组求解器与有限温的杂化展开CT-QMC求解器。通过对SrVO₃、La₃Ni₂O₇和MnO三个典型强关联材料的测试，结果与已有实验和理论高度一致。研究表明Zen工具包能够准确刻画d电子强关联体系的电子结构。",
+            links: {
+                pdf: "https://doi.org/10.1038/s41524-025-01586-6",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 5,
+            title: "First-principles study on the electronic and magnetic properties of monolayer FeSe on Cu<sub>3</sub>N(001)",
+            authors: "Hui-Hui He, Xiao-Le Qiu, Ben-Chao Gong, Zhong-Yi Lu, and Kai Liu",
+            year: "2023",
+            journal: "Physical Review B",
+            volume: "108(11), 115147 (2023)",
+            category: "prb",
+            abstract: "本研究基于第一性原理计算，提出Cu<sub>3</sub>N(001)是调控单层FeSe电子结构与磁性的有前景的空穴掺杂衬底。界面应变与电荷重新分布可能导致二聚与条纹反铁磁态之间的强磁性竞争。Cu<sub>3</sub>N可以向FeSe单层掺入约0.02空穴/Fe，并可通过外电场或Cu空位进一步调节，表明FeSe/Cu<sub>3</sub>N是探索FeSe体系空穴掺杂超导的重要平台。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.108.115147",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 6,
+            title: "Crystal valley Hall effect",
+            authors: "Chao-Yang Tan, Ze-Feng Gao, Huan-Cheng Yang, Zheng-Xin Liu, Kai Liu, Peng-Jie Guo, and Zhong-Yi Lu",
+            year: "2025",
+            journal: "Physical Review B",
+            volume: "111(9), 094411 (2025)",
+            category: "prb",
+            abstract: "本研究通过对称性分析与第一性原理计算，提出了无需时间反演对称性即可实现的新型“晶体谷霍尔效应”，并在二维交变磁材料Fe<sub>2</sub>WSe<sub>4</sub>与Fe<sub>2</sub>WS<sub>4</sub>中得到验证。研究还表明，它们在单轴应变下可实现压磁效应，在双轴压缩应力下可从交变磁半导体转变为双极化拓扑Weyl半金属。该工作拓展了谷霍尔效应的研究方向，也为探索交变磁半导体与拓扑相变提供了新平台。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.111.094411",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 7,
+            title: "Hund electronic correlation in La<sub>3</sub>Ni<sub>2</sub>O<sub>7</sub> under high pressure",
+            authors: "Zhenfeng Ouyang, Jia-Ming Wang, Jing-Xuan Wang, Rong-Qiang He, Li Huang, and Zhong-Yi Lu",
+            year: "2024",
+            journal: "Physical Review B",
+            volume: "109(11), 115114 (2024)",
+            category: "prb",
+            abstract: "本工作基于DFT+DMFT研究高压下La<sub>3</sub>Ni<sub>2</sub>O<sub>7</sub>的强关联电子结构，发现其为多轨道Hund金属。Ni的3<em>d</em><sub>z²</sub>与3<em>d</em><sub>x²−y²</sub>轨道接近半充填并贡献费米能级附近能带，呈现明显的能带重整化与轨道选择性关联。体系在高温处于自旋冻结态，低温恢复为费米液体，揭示了该材料中的Hund关联本质。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.109.115114",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 8,
+            title: "AI-Driven Inverse Design of Materials: Past, Present, and Future",
+            authors: "Xiao-Qi Han, Xin-De Wang, Meng-Yuan Xu, Zhen Feng, Bo-Wen Yao, Peng-Jie Guo, Ze-Feng Gao, and Zhong-Yi Lu",
+            year: "2025",
+            journal: "Chinese Physics Letters",
+            volume: "42(2), 027403 (2025)",
+            category: "cpl",
+            abstract: "本综述系统梳理了人工智能驱动的材料逆向设计的发展历程、主要进展与技术路线。文章阐述了材料性质与结构间复杂耦合带来的挑战，总结生成式与判别式模型在材料设计中的突破，并指出未来仍需解决的关键问题。作为领域的最新综述，该工作为研究者提供了全面而有价值的参考。",
+            links: {
+                pdf: "http://cpl.iphy.ac.cn/en/article/doi/10.1088/0256-307X/42/2/027403",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 9,
+            title: "Non-Fermi liquid and antiferromagnetic correlations with hole doping in the bilayer two-orbital Hubbard model of La<sub>3</sub>Ni<sub>2</sub>O<sub>7</sub> at zero temperature",
+            authors: "Yin Chen, Yi-Heng Tian, Jia-Ming Wang, Rong-Qiang He, and Zhong-Yi Lu",
+            year: "2024",
+            journal: "Phys. Rev. B",
+            volume: "110(23), 235119 (2024)",
+            category: "prb",
+            abstract: "该研究基于来源于 La<sub>3</sub>Ni<sub>2</sub>O<sub>7</sub> 的双层双轨道 Hubbard 模型，揭示掺空穴后体系依次呈现 Mott 绝缘态、赝能隙态、非费米液体态及费米液体态。结果表明基态处于具有 Hund 自旋关联的非费米液体区，并展示层间反铁磁关联如何随轨道占据变化而迅速减弱。工作指出在低压下的空穴掺杂可能模拟高压效应，从而削弱短程 SDW 并有利于超导的形成。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.110.235119",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 10,
+            title: "Tunable surface electron gas and effect of phonons in Sr<sub>2</sub>CuO<sub>3</sub>: A first-principles study",
+            authors: "Xin Du, Hui-Hui He, Xiao-Xiao Man, Zhong-Yi Lu, and Kai Liu",
+            year: "2024",
+            journal: "Phys. Rev. B",
+            volume: "110(19), 195121 (2024)",
+            category: "prb",
+            abstract: "该工作系统研究了 Sr<sub>2</sub>CuO<sub>3</sub> 体相与薄膜的电子、磁性和声子性质，发现表面暴露的 Cu–O 链可形成依赖于链间自旋耦合的自旋极化电子气。研究还表明链内与链外氧原子的声子模式会在表面诱导明显的电荷与自旋涨落，揭示出强烈的多自由度耦合机制，这可能对一维铜氧化物超导体的超导性具有重要意义。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.110.195121",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 11,
+            title: "A hybrid method integrating Green's function Monte Carlo and projected entangled pair states",
+            authors: "He-Yu Lin, Rong-Qiang He, Yibin Guo, and Zhong-Yi Lu",
+            year: "2024",
+            journal: "Chinese Physics B",
+            volume: "33(11), 117504 (2024)",
+            category: "Chinese Physics B",
+            abstract: "本文提出了一种将 Green's function Monte Carlo（GFMC）与 PEPS 张量网络方法相结合的混合策略，其中 PEPS 同时作为试探态与引导波函数。该方法在处理受挫量子自旋体系时兼具高精度与高效率，并在平方晶格的受挫 J<sub>1</sub>–J<sub>2</sub> 海森堡模型基态能量计算中展现出与其他数值方法相当甚至更优的精度。文章系统总结并拓展了作者在 Phys. Rev. B 109, 235133 (2024) 的相关工作。",
+            links: {
+                pdf: "https://cpb.iphy.ac.cn/EN/abstract/article_127221.shtml",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 12,
+            title: "Absence of electron-phonon coupling superconductivity in the bilayer phase of La<sub>3</sub>Ni<sub>2</sub>O<sub>7</sub> under pressure",
+            authors: "Zhenfeng Ouyang, Miao Gao, and Zhong-Yi Lu",
+            year: "2024",
+            journal: "npj Quantum Materials",
+            volume: "9(1), 80 (2024)",
+            category: "npj Quantum Materials",
+            abstract: "本文基于第一性原理研究了高压下 La<sub>3</sub>Ni<sub>2</sub>O<sub>7</sub> 双层相的声子性质及其电子-声子耦合，结果表明 EPC 强度不足以解释实验上约 80 K 的超导转变温度。此外，计算揭示的费米面嵌套可能与实验观测到的电荷密度波转变相关，进一步支持该体系属于非常规超导。",
+            links: {
+                pdf: "https://doi.org/10.1038/s41535-024-00689-5",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 13,
+            title: "Exploring charge and spin fluctuations in infinite-layer cuprate SrCuO<sub>2</sub> from a phonon perspective",
+            authors: "Xin Du, Pei-Han Sun, Ben-Chao Gong, Jian-Feng Zhang, Zhong-Yi Lu, and Kai Liu",
+            year: "2024",
+            journal: "Science China Physics, Mechanics & Astronomy",
+            volume: "67(8), 287411 (2024)",
+            category: "Science China Physics, Mechanics & Astronomy",
+            abstract: "本文基于第一性原理从声子角度研究了无限层铜氧化物 SrCuO<sub>2</sub> 的电子与磁性质，发现其声子振动可在掺空穴后诱发电荷、电偶极及局域磁矩的强烈涨落。其中，A<sub>1g</sub> 模式会导致 Cu–O 间显著电荷重分布，并呈现与超导 Tc 类似的“穹顶”演化。进一步分析表明在最优掺杂附近出现 A<sub>1g</sub> 模式频率软化及近费米能级的范霍夫奇点，提示可能存在电子–声子耦合。",
+            links: {
+                pdf: "https://doi.org/10.1007/s11433-024-2388-y",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 14,
+            title: "Green's function Monte Carlo combined with projected entangled pair state approach to the frustrated J<sub>1</sub>&minus;J<sub>2</sub> Heisenberg model",
+            authors: "He-Yu Lin, Yibin Guo, Rong-Qiang He, Z. Y. Xie, and Zhong-Yi Lu",
+            year: "2024",
+            journal: "Phys. Rev. B",
+            volume: "109(23), 235133 (2024)",
+            category: "prb",
+            abstract: "本文提出将 Green's function Monte Carlo 方法与 PEPS 张量网络结合，以降低张量网络在计算物理观测量时的高昂代价。该混合方法在解决受挫 J<sub>1</sub>&minus;J<sub>2</sub> Heisenberg 模型中显著提高了基态能量计算精度，并揭示了中间参数区间可能存在柱状价键态。该方法有效兼具精确性与计算效率，适用于研究受挫量子自旋体系。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.109.235133",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 15,
+            title: "Variational optimization of the amplitude of neural-network quantum many-body ground states",
+            authors: "Jia-Qi Wang, Han-Qing Wu, Rong-Qiang He, and Zhong-Yi Lu",
+            year: "2024",
+            journal: "Phys. Rev. B",
+            volume: "109(24), 245120 (2024)",
+            category: "prb",
+            abstract: "本文将量子多体波函数分解为幅度网络与符号结构，并重点优化由残差卷积网络构成的幅度部分。方法在典型量子体系中取得优于或可比传统 VMC 与 DMRG 的基态能量，对受挫 J<sub>1</sub>&minus;J<sub>2</sub> 模型甚至优于文献中的复值 CNN，显示复值 NQS 的符号结构难以优化。结果体现了幅度优化策略的有效性。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.109.245120",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 16,
+            title: "Spin-charge-lattice couplings and Co doping effect in Ba(Fe<sub>1−x</sub>Co<sub>x</sub>)<sub>2</sub>As<sub>2</sub>: an ab initio molecular dynamics study",
+            authors: "Hui-Hui He, Huan-Cheng Yang, Zhong-Yi Lu, and Kai Liu",
+            year: "2024",
+            journal: "Superconductor Science and Technology",
+            volume: "37(6), 065020 (2024)",
+            category: "Superconductor Science and Technology",
+            abstract: "本文利用从头算分子动力学研究 Ba(Fe<sub>1−x</sub>Co<sub>x</sub>)<sub>2</sub>As<sub>2</sub> 中自旋、电荷与晶格的耦合关系，发现三者以约 5.5 THz 的特征频率紧密关联。Co 掺杂增强了体系中自旋动态的空间不均匀性，并呈现与超导 T<sub>c</sub> 类似的非单调变化；而电荷动态变化较弱。该研究为理解铁基超导体中 T<sub>c</sub> 的穹顶行为提供了新的动力学视角。",
+            links: {
+                pdf: "https://doi.org/10.1088/1361-6668/ad4a13",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 17,
+            title: "Correlation effects and concomitant two-orbital s&plusmn;-wave superconductivity in La<sub>3</sub>Ni<sub>2</sub>O<sub>7</sub> under high pressure",
+            authors: "Yi-Heng Tian, Yin Chen, Jia-Ming Wang, Rong-Qiang He, and Zhong-Yi Lu",
+            year: "2024",
+            journal: "Physical Review B",
+            volume: "109(16), 165154 (2024)",
+            category: "prb",
+            abstract: "研究基于从 La<sub>3</sub>Ni<sub>2</sub>O<sub>7</sub> 下折的双层两轨道 Hubbard 模型，揭示两轨道均形成 s± 波超导且因轨道间跃迁而同步出现。体系在半填充时会同时转变为 Mott 绝缘态，而 Hund 耦合显著增强电子关联并对超导性起关键作用。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.109.165154",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 18,
+            title: "Non-Fermi liquid and Hund correlation in La<sub>4</sub>Ni<sub>3</sub>O<sub>10</sub> under high pressure",
+            authors: "Jing-Xuan Wang, Zhenfeng Ouyang, Rong-Qiang He, and Zhong-Yi Lu",
+            year: "2024",
+            journal: "Physical Review B",
+            volume: "109(16), 165140 (2024)",
+            category: "prb",
+            abstract: "研究利用 DFT+DMFT 分析 La<sub>4</sub>Ni<sub>3</sub>O<sub>10</sub> 的电子关联，并与 La<sub>3</sub>Ni<sub>2</sub>O<sub>7</sub> 比较。结果显示其外层 Ni 的 e<sub>g</sub> 轨道呈现类非费米液体行为，体现 Hund 关联及随温度线性的散射率；而内层 Ni 呈现费米液体特征。由于额外空穴掺杂削弱关联性，这可能解释其较低的超导转变温度。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.109.165140",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 19,
+            title: "Hund electronic correlation in La<sub>3</sub>Ni<sub>2</sub>O<sub>7</sub> under high pressure",
+            authors: "Zhenfeng Ouyang, Jia-Ming Wang, Jing-Xuan Wang, Rong-Qiang He, Li Huang, and Zhong-Yi Lu",
+            year: "2024",
+            journal: "Physical Review B",
+            volume: "109(11), 115114 (2024)",
+            category: "prb",
+            abstract: "通过 DFT+DMFT 研究发现，La<sub>3</sub>Ni<sub>2</sub>O<sub>7</sub> 在高压下表现为多轨道 Hund 金属，其 Ni 的 3d<sub>z²</sub> 和 3d<sub>x²−y²</sub> 轨道接近半填充并共同跨越费米面。体系呈现轨道选择性关联、能带重整化，并在高温下进入自旋冻结相、低温为费米液体，揭示其显著的 Hund 关联特征。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.109.115114",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 20,
+            title: "Realization of multiple topological states and topological phase transitions in (4,0) carbon nanotube derivatives",
+            authors: "Yan Gao, Yu Du, Yun-Yun Bai, Weikang Wu, Qiang Wang, Yong Liu, Kai Liu, and Zhong-Yi Lu",
+            year: "2024",
+            journal: "Carbon",
+            volume: "223, 118971 (2024)",
+            category: "Carbon",
+            abstract: "该工作基于紧束缚模型与第一性原理计算，提出(4,0)碳纳米管衍生物可作为研究拓扑态与拓扑相变的理想平台。其在1D、2D 与 3D 体系中分别实现了多种典型拓扑半金属态，并通过能带与表面态计算确认其拓扑非平庸性质。研究为拓扑碳材料体系提供了新的重要成员。",
+            links: {
+                pdf: "https://www.sciencedirect.com/science/article/pii/S0008622324001908",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 21,
+            title: "First-principles study of the magnetic and electronic properties of K-coated FeSe films",
+            authors: "Xiao-Xiao Man, Jian-Feng Zhang, Pei-Han Sun, Huan-Cheng Yang, Zhong-Yi Lu, and Kai Liu",
+            year: "2024",
+            journal: "Physical Review B",
+            volume: "109(3), 035105 (2024)",
+            category: "prb",
+            abstract: "本工作基于第一性原理计算研究了不同钾覆盖度下 K/FeSe 薄膜的磁与电子结构。结果表明体系存在两个能量接近的反铁磁态，暗示强磁涨落；同时电荷与自旋密度的变化随钾覆盖度呈现与超导 Tc 相同的“穹顶”趋势。研究为理解 K/FeSe 的超导机制及其他 FeSe 系超导体提供了重要线索。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.109.035105",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 22,
+            title: "Thickness-dependent oscillation of the superconducting T<sub>c</sub> in ultrathin NbC films: A first-principles study",
+            authors: "Chang-Jiang Wu, Jian-Feng Zhang, Pei-Han Sun, Huan-Cheng Yang, Zhong-Yi Lu, and Kai Liu",
+            year: "2023",
+            journal: "Physical Review B",
+            volume: "108(11), 115161 (2023)",
+            category: "prb",
+            abstract: "本研究基于第一性原理系统揭示了超薄 NbC 薄膜的超导临界温度随厚度呈现显著振荡，振幅可达约 10 K。其中三层 NbC 的 T<sub>c</sub> 甚至超过块体 NbC。进一步分析表明，高 T<sub>c</sub> 的薄膜均具有明显的声子软化与增强的声子–电子耦合。该结果为理解降维对金属碳化物超导性的调控提供了重要物理图像。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.108.115161",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 23,
+            title: "First-principles study on the electronic and magnetic properties of monolayer FeSe on Cu<sub>3</sub>N(001)",
+            authors: "Hui-Hui He, Xiao-Le Qiu, Ben-Chao Gong, Zhong-Yi Lu, and Kai Liu",
+            year: "2023",
+            journal: "Physical Review B",
+            volume: "108(11), 115147 (2023)",
+            category: "prb",
+            abstract: "本研究基于第一性原理提出 Cu<sub>3</sub>N(001) 是调控 FeSe 单层电子与磁性的重要空穴掺杂衬底。界面处的应变与电荷重排导致二聚体与条纹反铁磁态之间可能出现强磁挫折。计算显示 Cu<sub>3</sub>N 可向 FeSe 单层提供约 0.02 个空穴/Fe，且掺杂量可通过外电场或 Cu 空位调节。这一体系是研究空穴掺杂 FeSe 超导的重要平台。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.108.115147",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 24,
+            title: "Nonlinear Hall effect and potential Ising superconductivity in monolayer MXene heterostructure of T&minus;Mo<sub>2</sub>C/H&minus;Mo<sub>2</sub>C",
+            authors: "Ning-Ning Zhao, Zhen-Feng Ouyang, Pei-Han Sun, Jian-Feng Zhang, Kai Liu, and Zhong-Yi Lu",
+            year: "2023",
+            journal: "Physical Review B",
+            volume: "108(3), 035140 (2023)",
+            category: "prb",
+            abstract: "基于第一性原理计算，研究发现单层 MXene 异质结构 T–Mo<sub>2</sub>C/H–Mo<sub>2</sub>C 中可同时出现大的贝里曲率偶极诱导的非线性霍尔效应与潜在的 Ising 超导性。这些效应源自费米能级附近的能带反交叉与倒转，以及面内反演对称性的破缺所引起的 Ising 型自旋轨道耦合。此外，其中一种异质结构还呈现出 Z<sub>2</sub> 拓扑金属性。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.108.035140",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 25,
+            title: "Stacking-dependent topological quantum states in bilayer Mn<sub>2</sub>Cl<sub>3</sub>Br<sub>3</sub>",
+            authors: "Xinlei Zhao, Peng-Jie Guo, Fengjie Ma, and Zhong-Yi Lu",
+            year: "2023",
+            journal: "Physical Review Research",
+            volume: "5(3), 033040 (2023)",
+            category: "prb", 
+            abstract: "基于第一性原理研究表明，双层 Mn<sub>2</sub>Cl<sub>3</sub>Br<sub>3</sub> 在不同堆叠方式下均呈现铁磁层间耦合，并可在同一体系中实现多种奇异拓扑量子态，包括拓扑节点环自旋无隙半金属、自旋谷极化量子谷霍尔效应（SVP-QVH）以及高陈数量子反常霍尔态。其中 SVP-QVH 为首次发现的新拓扑相，具有两条自旋相同、分属不同极化谷且沿边界反向传播的拓扑保护无隙态。研究为发现新拓扑相及设计二维多功能电子、自旋电子与拓扑器件提供了思路。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevResearch.5.033040",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 26,
+            title: "Cubic C<sub>20</sub>: An intrinsic superconducting carbon allotrope",
+            authors: "Ying Yu, Xun-Wang Yan, Fengjie Ma, Miao Gao, and Zhong-Yi Lu",
+            year: "2023",
+            journal: "Applied Physics Express",
+            volume: "16(6), 063003 (2023)",
+            category: "Applied Physics Express",
+            abstract: "基于第一性原理计算，研究者系统分析了立方相金属碳同素体 sc-C<sub>20</sub> 的声子介导超导性。通过 Wannier 插值精确计算电子-声子耦合，并求解 Eliashberg 方程，预测其为无需掺杂或引入客体原子的本征碳超导体，转变温度约为 24 K。本研究丰富了碳基超导材料家族。",
+            links: {
+                pdf: "https://doi.org/10.35848/1882-0786/acdc02",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 27,
+            title: "Large intrinsic anomalous Hall effect in both Nb<sub>2</sub>FeB<sub>2</sub> and Ta<sub>2</sub>FeB<sub>2</sub> with collinear antiferromagnetism",
+            authors: "Xiao-Yao Hou, Huan-Cheng Yang, Zheng-Xin Liu, Peng-Jie Guo, and Zhong-Yi Lu",
+            year: "2023",
+            journal: "Physical Review B",
+            volume: "107(16), L161109 (2023)",
+            category: "prb",
+            abstract: "该工作基于对称性分析和第一性原理计算，预测两种已知的共线反铁磁金属 Nb<sub>2</sub>FeB<sub>2</sub> 与 Ta<sub>2</sub>FeB<sub>2</sub> 具有极大的本征反常霍尔效应，其 Néel 温度均高于室温。研究还补全了实现共线反铁磁体系中反常霍尔效应所需的对称性条件。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.107.L161109",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 28,
+            title: "Pressure-induced superconductivity at 32 K in MoB<sub>2</sub>",
+            authors: "Cuiying Pei, Jianfeng Zhang, Qi Wang, Yi Zhao, Lingling Gao, Chunsheng Gong, Shangjie Tian, Ruitao Luo, Mingtao Li, Wenge Yang, Zhong-Yi Lu, Hechang Lei, Kai Liu, and Yanpeng Qi",
+            year: "2023",
+            journal: "National Science Review",
+            volume: "10(5), nwad034 (2023)",
+            category: "National Science Review",
+            abstract: "该研究在高压下发现 MoB<sub>2</sub> 的超导转变温度可达 32 K，为过渡金属硼化物中目前最高的 Tc。理论分析表明其超导性由 Mo 的 d 电子与面外声子模的强耦合驱动。该工作为寻找高 Tc 过渡金属硼化物提供了新思路。",
+            links: {
+                pdf: "https://academic.oup.com/nsr/article-pdf/10/5/nwad034/50489440/nwad034.pdf",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 29,
+            title: "Stabilizing a hydrogen-rich superconductor at 1 GPa by charge transfer modulated virtual high-pressure effect",
+            authors: "Miao Gao, Peng-Jie Guo, Huan-Cheng Yang, Xun-Wang Yan, Fengjie Ma, Zhong-Yi Lu, Tao Xiang, and Hai-Qing Lin",
+            year: "2023",
+            journal: "Physical Review B",
+            volume: "107(18), L180501 (2023)",
+            category: "prb",
+            abstract: "该研究基于第一性原理提出，通过调整金属向氢的电荷转移，可在 1 GPa 下稳定原本需 280 GPa 才存在的 CaBH<sub>5</sub> 高压相。以 Cs 取代 Ca 后产生的“电荷转移调控的虚拟高压效应”显著增强结构稳定性，使氢富阴离子结构在低压下重新出现。进一步发现 CsBH<sub>5</sub> 是强耦合超导体，Tc 可达 98 K，为探索低压高温超导提供了新机制。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.107.L180501",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 30,
+            title: "Prediction of LiCrTe<sub>2</sub> monolayer as a half-metallic ferromagnet with a high Curie temperature",
+            authors: "Li-Man Xiao, Huan-Cheng Yang, and Zhong-Yi Lu",
+            year: "2023",
+            journal: "Chinese Physics B",
+            volume: "32(5), 057505 (2023)",
+            category: "Chinese Physics B",
+            abstract: "基于第一性原理计算，研究者预测出具有畸变方形结构的 LiCrTe<sub>2</sub> 单层是一种二维半金属铁磁体，具有高稳定性、宽自旋带隙、大磁矩以及极高的居里温度。在 −5% 至 +5% 的双轴应变下，其铁磁性与半金属性依然保持良好。拉伸与压缩应变均能显著提高磁晶各向异性能，并且在超过 1% 压缩应变时，易磁化方向会从面内转变为面外。该材料在自旋电子学中具有潜在重要应用。",
+            links: {
+                pdf: "https://doi.org/10.1088/1674-1056/acbe2e",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 31,
+            title: "Li<sub>2</sub>NiSe<sub>2</sub>: A new-type intrinsic two-dimensional ferromagnetic semiconductor above 200 K",
+            authors: "Li-Man Xiao, Huan-Cheng Yang, and Zhong-Yi Lu",
+            year: "2023",
+            journal: "Chinese Physics B",
+            volume: "32(3), 037501 (2023)",
+            category: "Chinese Physics B",
+            abstract: "基于第一性原理计算，本文提出二维铁磁半导体 Li<sub>2</sub>NiSe<sub>2</sub>，其居里温度超过 200 K，且结构动力学稳定。该材料可视为 Li 修饰的 1T 型 NiSe<sub>2</sub>，其铁磁性主要来自符合 GKA 规则的 Ni–Se–Ni 超交换作用。系统研究表明，Li<sub>2</sub>NiSe<sub>2</sub> 在自旋电子学领域具有潜在应用价值，并为设计二维铁磁半导体提供了新的材料体系。",
+            links: {
+                pdf: "https://doi.org/10.1088/1674-1056/aca39f",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 32,
+            title: "Detection of long-range orbital-Hall torques",
+            authors: "Arnab Bose, Fabian Kammerbauer, Rahul Gupta, Dongwook Go, Yuriy Mokrousov, Gerhard Jakob, and Mathias Kläui",
+            year: "2023",
+            journal: "Phys. Rev. B",
+            volume: "107(13), 134423 (2023)",
+            category: "prb",
+            abstract: "本文实验证实 Nb 和 Ru 可产生显著的轨道霍尔扭矩，其效应取决于所接触的铁磁材料。在 Nb（或 Ru）/Ni 双层中观测到明显增强的阻尼型扭矩，甚至出现符号反转。随着 Ni 厚度增加，扭矩强度异常增强，这一现象不同于常规自旋转移扭矩，揭示了轨道霍尔扭矩可能具有长程作用特性。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.107.134423",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 33,
+            title: "Quantum anomalous hall effect in collinear antiferromagnetism",
+            authors: "Peng-Jie Guo, Zheng-Xin Liu, Zhong-Yi Lu",
+            year: "2023",
+            journal: "npj Computational Materials",
+            volume: "9(1), 70 (2023)",
+            category: "Computational Materials Science",
+            abstract: "该工作提出了一个包含反铁磁序的四能带模型，证明了共线反铁磁材料中也能出现量子反常霍尔效应。研究发现，单层CrO在应变作用下可从AFM Weyl半金属转变为AFM QAH绝缘体，为寻找高温QAH材料提供了新机制。",
+            links: {
+                pdf: "https://doi.org/10.1038/s41524-023-01025-4",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 34,
+            title: "Spin-Resolved Imaging of Antiferromagnetic Order in Fe<sub>4</sub>Se<sub>5</sub> Ultrathin Films on SrTiO<sub>3</sub>",
+            authors: "Wenhao Zhang, Zhi-Mo Zhang, Jin-Hua Nie, Ben-Chao Gong, Min Cai, Kai Liu, Zhong-Yi Lu, Ying-Shuang Fu",
+            year: "2023",
+            journal: "Advanced Materials",
+            volume: "35(19), 2209931 (2023)",
+            category: "Advanced Materials",
+            abstract: "本研究利用自旋极化扫描隧道显微镜直接观测了Fe<sub>4</sub>Se<sub>5</sub>超薄膜中的反铁磁条纹结构，并揭示其来源于具有平面磁矩的成对棋盘式反铁磁基态。实验结合第一性原理计算进一步展现了三类纳米尺度反铁磁畴及其受热扰动的行为，为理解FeSe类材料的磁性与超导相图提供了重要线索。",
+            links: {
+                pdf: "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.202209931",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 35,
+            title: "Magnetic Proximity Effect in LaO/EuO Heterostructures: A First-Principles Study",
+            authors: "Pei-Han Sun, Xiao-Xiao Man, Ben-Chao Gong, Zhong-Yi Lu, Kai Liu",
+            year: "2023",
+            journal: "Physical Review B",
+            volume: "107(12), 125130 (2023)",
+            category: "prb",
+            abstract: "该研究基于第一性原理计算揭示了LaO/EuO异质结构中显著的磁近邻效应，包括La层表面能带的自旋分裂与局域磁矩的出现。结果表明界面及EuO表面累积的电子气均呈现自旋极化，并发现自旋极化可在整个LaO层中扩散，同时可通过外电场有效调控。该工作为理解LaO/EuO体系中的磁近邻效应、研究拓扑马约拉纳态及设计电场控制的超导开关提供了重要理论基础。",
+            links: {
+                pdf: "https://link.aps.org/doi/10.1103/PhysRevB.107.125130",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 36,
+            title: "Tuning the Mottness in Sr<sub>3</sub>Ir<sub>2</sub>O<sub>7</sub> via Bridging Oxygen Vacancies",
+            authors: "Miao Xu, Changwei Zou, Benchao Gong, Ke Jia, Shusen Ye, Zhenqi Hao, Kai Liu, Youguo Shi, Zhong-Yi Lu, Peng Cai, Yayu Wang",
+            year: "2023",
+            journal: "Chinese Physics Letters",
+            volume: "40(3), 037101 (2023)",
+            category: "cpl",
+            abstract: "该研究利用扫描隧道显微镜解析Sr<sub>3</sub>Ir<sub>2</sub>O<sub>7</sub>中氧空位对莫特绝缘态的影响。结果发现无缺陷区域呈现均匀的莫特能隙，而在氧空位附近能隙显著增大，这源于局域跳跃积分的减弱。研究表明桥接氧缺陷能显著调控局域能带宽度，为操纵莫特性强度提供了新途径。",
+            links: {
+                pdf: "https://doi.org/10.1088/0256-307X/40/3/037101",
+                arxiv: null,
+                code: null
+            }
+        },
         {
             id: 37,
             title: "Tetragonal SnOFeSe: A possible parent compound of the FeSe-based superconductor",
@@ -2708,6 +3247,51 @@ document.addEventListener('DOMContentLoaded', function() {
             abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
             links: {
                 pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 215,
+            title: "InvDesFlow-AL: active learning-based workflow for inverse design of functional materials",
+            authors: "Xiao-Qi Han, Peng-Jie Guo, Ze-Feng Gao, Hao Sun, Zhong-Yi Lu",
+            year: "2025",
+            journal: "npj Computational Materials",
+            volume: "11(1), 364 (2025)",
+            category: "npj",
+            abstract: "本工作提出了基于主动学习的逆向材料设计框架 InvDesFlow-AL，可迭代优化生成过程并逐步引导材料向目标性能收敛。该模型在晶体结构预测中将RMSE降低至0.0423 Å，性能较现有模型提升32.96%，并成功用于低形成能材料搜索，获得超159万种Ehull < 50 meV的热稳定材料。进一步应用于常压BCS超导材料设计时，InvDesFlow-AL发现了Tc高达140 K的Li<sub>2</sub>AuH<sub>6</sub>及多种高Tc材料，展示了逆向设计在材料发现中的强大能力。",
+            links: {
+                pdf: "https://doi.org/10.1038/s41524-025-01830-z",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 216,
+            title: "InvDesFlow: An AI-Driven Materials Inverse Design Workflow to Explore Possible High-Temperature Superconductors",
+            authors: "Xiao-Qi Han, Zhenfeng Ouyang, Peng-Jie Guo, Hao Sun, Ze-Feng Gao, Zhong-Yi Lu",
+            year: "2025",
+            journal: "Chinese Physics Letters",
+            volume: "42(4), 047301 (2025)",
+            category: "cpl",
+            abstract: "本工作提出了AI驱动的逆向材料设计流程 InvDesFlow，将深度模型预训练与微调、扩散模型及基于物理的方法集成，用于高Tc超导材料的发现。模型成功获得74种热力学稳定且Tc ≥ 15 K的材料，这些材料全部不在任何已有数据库中，并系统分析了如B<sub>4</sub>CN<sub>3</sub>与B<sub>5</sub>CN<sub>2</sub>等代表性材料的超导特性。结果表明AI技术能够显著加速高Tc超导材料的发现。",
+            links: {
+                pdf: "http://cpl.iphy.ac.cn/en/article/doi/10.1088/0256-307X/42/4/047301",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 217,
+            title: "HTSC-2025: A benchmark dataset of ambient-pressure high-temperature superconductors for AI-driven critical temperature prediction",
+            authors: "Xiao-Qi Han(韩小琪), Ze-Feng Gao(高泽峰), Xin-De Wang(王馨德), Zhenfeng Ouyang(欧阳振峰), Peng-Jie Guo(郭朋杰), Zhong-Yi Lu(卢仲毅)",
+            year: "2025",
+            journal: "Chinese Physics B",
+            volume: "34(10), 100301 (2025)",
+            category: "cpb",
+            abstract: "本工作构建了常压高温超导材料基准数据集 HTSC-2025，涵盖2023–2025年基于BCS理论预测的多类高温超导材料，包括多种氢化物、BCN 掺杂体系及类 MgB<sub>2</sub> 蜂窝材料。该数据集填补了领域内缺乏统一基准的空白，有助于公平评估AI预测模型并推动超导材料研究发展。",
+            links: {
+                pdf: "https://cpb.iphy.ac.cn/EN/abstract/article_127930.shtml",
                 arxiv: null,
                 code: null
             }
