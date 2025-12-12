@@ -546,6 +546,546 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         {
+            id: 73,
+            title: "Order parameter for the multichannel Kondo model at quantum criticality",
+            authors: "Ru Zheng, Rong-Qiang He, and Zhong-Yi Lu",
+            year: "2021",
+            journal: "Physical Review B",
+            volume: "103(4), 045111 (2021)",
+            category: "prb",
+            abstract: "本文研究了量子临界点处多通道近藤模型的序参量。通过发展适当的理论框架，我们识别了表征量子相变的序参量性质，为理解强关联系统中的临界行为提供了新的见解。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.103.045111",
+                arxiv: "https://arxiv.org/pdf/2201.04303",
+                code: null
+            }
+        },
+        {
+            id: 74,
+            title: "Topological properties of non-centrosymmetric superconductors TIr<sub>2</sub>B<sub>2</sub> (T=Nb, Ta)",
+            authors: "Yan Gao, Jian-Feng Zhang, Shengyuan A. Yang, Kai Liu, and Zhong-Yi Lu",
+            year: "2021",
+            journal: "Physical Review B",
+            volume: "103(12), 125154 (2021)",
+            category: "prb",
+            abstract: "我们结合第一性原理计算和对称性分析，揭示了非中心对称超导体TIr<sub>2</sub>B<sub>2</sub> (T=Nb, Ta)在正常态为拓扑Weyl金属，具有丰富的拓扑特征（Weyl点、节线、沙漏型Weyl环和表面费米弧）。结合其本征超导性，该体系为探索三维拓扑超导提供了理论依据和潜在平台。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.103.125154",
+                arxiv: "https://arxiv.org/pdf/2012.15204",
+                code: null
+            }
+        },
+        {
+            id: 75,
+            title: "Deconfined Quantum Phase Transition of a Higher-Order Symmetry-Protected Topological State",
+            authors: "Chen Peng, Long Zhang, and Zhong-Yi Lu",
+            year: "2021",
+            journal: "Physical Review B",
+            volume: "104(7), 075112 (2021)",
+            category: "prb",
+            abstract: "我们的研究揭示，在方格晶格反铁磁体中，高阶对称保护拓扑态可以通过一个直接跨越去限制量子临界点的拓扑相变进入平庸无序相。这一发现确立了去限制量子临界点作为连接传统序参量相变与拓扑相变的多临界点角色，展现了二者之间深刻的对偶性。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.104.075112",
+                arxiv: "https://arxiv.org/pdf/2010.11129",
+                code: null
+            }
+        },
+        {
+            id: 76,
+            title: "Large anomalous Hall effect induced by gapped nodal lines in GdZn and GdCd",
+            authors: "Ning-Ning Zhao, Kai Liu, and Zhong-Yi Lu",
+            year: "2021",
+            journal: "Physical Review B",
+            volume: "103(20), 205104 (2021)",
+            category: "prb",
+            abstract: "基于第一性原理计算，我们发现铁磁体GdZn和GdCd在费米面附近存在拓扑节线。当磁化破坏镜面对称性时，这些节线会打开带隙并产生巨大的贝里曲率，从而在其带隙内诱导出巨大的反常霍尔效应。该工作表明，此体系是研究拓扑与磁性相互作用的理想平台。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.103.205104",
+                arxiv: "https://arxiv.org/pdf/2106.12404",
+                code: null
+            }
+        },
+        {
+            id: 77,
+            title: "LaO as a candidate substrate for realizing superconductivity in FeSe epitaxial film",
+            authors: "Xiao-Le Qiu, Ben-Chao Gong, Huan-Cheng Yang, Zhong-Yi Lu, and Kai Liu",
+            year: "2021",
+            journal: "Physical Review B",
+            volume: "103(3), 035143 (2021)",
+            category: "prb",
+            abstract: "基于第一性原理计算，我们发现LaO(001)衬底可有效诱导外延FeSe单层膜产生强磁涨落与显著电子掺杂，且二者可能产生超导邻近效应，是研究界面超导的理想候选体系。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.103.035143",
+                arxiv: "https://arxiv.org/pdf/2106.12388",
+                code: null
+            }
+        },
+        {
+            id: 78,
+            title: "Coexistence of topological Weyl and nodal-ring states in ferromagnetic and ferrimagnetic double perovskites",
+            authors: "Xinlei Zhao, Peng-jie Guo, Fengjie Ma, and Zhong-Yi Lu",
+            year: "2021",
+            journal: "Physical Review B",
+            volume: "103(8), 085138 (2021)",
+            category: "prb",
+            abstract: "我们通过理论计算预测了铁磁和亚铁磁双钙钛矿中拓扑外尔态和节点环态的共存。这项研究揭示了这些材料中丰富的拓扑相，为设计具有多功能拓扑性质的新型磁性材料指明了方向。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.103.085138",
+                arxiv: "https://arxiv.org/pdf/2007.15699",
+                code: null
+            }
+        },
+        {
+            id: 79,
+            title: "Two ultra-stable novel allotropes of Tellurium few-layers",
+            authors: "Cong Wang, Linlu Wu, Xieyu Zhou, Linwei Zhou, Pengjie Guo, Kai Liu, Zhong-Yi Lu, Zhihai Cheng, Yang Chai, and Wei Ji",
+            year: "2020",
+            journal: "Chinese Physics B",
+            volume: "29(9), 097103 (2020)",
+            category: "cpb",
+            abstract: "理论研究发现碲少层存在两种新相（&epsilon;和&zeta;）。其中，&zeta;相比已知最稳定的单层&gamma;相能量低29 meV/Te以上，而&epsilon;相与&gamma;相稳定性相当。随着层数增加，&zeta;相与&alpha;相的能量差减小，在四层（12子层）厚度时消失，且该转变厚度在电荷掺杂下增加。&epsilon;相和&zeta;相分别为金属性链状和层状结构，&zeta;相具有强层间耦合和量子阱态。",
+            links: {
+                pdf: "https://iopscience.iop.org/article/10.1088/1674-1056/aba606/meta",
+                arxiv: "https://arxiv.org/pdf/1809.00561",
+                code: null
+            }
+        },
+        {
+            id: 80,
+            title: "Natural orbitals renormalization group approach to a Kondo singlet",
+            authors: "Ru Zheng, Rong-Qiang He, and Zhong-Yi Lu",
+            year: "2020",
+            journal: "Science China Physics, Mechanics & Astronomy",
+            volume: "63(9), 297411 (2020)",
+            category: "scpma",
+            abstract: "我们利用新发展的自然轨道重整化群（NORG）方法研究了近藤单态。研究发现，在自然轨道框架下，近藤屏蔽机制变得清晰简单，存在一个主导屏蔽磁性杂质的活性自然轨道。通过引入近藤关联能，我们得到特征长度尺度（仅几纳米），解释了实验中难以探测近藤屏蔽云的原因。",
+            links: {
+                pdf: "https://link.springer.com/article/10.1007/s11433-019-1520-3",
+                arxiv: "https://arxiv.org/pdf/1803.03072",
+                code: null
+            }
+        },
+        {
+            id: 81,
+            title: "First-principles study of the robust superconducting state of NbTi alloys under ultrahigh pressures",
+            authors: "Jian-Feng Zhang, Miao Gao, Kai Liu, and Zhong-Yi Lu",
+            year: "2020",
+            journal: "Physical Review B",
+            volume: "102(19), 195140 (2020)",
+            category: "prb",
+            abstract: "我们通过第一性原理计算研究了NbTi合金在超高压下稳健超导的起源。研究发现，高压促使合金结构有序化，其超导性仍符合BCS机制。稳健的超导转变温度源于声子行为、电子耦合与库仑作用随压力的协同变化。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.102.195140",
+                arxiv: "https://arxiv.org/pdf/2106.12371",
+                code: null
+            }
+        },
+        {
+            id: 82,
+            title: "SrPd, a candidate material with extremely large magnetoresistance",
+            authors: "Xiao-Qin Lu, Peng-Jie Guo, Jian-Feng Zhang, Kai Liu, and Zhong-Yi Lu",
+            year: "2020",
+            journal: "Physical Review B",
+            volume: "101(16), 165115 (2020)",
+            category: "prb",
+            abstract: "我们基于第一性原理计算提出SrPd是一种具有极大磁电阻的候选材料。计算表明其具有良好的电子-空穴补偿和高载流子迁移率，可用两带模型描述输运性质，预测其在4 T磁场下低温磁电阻可达10<sup>5</sup>%。该材料为研究XMR效应电荷补偿机制提供了理想平台。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.165115",
+                arxiv: "https://arxiv.org/pdf/2106.12410",
+                code: null
+            }
+        },
+        {
+            id: 83,
+            title: "First-principles study on the electron-phonon coupling and magnetoresistance of LaBi under pressure",
+            authors: "Jian-Feng Zhang, Peng-Jie Guo, Miao Gao, Kai Liu, and Zhong-Yi Lu",
+            year: "2020",
+            journal: "Physical Review B",
+            volume: "101(15), 155139 (2020)",
+            category: "prb",
+            abstract: "我们通过第一性原理计算研究了LaBi在压力下的电子-声子耦合与磁电阻。发现其在约7 GPa发生结构相变但仍保持拓扑非平庸性。计算表明弱电子-声子耦合不足以解释其超导性，且磁电阻未见抑制，这可能源于样品杂质或其他未知机制。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.155139",
+                arxiv: "https://arxiv.org/pdf/2106.12365",
+                code: null
+            }
+        },
+        {
+            id: 84,
+            title: " RRuB<sub>2</sub> (R=Y, Lu), topological superconductor candidates with hourglass-type Dirac ring",
+            authors: "Yan Gao, Peng-Jie Guo, Kai Liu, and Zhong-Yi Lu",
+            year: "2020",
+            journal: "Physical Review B",
+            volume: "102(11), 115137 (2020)",
+            category: "prb",
+            abstract: "我们预测RRuB<sub>2</sub>（R=Y, Lu）是拓扑超导体候选材料，具有沙漏型狄拉克环和能带反转诱导的拓扑表面态。其本征超导性（T<sub>c</sub>~10 K）可通过邻近效应在表面态诱导超导，为研究拓扑超导提供理想平台。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.102.115137",
+                arxiv: "https://arxiv.org/pdf/2106.12220",
+                code: null
+            }
+        },
+        {
+            id: 85,
+            title: "Topological properties of Mo<sub>2</sub>C and W<sub>2</sub>C superconductors",
+            authors: "Ning-Ning Zhao, Peng-Jie Guo, Xiao-Qin Lu, Qiang Han, Kai Liu, and Zhong-Yi Lu",
+            year: "2020",
+            journal: "Physical Review B",
+            volume: "101(19), 195144 (2020)",
+            category: "prb",
+            abstract: "基于第一性原理计算，我们研究了Mo<sub>2</sub>C和W<sub>2</sub>C的拓扑性质。二者均为三维强拓扑绝缘体，其(001)表面态穿过或接近费米能级，具有螺旋自旋结构，可通过邻近效应诱导p+ip超导，为探索拓扑超导与马约拉纳零模提供平台。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.195144",
+                arxiv: "https://arxiv.org/pdf/2106.11792",
+                code: null
+            }
+        },
+        {
+            id: 86,
+            title: "A Model Compression Method with Matrix Product Operators for Speech Enhancement",
+            authors: "Xingwei Sun, Ze-Feng Gao, Zhong-Yi Lu, Junfeng Li, and Yonghong Yan",
+            year: "2020",
+            journal: "IEEE-ACM Transactions on Audio, Speech, and Language Processing",
+            volume: "28, 2837-2847 (2020)",
+            category: "IEEE-ACM Transactions on Audio, Speech, and Language Processing",
+            abstract: "本文提出一种基于矩阵乘积算子（MPO）的深度神经网络压缩方法，用于语音增强任务。该方法在训练前将网络中的权重矩阵替换为MPO分解格式，大幅减少了参数量。在MLP与LSTM模型上的实验表明，该压缩方法在各种压缩率下均优于常用的剪枝方法，且尤其适用于无云端计算的应用场景。",
+            links: {
+                pdf: "https://ieeexplore.ieee.org/abstract/document/9222236",
+                arxiv: "https://arxiv.org/pdf/2010.04950",
+                code: null
+            }
+        },
+        {
+            id: 87,
+            title: "Strong-coupling superconductivity in LiB<sub>2</sub>C<sub>2</sub> trilayer films",
+            authors: "Miao Gao, Xun-Wang Yan, Zhong-Yi Lu, and Tao Xiang",
+            year: "2020",
+            journal: "Physical Review B",
+            volume: "101(9), 094501 (2020)",
+            category: "prb",
+            abstract: "基于第一性原理计算，我们预测三层LiB<sub>2</sub>C<sub>2</sub>薄膜是一种通过&sigma;电子金属化实现的高温超导体。求解各向异性Eliashberg方程表明，其常压下T<sub>c</sub>超过液氮温度，且双轴拉伸应变下可进一步提升至125 K",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.094501",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 88,
+            title: "Quantum spin Hall effect in monolayer and bilayer TaIrTe<sub>4</sub>",
+            authors: "Peng-Jie Guo, Xiao-Qin Lu, Wei Ji, Kai Liu, and Zhong-Yi Lu",
+            year: "2020",
+            journal: "Physical Review B",
+            volume: "102(4), 041109(R) (2020)",
+            category: "prb",
+            abstract: "我们通过第一性原理计算发现，单层和双层TaIrTe<sub>4</sub>均为量子自旋霍尔绝缘体。分析表明，层间相互作用与&Gamma;点小带隙诱导了双层中的能带反转，且层间距调控可实现拓扑相变。该体系为不同维度拓扑相研究提供了理想平台。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.102.041109",
+                arxiv: "https://arxiv.org/pdf/1910.14307",
+                code: null
+            }
+        },
+        {
+            id: 89,
+            title: " AFeSe<sub>2</sub> (A=Tl, K, Rb, or Cs): Iron-based superconducting analog of the cuprates",
+            authors: "Xinlei Zhao, Fengjie Ma, Zhong-Yi Lu, and Tao Xiang",
+            year: "2020",
+            journal: "Physical Review B",
+            volume: "101(18), 184504 (2020)",
+            category: "prb",
+            abstract: "基于第一性原理计算，我们发现AFeSe<sub>2</sub>（A=Tl, K, Rb, Cs）在晶体结构、反铁磁绝缘性和强交换作用等方面与铜氧化物母体高度相似，预测其通过掺杂可能成为铁基高温超导体。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.184504",
+                arxiv: "https://arxiv.org/pdf/1910.03545",
+                code: null
+            }
+        },
+        {
+            id: 90,
+            title: "Combined spontaneous symmetry-breaking and symmetry-protected topological order from cluster charge interaction",
+            authors: "Chen Peng, Rong-Qiang He, Yuan-Yao He, and Zhong-Yi Lu",
+            year: "2020",
+            journal: "Physical Review Research",
+            volume: "2(3), 033291 (2020)",
+            category: "prr",
+            abstract: "通过大规模量子蒙特卡洛模拟，我们发现Kane-Mele模型中团簇电荷相互作用可导致对称性保护拓扑序与Kekul&eacute;价键序共存，并驱动一种独特的拓扑相变，其特征为单粒子格林函数零点与自旋通道能隙闭合，且无平均场对应。",
+            links: {
+                pdf: "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033291",
+                arxiv: "https://arxiv.org/pdf/1909.03025",
+                code: null
+            }
+        },
+        {
+            id: 91,
+            title: "RSAVS superconductors: Materials with a superconducting state that is robust against large volume shrinkage",
+            authors: "Cheng Huang, Jing Guo, Jianfeng Zhang, Karoline Stolze, Shu Cai, Kai Liu, Hongming Weng, Zhongyi Lu, Qi Wu, Tao Xiang, Robert J. Cava, and Liling Sun",
+            year: "2020",
+            journal: "Physical Review Materials",
+            volume: "4(7), 071801(R) (2020)",
+            category: "prm",
+            abstract: "我们发现一类新型超导体（RSAVS超导体），其超导转变温度在极大压力范围内保持稳定。例如，(TaNb)<sub>0.67</sub>(HfZrTi)<sub>0.33</sub>高熵合金与NbTi合金的T<sub>c</sub>分别在超过136 GPa和141 GPa压力下几乎不变。电子结构计算表明，费米面附近d<sub>x<sup>2</sup>-y<sup>2</sup></sub>和d<sub>z<sup>2</sup></sub>轨道电子的稳定贡献是维持T<sub>c</sub>的关键。",
+            links: {
+                pdf: "https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.4.071801",
+                arxiv: "https://arxiv.org/pdf/1912.10794",
+                code: null
+            }
+        },
+        {
+            id: 92,
+            title: "Degenerate antiferromagnetic states in spinel oxide LiV<sub>2</sub>O<sub>4</sub>",
+            authors: "Ben-Chao Gong, Huan-Cheng Yang, Kui Jin, Kai Liu, and Zhong-Yi Lu",
+            year: "2020",
+            journal: "Chinese Physics B",
+            volume: "29(7), 077508 (2020)",
+            category: "cpb",
+            abstract: "通过自旋极化第一性原理计算，我们系统研究了尖晶石氧化物LiV<sub>2</sub>O<sub>4</sub>的磁性与电子性质。研究发现，一系列由铁磁V<sub>4</sub>四面体通过角共享反铁磁V<sub>4</sub>四面体连接而成的磁态能量简并，导致强磁挫和大磁熵。典型二四面体反铁磁态的能带分析表明，该体系处于金属-绝缘体转变边缘，且V原子的t<sub>2g</sub>与e<sub>g</sub>轨道在磁交换中作用不同，为理解其奇异磁性与重费米子行为提供了见解。",
+            links: {
+                pdf: "https://iopscience.iop.org/article/10.1088/1674-1056/ab9617/meta",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 93,
+            title: "Interlayer quantum transport in Dirac semimetal BaGa<sub>2</sub>",
+            authors: "Sheng Xu, Changhua Bao, Peng-Jie Guo, Yi-Yan Wang, Qiao-He Yu, Lin-Lin Sun, Yuan Su, Kai Liu, Zhong-Yi Lu, Shuyun Zhou, and Tian-Long Xia",
+            year: "2020",
+            journal: "Nature Communications",
+            volume: "11(1), 2370 (2020)",
+            category: "nat-com",
+            abstract: "我们报告了狄拉克半金属BaGa<sub>2</sub>中层间输运的研究。由于其准二维狄拉克锥恰好位于费米能级，体系易于达到量子极限。实验观测到由狄拉克费米子在相邻层间零级朗道能级隧穿引起的负层间磁电阻，且电阻在磁场垂直于c轴时出现峰值。该现象可由量子极限下的狄拉克费米子隧穿模型很好地解释。",
+            links: {
+                pdf: "https://www.nature.com/articles/s41467-020-15854-0",
+                arxiv: "https://arxiv.org/pdf/1907.10702",
+                code: null
+            }
+        },
+        {
+            id: 94,
+            title: "Bethe-Slater-curve-like behavior and interlayer spin-exchange coupling mechanisms in two-dimensional magnetic bilayers",
+            authors: "Cong Wang, Xieyu Zhou, Linwei Zhou, Yuhao Pan, Zhong-Yi Lu, Xiangang Wan, Xiaoqun Wang, and Wei Ji",
+            year: "2020",
+            journal: "Physical Review B",
+            volume: "102(2), 020402(R) (2020)",
+            category: "prb",
+            abstract: "通过第一性原理计算，我们在九种MX<sub>2</sub>（M=V, Cr, Mn; X=S, Se, Te）双层材料中发现了类似Bethe-Slater曲线的行为，即层间磁耦合随距离发生反铁磁-铁磁转变。以CrSe<sub>2</sub>为例，该转变由层间区域Se-p<sub>z</sub>波函数重叠处的泡利排斥与自旋极化电子的动能增益之间的竞争所主导。此项研究揭示了二维磁性材料中层间耦合的新机制，为调控层间磁性提供了新途径。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.102.020402",
+                arxiv: "https://arxiv.org/pdf/1906.05576",
+                code: null
+            }
+        },
+        {
+            id: 95,
+            title: "de Haas–van Alphen quantum oscillations and electronic structure in the large-Chern-number topological chiral semimetal CoSi",
+            authors: "Huan Wang, Sheng Xu, Xiao-Qin Lu, Xiao-Yan Wang, Xiang-Yu Zeng, Jun-Fa Lin, Kai Liu, Zhong-Yi Lu, and Tian-Long Xia",
+            year: "2020",
+            journal: "Physical Review B",
+            volume: "102(11), 114129 (2020)",
+            category: "prb",
+            abstract: "我们通过德哈斯-范阿尔芬量子振荡和第一性原理计算研究了大陈数拓扑手性半金属CoSi的电子结构。这项研究揭示了其独特的拓扑性质和费米面特征，为理解和利用拓扑手性材料提供了重要的实验和理论依据。",
+            links: {
+                pdf: null,
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 96,
+            title: "First-principles study of solid hydrogen: Comparison among four exchange-correlation functionals",
+            authors: "Huan-Cheng Yang, Kai Liu, Zhong-Yi Lu, and Hai-Qing Lin",
+            year: "2020",
+            journal: "Physical Review B",
+            volume: "102(17), 174109 (2020)",
+            category: "prb",
+            abstract: "我们通过第一性原理计算重新研究了高压下固态氢的结构，比较了七种结构和四种交换关联泛函（SCAN、PBE、BLYP、vdW-DF）。研究发现，SCAN泛函在150-450 GPa压力范围内预测C2/c结构最稳定，且计算的振动频率与实验吻合，为固态氢的理论研究提供了更可靠的起点。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.102.174109",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 97,
+            title: "Correlation Effects in Quadrupole Insulators: a Quantum Monte Carlo Study",
+            authors: "Chen Peng, Rong-Qiang He, and Zhong-Yi Lu",
+            year: "2020",
+            journal: "Physical Review B",
+            volume: "102(4), 045110 (2020)",
+            category: "prb",
+            abstract: "我们通过大规模投影量子蒙特卡洛模拟研究了具有在位Hubbard相互作用的四极绝缘体（高阶拓扑绝缘体）。首次成功利用格林函数方法刻画了相互作用下四极绝缘体的拓扑性质。研究发现，拓扑四极绝缘体在弱相互作用下稳定，而在强相互作用下通过连续拓扑相变转变为平庸反铁磁绝缘体，其临界指数（&nu;=0.67(4)，&beta;=0.40(2)）表明属于新的普适类。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.102.045110",
+                arxiv: "https://arxiv.org/pdf/1905.13222",
+                code: null
+            }
+        },
+        {
+            id: 98,
+            title: "Compressing deep neural networks by matrix product operators",
+            authors: "Ze-Feng Gao, Song Cheng, Rong-Qiang He, Zhi-Yuan Xie, Hui-Hai Zhao, Zhong-Yi Lu, and Tao Xiang",
+            year: "2020",
+            journal: "Physical Review Research",
+            volume: "2(2), 023300 (2020)",
+            category: "prr",
+            abstract: "本文提出一种利用矩阵乘积算子（MPO）压缩深度神经网络的方法。MPO 是一种源自物理学的张量网络方法，可高效表示神经网络中的线性变换层。在 FC2、LeNet-5、VGG、ResNet 和 DenseNet 等多个典型网络架构上，于 MNIST 和 CIFAR-10 数据集上的实验表明，该方法在显著减少参数量的同时，能保持甚至提升预测准确率，为构建更简洁高效的神经网络框架提供了新途径。",
+            links: {
+                pdf: "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023300",
+                arxiv: "https://arxiv.org/pdf/1904.06194",
+                code: null
+            }
+        },
+        {
+            id: 99,
+            title: "Quasi-One-Dimensional Free-Electron-Like States Selected by Intermolecular Hydrogen Bonds at the Glycine/Cu(100) Interface*",
+            authors: "Linwei Zhou, Chen-Guang Wang, Zhixin Hu, Xianghua Kong, Zhong-Yi Lu, Hong Guo, and Wei Ji",
+            year: "2020",
+            journal: "Chinese Physics Letters",
+            volume: "37(11), 117301 (2020)",
+            category: "cpl",
+            abstract: "我们通过第一性原理计算研究了甘氨酸分子在Cu(100)表面形成的氢键自组装网络。研究发现，两条大致垂直的分子间氢键链选择性地与铜表面态杂化，产生了各向异性的准一维类自由电子表面态，揭示了氢键链作为电荷导体的潜在可能。",
+            links: {
+                pdf: "https://iopscience.iop.org/article/10.1088/0256-307X/37/11/117301",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 100,
+            title: "Electron-phonon coupling in a honeycomb borophene grown on Al(111) surface",
+            authors: "Miao Gao, Xun-Wang Yan, Jun Wang, Zhong-Yi Lu, and Tao Xiang",
+            year: "2019",
+            journal: "Physical Review B",
+            volume: "100(2), 024503 (2019)",
+            category: "prb",
+            abstract: "我们通过第一性原理计算研究了Al(111)衬底上蜂窝状硼烯的电子-声子耦合。发现衬底电荷转移使&sigma;键金属化，但声子模式硬化导致耦合较弱。预测单层AlB<sub>2</sub>可能有6.5 K的超导转变，因此Al(111)上的蜂窝状硼烯也可能具有类似超导性。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.100.024503",
+                arxiv: "https://arxiv.org/pdf/1902.06276",
+                code: null
+            }
+        },
+        {
+            id: 101,
+            title: "Manipulating the electronic and magnetic properties of monolayer electride Ca<sub>2</sub>N by hydrogenation",
+            authors: "Xiao-Le Qiu, Jian-Feng Zhang, Zhong-Yi Lu, and Kai Liu",
+            year: "2019",
+            journal: "Journal of Physical Chemistry C",
+            volume: "123(40), 24698–24704 (2019)",
+            category: "jpcc",
+            abstract: "我们基于第一性原理计算，研究了氢化对单层驻极体Ca<sub>2</sub>N电子与磁性的调控。研究表明，单侧氢化可使其从非磁性金属转变为半导体（带隙1.13 eV），完全氢化则进一步诱发结构相变并使其转变为铁磁半金属，实现了对该材料电子态的逐级操控。",
+            links: {
+                pdf: "https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.9b06089",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 102,
+            title: "Quasi-degenerate magnetic states in &alpha;-RuCl<sub>3</sub>",
+            authors: "Huan-Cheng Yang, Ben-Chao Gong, Kai Liu, and Zhong-Yi Lu",
+            year: "2019",
+            journal: "Journal of Physics: Condensed Matter",
+            volume: "31(2), 025803 (2019)",
+            category: "jpc",
+            abstract: "基于DFT+U与自旋轨道耦合计算，我们发现&alpha;-RuCl<sub>3</sub>在U=2.0 eV、J=0.4 eV时锯齿形反铁磁为基态，但存在一系列能量相近的磁构型。调节U和J可使其与基态简并，导致强磁挫与无长程序状态，这为理解压力诱导的量子无序相提供了视角。",
+            links: {
+                pdf: "https://iopscience.iop.org/article/10.1088/1361-648X/aaeeac/meta",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 103,
+            title: "Electronic structures of quasi-one-dimensional cuprate superconductors Ba<sub>2</sub>CuO<sub>3+&delta;</sub>",
+            authors: "Kai Liu, Zhong-Yi Lu, and Tao Xiang",
+            year: "2019",
+            journal: "Physical Review Materials",
+            volume: "3(4), 044802 (2019)",
+            category: "prm",
+            abstract: "通过第一性原理计算，我们研究了Ba<sub>2</sub>CuO<sub>3+&delta;</sub>的电子与磁结构。发现Ba<sub>2</sub>CuO<sub>3</sub>为反铁磁莫特绝缘体，具有准一维CuO链和链内反铁磁耦合；而Ba<sub>2</sub>CuO<sub>4</sub>为非磁性金属。氧空位倾向于占据平面位置，与实验一致。电荷掺杂可诱导磁涨落，表明超导配对可能主要由CuO链内的反铁磁涨落驱动。",
+            links: {
+                pdf: "https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.3.044802",
+                arxiv: "https://arxiv.org/pdf/1901.11392",
+                code: null
+            }
+        },
+        {
+            id: 104,
+            title: "Hexagonal supertetrahedral boron: A topological metal with multiple spin-orbit-free emergent fermions",
+            authors: "Yan Gao, Weikang Wu, Peng-Jie Guo, Chengyong Zhong, Shengyuan A. Yang, Kai Liu, and Zhong-Yi Lu",
+            year: "2019",
+            journal: "Physical Review Materials",
+            volume: "3(4), 044202 (2019)",
+            category: "prm",
+            abstract: "通过第一性原理计算，我们预测了一种新型三维硼同素异形体（H-硼）。该结构具有良好稳定性与优异力学性质，并且是一种具有多种无自旋轨道耦合涌现费米子的拓扑金属，包括半狄拉克费米子、三重简并费米子、节线费米子与节面费米子，为探索新型费米子物理提供了理想平台。",
+            links: {
+                pdf: "https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.3.044202",
+                arxiv: "https://arxiv.org/pdf/1901.08413",
+                code: null
+            }
+        },
+        {
+            id: 105,
+            title: "Finite-temperature Auxiliary-Field Quantum Monte Carlo: Self-Consistent Constraint and Systematic Approach to Low Temperatures",
+            authors: "Yuan-Yao He, Mingpu Qin, Hao Shi, Zhong-Yi Lu, and Shiwei Zhang",
+            year: "2019",
+            journal: "Physical Review B",
+            volume: "99(4), 045108 (2019)",
+            category: "prb",
+            abstract: "我们提出了一种有限温度、巨正则系综下的辅助场量子蒙特卡洛（AFQMC）方法，通过自洽约束控制符号问题。该方法在二维排斥哈伯德模型（1/8掺杂）中进行了系统基准测试，达到了低至T=1/80的温度。该方法在高温下精确，在低温下与零温约束路径AFQMC的结果一致，为热力学性质的计算提供了系统准确的解决方案。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.99.045108",
+                arxiv: "https://arxiv.org/pdf/1811.07290",
+                code: null
+            }
+        },
+        {
+            id: 106,
+            title: "&beta;-RhPb<sub>2</sub>, a topological superconductor candidate",
+            authors: "Jian-Feng Zhang, Peng-Jie Guo, Miao Gao, Kai Liu, and Zhong-Yi Lu",
+            year: "2019",
+            journal: "Physical Review B",
+            volume: "99(4), 045110 (2019)",
+            category: "prb",
+            abstract: "我们通过第一性原理计算预测&beta;-RhPb<sub>2</sub>是拓扑超导体候选材料。计算表明其在布里渊区Z点存在能带反转，拓扑不变量Z<sub>2</sub>非零，且具有穿过费米能级的拓扑表面态。同时，该材料动力学稳定，电子-声子耦合计算预测超导转变温度可达9.7 K，是值得实验验证的拓扑超导体。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.99.045110",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 107,
+            title: "A family of high-temperature ferromagnetic monolayers with locked spin-dichroism-mobility anisotropy: MnNX and CrCX (X=Cl, Br, I; C=S, Se, Te)",
+            authors: "Cong Wang, Xieyu Zhou, Linwei Zhou, Ninghua Tong, Zhong-Yi Lu, and Wei Ji",
+            year: "2019",
+            journal: "Science Bulletin",
+            volume: "64(5), 293-300 (2019)",
+            category: "sci-bull",
+            abstract: "我们理论预测了一系列具有高居里温度（T<sub>c</sub>：100-500 K）的二维铁磁半导体单层MnNX与CrCX。这些材料表现出独特的自旋锁定线性二向色性与载流子迁移率各向异性（约10<sup>2</sup>量级），为高性能自旋电子与光电器件提供了新材料平台。",
+            links: {
+                pdf: "https://www.sciencedirect.com/science/article/abs/pii/S2095927319301021",
+                arxiv: "https://arxiv.org/pdf/1807.11000",
+                code: null
+            }
+        },
+        {
+            id: 108,
+            title: "Stacking tunable interlayer magnetism in bilayer CrI<sub>3</sub>",
+            authors: "Peiheng Jiang, Cong Wang, Dachuan Chen, Zhicheng Zhong, Zhe Yuan, Zhong-Yi Lu, and Wei Ji",
+            year: "2019",
+            journal: "Physical Review B",
+            volume: "99(14), 144401 (2019)",
+            category: "prb",
+            abstract: "通过第一性原理计算，我们揭示了双层CrI<sub>3</sub>中层间磁耦合可通过堆垛方式有效调控。研究发现，导致反铁磁耦合的新堆垛构型（C2/m空间群）取代了此前认为的R3构型。层内与层间磁耦合分别由强、弱极限下主导的不同交换机制决定，为二维磁性材料的层间磁学调控提供了新范式。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.99.144401",
+                arxiv: "https://arxiv.org/pdf/1806.09274",
+                code: null
+            }
+        },
+        {
         "id": 109,
         "title": "Experimental observation of bulk nodal lines and electronic surface states in ZrB<sub>2</sub>",
         "authors": "Rui Lou, Pengjie Guo, Man Li, Qi Wang, Zhonghao Liu, Shanshan Sun, Chenghe Li, Xuchuan Wu, Zilu Wang, Zhe Sun, Dawei Shen, Yaobo Huang, Kai Liu, Zhong-Yi Lu, Hechang Lei, Hong Ding, Shancai Wang",
@@ -648,7 +1188,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "year": "2018",
         "journal": "Science Bulletin",
         "volume":  "63(14), 887 (2018)",
-        "category": "scibull",
+        "category": "sci-bull",
         "abstract": "我们基于第一性原理预测了melilite型硫氧化物Sr<sub>2</sub>MnGe<sub>2</sub>S<sub>6</sub>O通过空穴和电子掺杂可实现居里温度超过300K的高温铁磁半导体，为探索新型自旋电子学材料提供了有效途径。",
         "badges": [],
         "links": {
@@ -1120,7 +1660,1058 @@ document.addEventListener('DOMContentLoaded', function() {
             "arxiv":  "https://arxiv.org/pdf/1412.7360",
             "code": null
         }
-    }
+    },
+    {id: 145,
+            title: "Prediction of phonon-mediated high-temperature superconductivity in Li<sub>3</sub>B<sub>4</sub>C<sub>2</sub>",
+            authors: "Miao Gao, Zhong-Yi Lu, and Tao Xiang",
+            year: "2015",
+            journal: "Physical Review B",
+            volume: "91(4), 045132 (2015)",
+            category: "prb",
+            abstract: "该研究基于第一性原理，预测了层状材料Li<sub>3</sub>B<sub>4</sub>C<sub>2</sub>具有强电子–声子耦合并可能实现高于MgB<sub>2</sub>的超导转变温度，其超导性源于费米能级附近的两条&sigma;键带与层内键伸缩模的强耦合，且材料在动力学和形成能上均显示出可实验合成的稳定性。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.91.045132",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 146,
+            title: "First-principles study of electron-phonon coupling and superconductivity in compound Li<sub>2</sub>C<sub>2</sub>",
+            authors: "Miao Gao, Xin Kong, Zhong-Yi Lu, and Tao Xiang",
+            year: "2015",
+            journal: "Acta Physica Sinica",
+            volume: "64(21), 214701 (2015)",
+            category: "Acta Physica Sinica",
+            abstract: "该研究基于第一性原理揭示含一维锯齿碳链的高压相Cmcm-Li<sub>2</sub>C<sub>2</sub>具有由&pi;<sup>*</sup>带主导的金属性并呈现中等强度的电子-声子耦合，预测其在常压与 5 GPa 下分别可实现约 13.2 K 与 9.8 K 的声子介导超导性，若获实验验证其将成为首个一维碳链超导体且在锂碳化物体系中具有最高超导转变温度。",
+            links: {
+                pdf: "https://wulixb.iphy.ac.cn/en/article/doi/10.7498/aps.64.214701",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 147,
+            title: "Neutron Scattering Measurements of Spatially Anisotropic Magnetic Exchange Interactions in Semiconducting K<sub>0.85</sub>Fe<sub>1.54</sub>Se<sub>2</sub> (T<sub>N</sub>=280 K)",
+            authors: "Jun Zhao, Yao Shen, R. J. Birgeneau, Miao Gao, Zhong-Yi Lu, D. -H. Lee, X. Z. Lu, H. J. Xiang, D. L. Abernathy, and Y. Zhao",
+            year: "2014",
+            journal: "Physical Review Letters",
+            volume: "112(17), 177002 (2014)",
+            category: "prl",
+            abstract: "本工作通过中子散射研究半导体K<sub>0.85</sub>Fe<sub>1.54</sub>Se<sub>2</sub>的条纹反铁磁序的自旋激发，结果表明其自旋波谱可用具有高度各向异性面内耦合的有效海森堡哈密顿量精确描述，这暗示了铁基化合物的反铁磁性可能源于局部强关联效应而非弱耦合费米面嵌套。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.112.177002",
+                arxiv: "https://arxiv.org/pdf/1405.4737",
+                code: null
+            }
+        },
+        {
+            id: 148,
+            title: "Quantum Renormalization Groups Based on Natural Orbitals",
+            authors: "Rong-Qiang He and Zhong-Yi Lu",
+            year: "2014",
+            journal: "Physical Review B",
+            volume: "89(8), 085108 (2014)",
+            category: "prb",
+            abstract: "该研究在自然轨道框架下推广量子重整化群方法至一般轨道空间，并在四杂质簇模型中与精确对角化对比验证其有效性，同时提出显著提升计算效率的捷径，并讨论其对簇DMFT及多杂质/多轨道Kondo问题的潜在影响。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.89.085108",
+                arxiv: "https://arxiv.org/pdf/1306.3662",
+                code: null
+            }
+        },
+        {
+            id: 149,
+            title: "Electronic transport of a large scale system studied by renormalized transfer matrix method: application to armchair graphene nanoribbons between quantum wires",
+            authors: "Miao Gao, Gui-Ping Zhang, Zhong-Yi Lu",
+            year: "2014",
+            journal: "Computer Physics Communications",
+            volume: "185(3), 856 (2014)",
+            category: "cpc",
+            abstract: "该研究提出重整化传输矩阵方法以克服传统 TMM 在大尺度二维体系中的数值不稳定问题，将计算复杂度降至O(W<sup>3</sup>)，并成功用于含多达10<sup>6</sup>个碳原子的扶手椅石墨烯纳米带，揭示其纯态的弹道传输行为及长程相关无序诱导的金属–绝缘体转变，并表明该方法可推广至更一般的大尺度结构。",
+            links: {
+                pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0010465513004189",
+                arxiv: "https://arxiv.org/pdf/1305.6682",
+                code: null
+            }
+        },
+        {
+            id: 150,
+            title: "Layered pnictide-oxide Na<sub>2</sub>Ti<sub>2</sub>Pn<sub>2</sub>O (Pn=As, Sb): a paradigm for spin density waves",
+            authors: "Xun-Wang Yan and Zhong-Yi Lu",
+            year: "2013",
+            journal: "Journal of Physics: Condensed Matter",
+            volume: "25(36), 365501 (2013)",
+            category: "Journal of Physics: Condensed Matter",
+            abstract: "该研究通过第一性原理揭示 Na<sub>2</sub>Ti<sub>2</sub>Pn<sub>2</sub>O（Pn = As, Sb）兼具铜氧化物与铁基材料结构特征，并分别呈现阻塞式棋盘反铁磁半导体（As）与双条纹反铁磁半金属（Sb）基态，均由强费米面嵌套驱动的自旋密度波形成，其中 As 化合物还伴随与实验一致的四聚体结构畸变且保持空间群对称性。",
+            links: {
+                pdf: "https://iopscience.iop.org/article/10.1088/0953-8984/25/36/365501",
+                arxiv: "https://arxiv.org/pdf/1210.3481v1",
+                code: null
+            }
+        },
+        {
+            id: 151,
+            title: "Influence of spin-phonon coupling on antiferromagnetic spin fluctuations in FeSe under pressure: First-principles calculations with van der Waals corrections",
+            authors: "Qian-Qian Ye, Kai Liu, and Zhong-Yi Lu",
+            year: "2013",
+            journal: "Physical Review B",
+            volume: "88(20), 205130 (2013)",
+            category: "prb",
+            abstract: "该研究表明，在压力下 &beta;-FeSe 的 Fe-3d 能带与光学声子频率均发生显著变化，其中与 Se 高度相关的 A<sub>1</sub>g 模式在 5–6 GPa 出现频率突变，并在同一区间导致最强的局域磁矩零点振动波动，与实验中 T<sub>c</sub> 的最高压力范围一致，表明自旋-声子耦合在铁基超导机制中不可忽略。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.88.205130",
+                arxiv: "https://arxiv.org/pdf/1309.2492",
+                code: null
+            }
+        },
+        {
+            id: 152,
+            title: "Spin Wave Excitations in AFe<sub>1.5</sub>Se<sub>2</sub> (A=K, Tl): Analytical Study",
+            authors: "Miao Gao, Xun-Wang Yan, and Zhong-Yi Lu",
+            year: "2013",
+            journal: "Journal of Physics: Condensed Matter",
+            volume: "25(3), 036004 (2013)",
+            category: "Journal of Physics: Condensed Matter",
+            abstract: "该研究解析了 AFe<sub>1.5</sub>Se<sub>2</sub>(A = K, Tl)在 4&times;2 共线反铁磁序中的自旋波谱，得到一条声学支与两条简并光学支，并基于第一性原理提取交换参数、量化量子涨落与其对自旋各向异性的敏感性，并计算自旋动力学结构因子以联系中子散射实验。",
+            links: {
+                pdf: "https://iopscience.iop.org/article/10.1088/0953-8984/25/3/036004",
+                arxiv: "https://arxiv.org/pdf/1210.2668",
+                code: null
+            }
+        },
+        {
+            id: 153,
+            title: "Atomic and electronic structures of FeSe monolayer and bilayer thin films on SrTiO<sub>3<>/sub (001): a first-principles study",
+            authors: "Kai Liu, Zhong-Yi Lu, and Tao Xiang",
+            year: "2012",
+            journal: "Physical Review B",
+            volume: "85(23), 235123 (2012)",
+            category: "prb",
+            abstract: "第一性原理计算研究表明，在 SrTiO<sub>3<>/sub (001) 衬底上的 FeSe 单层和双层薄膜表现为具有共线反铁磁序的轻微掺杂半导体，其费米面主要由 Fe-3d 轨道贡献，且 FeSe 的能带位置会随衬底（例如电子掺杂的 TiO<sub>2</sub> 终止的 SrTiO<sub>3</sub>）的不同而变化。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.85.235123",
+                arxiv: "https://arxiv.org/pdf/1202.0538",
+                code: null
+            }
+        },
+        {
+            id: 154,
+            title: "Cluster dynamical mean field theory of quantum phases on a honeycomb lattice",
+            authors: "Rong-Qiang He and Zhong-Yi Lu",
+            year: "2012",
+            journal: "Physical Review B",
+            volume: "86(4), 045105 (2012)",
+            category: "prb",
+            abstract: "该工作基于蜂窝状晶格半满 Hubbard 模型的团簇动力学平均场理论计算发现，该体系在 Hubbard 相互作用 U 从 0 到 U<sub>c</sub>（在 4.6t 和 4.85t 之间）的基态存在一个自旋液体相，且在 U<sub>c</sub> 处向 N&eacute;el 反铁磁 Mott 绝缘相的转变是一级量子相变，其中电荷波动对稳定自旋液体相起着关键作用。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.86.045105",
+                arxiv: "https://arxiv.org/pdf/1112.5124",
+                code: null
+            }
+        },
+        {
+            id: 155,
+            title: "Exact Results for Intrinsic Electronic Transport in Graphene",
+            authors: "Shi-Jie Hu, Wei Du, Gui-Ping Zhang, Miao Gao, Zhong-Yi Lu, and Xiao-Qun Wang",
+            year: "2012",
+            journal: "Chinese Physics Letters",
+            volume: "29(5), 057201 (2012)",
+            category: "cpl",
+            abstract: "该工作使用传输矩阵方法得到了连接到两个金属电极的石墨烯片电子输运特性的精确结果，发现在宽长比很大的极限下，armchair型石墨烯的狄拉克点电导率为 2e<sup>2</sup>/(&radic;<span style='text-decoration: overline'>3</span>h)，次泊松分布 Fano 因子约为 0.346，而zigzag型石墨烯的电导率为 0 且 Fano 因子为 1，这些结果反映了石墨烯拓扑结构和电极电子结构的关键影响。",
+            links: {
+                pdf: "https://iopscience.iop.org/article/10.1088/0256-307X/29/5/057201",
+                arxiv: "https://arxiv.org/pdf/1111.4862",
+                code: null
+            }
+        },
+        {
+            id: 156,
+            title: "First-principles study of Fe-based superconductors: A comparison of screened hybrid functional with gradient corrected functional",
+            authors: "Kai Liu and Zhong-Yi Lu",
+            year: "2011",
+            journal: "Computational Materials Science",
+            volume: "55(1), 284 (2011)",
+            category: "cms",
+            abstract: "本研究利用第一性原理杂化泛函计算方法，成功修正了传统LDA和GGA方法在研究BaFe<sub>2</sub>As<sub>2</sub>和&beta;-FeSe这两种铁基超导体材料时出现的半金属态和磁矩低估问题，揭示了强关联体系中交换作用的关键作用。",
+            links: {
+                pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0927025611006367",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 157,
+            title: "Pressure- and temperature-induced structural phase transitions of CaFe<sub>2</sub>As<sub>2</sub> and BaFe<sub>2</sub>As<sub>2</sub> studied in the Hund's rule correlation picture",
+            authors: "Wei Ji, Xun-Wang Yan, and Zhong-Yi Lu",
+            year: "2011",
+            journal: "Physical Review B",
+            volume: "83(13), 132504 (2011)",
+            category: "prb",
+            abstract: "本研究基于洪特规则关联图像，成功解释了CaFe<sub>2</sub>As<sub>2</sub>中观察到的特殊塌缩四方相变，并预测了BaFe<sub>2</sub>As<sub>2</sub>在不同压力下的相图，揭示了这类化合物中晶体结构、磁性和电子结构之间的复杂关联。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.83.132504",
+                arxiv: "https://arxiv.org/pdf/1007.4766",
+                code: null
+            }
+        },
+        {
+            id: 158,
+            title: "Pnicogen-bridged antiferromagnetic superexchange interactions in iron pnictides",
+            authors: "Zhong-Yi Lu, Fengjie Ma, and Tao Xiang",
+            year: "2011",
+            journal: "Journal of Physics and Chemistry of Solids",
+            volume: "72(5), 319 (2011)",
+            category: "Journal of Physics and Chemistry of Solids",
+            abstract: "本文通过精细的第一性原理电子结构计算，不仅阐述了铁基超导体LaFeAsO和$BaFe<sub>2</sub>As<sub>2</sub>的预测磁性结构，更深入讨论了铁砷化物中由砷桥联的最近邻铁原子间反铁磁超交换作用所决定的磁性起源，并探讨了它与超导性之间的关联。",
+            links: {
+                pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0022369710003690",
+                arxiv: "https://arxiv.org/pdf/1009.0726",
+                code: null
+            }
+        },
+        {
+            id: 159,
+            title: "Superconductivity mediated by the antiferromagnetic spin-wave in chalcogenide iron-base superconductors",
+            authors: "GuangMing Zhang, Zhong-Yi Lu, and Tao Xiang",
+            year: "2011",
+            journal: "Physical Review B",
+            volume: "84(5), 052502 (2011)",
+            category: "prb",
+            abstract: "本研究提出K<sub>0.8+x</sub>Fe<sub>1.6+y</sub>Se<sub>2</sub>等铁基硒化物超导体的基态由掺杂反铁磁半导体模型哈密顿量描述，并证明超导性是由相干自旋波激发介导的有效配对势驱动的，从而自然解释了实验中观察到的超导与反铁磁长程有序的共存现象。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.052502",
+                arxiv: "https://arxiv.org/pdf/1102.4575",
+                code: null
+            }
+        },
+        {
+            id: 160,
+            title: "Electronic structures and magnetic orders of Fe-vacancies ordered ternary iron selenides TlFe<sub>1.5</sub>Se<sub>2</sub> and AFe<sub>1.5</sub>Se<sub>2</sub> (A=K, Rb, or Cs)",
+            authors: "Xun-Wang Yan, Miao Gao, Zhong-Yi Lu, and Tao Xiang",
+            year: "2011",
+            journal: "Physical Review Letters",
+            volume: "106(8), 087005 (2011)",
+            category: "prl",
+            abstract: "通过第一性原理电子结构计算，本文发现TlFe<sub>1.5</sub>Se<sub>2</sub>基态为具有94 meV能隙的准二维共线反铁磁半导体，且其反铁磁序由硒桥联的超交换作用驱动；同时预测AFe<sub>1.5</sub>Se<sub>2</sub>（A = K, Rb, 或 Cs）也为反铁磁半导体，但因与零能隙或半金属态近简并而可能展现出复杂的物理特性和相图。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.106.087005",
+                arxiv: "https://arxiv.org/pdf/1012.6015",
+                code: null
+            }
+        },
+        {
+            id: 161,
+            title: "Ternary iron selenide K<sub>0.8</sub>Fe<sub>1.6</sub>Se<sub>2</sub> is an antiferromagnetic semiconductor",
+            authors: "Xun-Wang Yan, Miao Gao, Zhong-Yi Lu, and Tao Xiang",
+            year: "2011",
+            journal: "Physical Review B",
+            volume: "83(23), 233205 (2011)",
+            category: "prb",
+            abstract: "这项研究利用第一性原理计算，确定了 K<sub>0.8</sub>Fe<sub>1.6</sub>Se<sub>2</sub> 的基态是由化学键驱动四聚体晶格畸变形成的准二维受阻棋盘状反铁磁半导体，并提出应将其（而非 KFe<sub>2</sub>Se<sub>2</sub>）视为超导电性出现的真正母体化合物。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.83.233205",
+                arxiv: "https://arxiv.org/pdf/1102.2215",
+                code: null
+            }
+        },
+        {
+            id: 162,
+            title: "Electronic and magnetic structures of ternary iron selenides AFe<sub>2</sub>Se<sub>2</sub> (A=K, Cs, or Tl)",
+            authors: "Xun-Wang Yan, Miao Gao, Zhong-Yi Lu, Tao Xiang",
+            year: "2011",
+            journal: "Physical Review B",
+            volume: "84(5), 054502 (2011)",
+            category: "prb",
+            abstract: "本研究利用第一性原理计算揭示了三元铁硒化物 AFe<sub>2</sub>Se<sub>2</sub>（A = Cs、Rb、K 或 Tl）的基态是由 Se 4p 轨道介导的超交换相互作用导致的双共线反铁磁序，并确定了其在不同磁性状态下的电子结构及物理性质。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.054502",
+                arxiv: "https://arxiv.org/pdf/1012.5536",
+                code: null
+            }
+        },
+        {
+            id: 163,
+            title: "The Electron Pairing of K<sub>x</sub>Fe<sub>2-y</sub>Se<sub>2</sub>",
+            authors: "Fa Wang, Fan Yang, Miao Gao, Zhong-Yi Lu, Tao Xiang, and Dung-Hai Lee",
+            year: "2011",
+            journal: "Europhysics Letters",
+            volume: "93(5), 57003 (2011)",
+            category: "epl",
+            abstract: "本研究利用两阶段功能重整化群方法研究了 K<sub>x</sub>Fe<sub>2-y</sub>Se<sub>2</sub> 的配对不稳定性，结果表明尽管缺乏空穴费米面，深埋的空穴带仍起到重要作用，导致该体系的低能有效相互作用可用以最近邻反铁磁相互作用 J<sub>1</sub> 为主的 J<sub>1</sub>-J<sub>2</sub> 模型描述，且其主导配对对称性为无节点的 d<sub>x<sup>2</sup>-y<sup>2</sup></sub> 波。",
+            links: {
+                pdf: "https://iopscience.iop.org/article/10.1209/0295-5075/93/57003",
+                arxiv: "https://arxiv.org/pdf/1101.4390",
+                code: null
+            }
+        },
+        {
+            id: 164,
+            title: "Pressure-induced isostructural phase transition and correlation of FeAs coordination with the superconducting properties of 111-type Na<sub>1-x</sub>FeAs",
+            authors: "Qingqing Liu, Xiaohui Yu, Xiancheng Wang, Zheng Deng, Yuxi Lv, Jinlong Zhu, Sijia Zhang, Haozhe Liu, Wenge Yang, Lin Wang, Hokwang Mao, Guoyin Shen, Zhong-Yi Lu, Yang Ren, Zhiqiang Chen, Zhijun Lin, Yusheng Zhao, Changqing Jin",
+            year: "2011",
+            journal: "Journal of the American Chemical Society",
+            volume: "133(20), 7892 (2011)",
+            category: "jacs",
+            abstract: "本研究利用原位高压同步辐射X射线衍射技术揭示了111型 Na<sub>1–x</sub>FeAs 体系中存在压力诱导的四方到四方等结构相变，并发现超导转变温度 T<sub>c</sub> 随压力的非单调变化与 As 阴离子高度及 As–Fe–As 键角的结构异常密切相关。",
+            links: {
+                pdf: "https://pubs.acs.org/doi/10.1021/ja2009949",
+                arxiv: "https://arxiv.org/pdf/1106.5640",
+                code: null
+            }
+        },
+        {
+            id: 165,
+            title: "Surface structures of ternary iron arsenides AFe<sub>2</sub>As<sub>2</sub> (A=Ba, Sr, or Ca)",
+            authors: "Miao Gao, Fengjie Ma, Zhong-Yi Lu, and Tao Xiang",
+            year: "2010",
+            journal: "Physical Review B",
+            volume: "81(19), 193409 (2010)",
+            category: "prb",
+            abstract: "本研究通过第一性原理计算发现 AFe<sub>2</sub>As<sub>2</sub>(001) 解理面在能量上最倾向于形成具有 &radic;<span style='text-decoration: overline'>2</span>&times;&radic;<span style='text-decoration: overline'>2</span> 或 1&times;2 重构序的 A 端面，并阐明了 BaFe<sub>2</sub>As<sub>2</sub> 表面原子结构与 STM 图像之间的对应关系，从而解决了实验观测中的争议。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.81.193409",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 166,
+            title: "Electronic structures of ternary iron arsenides AFe<sub>2</sub>As<sub>2</sub> (A=Ba, Ca, or Sr)",
+            authors: "Fengjie Ma, Zhong-Yi Lu, and Tao Xiang",
+            year: "2010",
+            journal: "Frontiers of Physics in China",
+            volume: "5(2), 150 (2010)",
+            category: "Frontiers of Physics in China",
+            abstract: "本研究利用第一性原理密度泛函理论研究了三元铁砷化物 AFe<sub>2</sub>As<sub>2</sub>（A = Ba、Ca 或 Sr），发现由 As 4p 轨道介导的超交换相互作用导致其基态呈共线反铁磁序，且压力能显著抑制磁矩，最终提出可用 t-J<sub>H</sub>-J<sub>1</sub>-J<sub>2</sub> 模型描述其低能动力学。",
+            links: {
+                pdf: "https://link.springer.com/article/10.1007/s11467-009-0076-9",
+                arxiv: "https://arxiv.org/pdf/0806.3526",
+                code: null
+            }
+        },
+        {
+            id: 167,
+            title: "Surface and bulk electronic structures of LaFeAsO studied by angle-resolved photoemission spectroscopy",
+            authors: "L. X. Yang, B. P. Xie, Y. Zhang, C. He, Q. Q. Ge, X. F. Wang, X. H. Chen, M. Arita, J. Jiang, K. Shimada, M. Taniguchi, I. Vobornik, G. Rossi, J. P. Hu, D. H. Lu, Z. X. Shen, Zhong-Yi Lu, and D. L. Feng",
+            year: "2010",
+            journal: "Physical Review B",
+            volume: "82(10), 104519 (2010)",
+            category: "prb",
+            abstract: "本研究利用角分辨光电子能谱分析了铁砷超导母体 LaFeAsO 的电子结构，通过区分体态与表面态贡献，揭示了体能带在自旋密度波转变处约 25 meV 的位移及其对结构相变的关键作用，并观测到低温下显著的准粒子峰及表面能带中可能源于电子-声子相互作用的扭结结构。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.82.104519",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 168,
+            title: "Electronic structure of Fe<sub>1.04</sub>(Te<sub>0.66</sub>Se<sub>0.34</sub>)",
+            authors: "Fei Chen, Bo Zhou, Yan Zhang, Jia Wei, Hong-Wei Ou, Jia-Feng Zhao, Cheng He, Qing-Qin Ge, Masashi Arita, Kenya Shimada, Hirofumi Namatame, Masaki Taniguchi, Zhong-Yi Lu, Jiangping Hu, Xiao-Yu Cui, and D. L. Feng",
+            year: "2010",
+            journal: "Physical Review B",
+            volume: "81(1), 014526 (2010)",
+            category: "prb",
+            abstract: "本研究利用高分辨率角分辨光电子能谱结合密度泛函理论计算，揭示了铁硫族超导体 Fe<sub>1.04</sub>(Te<sub>0.66</sub>Se<sub>0.34</sub>) 的电子结构，发现尽管存在约三倍的能带重整化，其能带对称性及布里渊区中心的三个空穴型费米面（含一椭圆形费米面）特征与理论预测定性一致，且未观测到自旋密度波迹象。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.81.014526",
+                arxiv: "https://arxiv.org/pdf/1001.0855",
+                code: null
+            }
+        },
+        {
+            id: 169,
+            title: "Microstructure and superconductivity of Ir-doped BaFe<sub>2</sub>As<sub>2</sub> superconductor",
+            authors: "X. L. Wang, H. Y. Shi, X.W. Yan, Y. C. Yuan, Zhong-Yi Lu, X. Q. Wang, T.-S. Zhao",
+            year: "2010",
+            journal: "Applied Physics Letters",
+            volume: "96(1), 012507 (2010)",
+            category: "apl",
+            abstract: "本研究通过多种表征手段研究了 Ba(Fe<sub>1-x</sub>Ir<sub>x</sub>)<sub>2</sub>As<sub>2</sub> 多晶样品，发现在 x = 0.10 时样品具有 T<sub>C</sub> 约为 28 K 的体超导电性（为目前已报道电子掺杂 AFe<sub>2</sub>As<sub>2</sub> 型超导体中最高值）以及高达 65 T 的上临界场 H<sub>c2</sub>(0)。",
+            links: {
+                pdf: "https://pubs.aip.org/aip/apl/article-abstract/96/1/012507/118883/Microstructure-and-superconductivity-of-Ir-doped",
+                arxiv: "https://arxiv.org/pdf/0912.4113",
+                code: null
+            }
+        },
+        {
+            id: 170,
+            title: "Raman phonons of &alpha;-FeTe and Fe<sub>1.03</sub>Se<sub>0.3</sub>Te<sub>0.7</sub> single crystals",
+            authors: "Tian-Long Xia, D. Hou, S. C. Zhao, A. M. Zhang, G. F. Chen, J. L. Luo, N. L. Wang, J. H. Wei, Zhong-Yi Lu, Q. M. Zhang",
+            year: "2009",
+            journal: "Physical Review B",
+            volume: "79(14), 140510(R) (2009)",
+            category: "prb",
+            abstract: "本研究通过测量单晶的偏振拉曼散射光谱并结合第一性原理计算，发现母体 &alpha;-FeTe 呈现清晰的 Te 原子 A<sub>1g</sub> 和 Fe 原子 B<sub>1g</sub> 模，而超导体 Fe<sub>1.03</sub>Se<sub>0.3</sub>Te<sub>0.7</sub> 仅显示软化的 Fe B<sub>1g</sub> 模，且虽然两者均未显现电子-声子耦合特征，但超导体在 300 cm<sup>-1</sup> 以下展现出可能源于电子贡献的微弱增强。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.79.140510",
+                arxiv: "https://arxiv.org/pdf/0811.2350",
+                code: null
+            }
+        },
+        {
+            id: 171,
+            title: "First-Principles Calculations of the Electronic Structure of Tetragonal &alpha;-FeTe and &alpha;-FeSe Crystals: Evidence for a Bicollinear Antiferromagnetic Order",
+            authors: "Fengjie Ma, Wei Ji, Jiangping Hu, Zhong-Yi Lu, and Tao Xiang",
+            year: "2009",
+            journal: "Physical Review Letters",
+            volume: "102(17), 177003 (2009)",
+            category: "prl",
+            abstract: "本研究通过第一性原理计算发现，PbO 型四方相 &alpha;-FeTe 的基态是由 Te 5p 能带介导的最近邻、次近邻及次次近邻超交换相互作用竞争导致的双共线反铁磁序，而 &alpha;-FeSe 则呈现与 LaFeAsO 及 BaFe<sub>2</sub>As<sub>2</sub> 类似的共线反铁磁序，从而为理解铁基超导体的磁有序起源提供了新视角。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.102.177003",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 172,
+            title: "Universal linear-temperature dependence of static magnetic susceptibility in iron pnictides",
+            authors: "G. M. Zhang, Y. H. Su, Zhong-Yi Lu, Z. Y. Weng, D. H. Lee and T. Xiang",
+            year: "2009",
+            journal: "Europhysics Letters",
+            volume: "86(3), 37006 (2009)",
+            category: "epl",
+            abstract: "本研究针对铁磷族化合物非磁性正常态中均匀磁化率表现出的普适线性温度依赖行为，提出该现象源于存在一个宽反铁磁涨落窗口，在此窗口内局域自旋密度波关联已存在但尚未建立全局方向序。",
+            links: {
+                pdf: "https://iopscience.iop.org/article/10.1209/0295-5075/86/37006",
+                arxiv: "https://arxiv.org/pdf/0809.3874",
+                code: null
+            }
+        },
+        {
+            id: 173,
+            title: "Electronic Structure and Unusual Exchange Splitting in the Spin-Density-Wave State of the BaFe<sub>2</sub>As<sub>2</sub> Parent Compound of Iron-Based Superconductors",
+            authors: "L. X. Yang, Y. Zhang, H. W. Ou, J. F. Zhao, D. W. Shen, B. Zhou, J. Wei, F. Chen, M. Xu, C. He, Y. Chen, Z. D. Wang, X. F. Wang, T. Wu, G. Wu, X. H. Chen, M. Arita, K. Shimada, M. Taniguchi, Zhong-Yi Lu, T. Xiang, and D. L. Feng",
+            year: "2009",
+            journal: "Physical Review Letters",
+            volume: "102(10), 107002 (2009)",
+            category: "prl",
+            abstract: "本研究报道了对铁基超导体母体化合物 BaFe<sub>2</sub>As<sub>2</sub> 电子结构的首次直接测量，表明其自旋密度波能量的降低主要源于能带结构的奇异交换分裂，为后续研究奠定了基础。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.102.107002",
+                arxiv: "https://arxiv.org/pdf/0806.2627",
+                code: null
+            }
+        },
+        {
+            id: 174,
+            title: "&pi;-Junction to Probe Antiphase s-Wave Pairing in Iron Pnictide Superconductors",
+            authors: "Wei-Qiang Chen, Fengjie Ma, Zhong-Yi Lu, and Fu-Chun Zhang",
+            year: "2009",
+            journal: "Physical Review Letters",
+            volume: "103(20), 207001 (2009)",
+            category: "prl",
+            abstract: "本研究通过分析具有反相 <i>s</i> 波配对的 FeAs 基超导体与常规 <i>s</i> 波超导体构成的约瑟夫森结，发现平面结的平移不变性显著增强了电子费米囊对临界电流的贡献，且在宽掺杂区内平面结与点接触结具有相反相位，从而提出利用 &pi; 相位三结环来探测这种反相配对特性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.103.207001",
+                arxiv: "https://arxiv.org/pdf/0906.0169",
+                code: null
+            }
+        },
+        {
+            id: 175,
+            title: "Raman spectra in iron-based quaternary CeO<sub>1−x</sub>F<sub>x</sub>FeAs and LaO<sub>1−x</sub>F<sub>x</sub>FeAs",
+            authors: "S. C. Zhao, D. Hou, Y. Wu, T. L. Xia, A. M. Zhang, G. F. Chen, J. L. Luo, N. L. Wang, J. H. Wei, Zhong-Yi Lu, and Q. M. Zhang",
+            year: "2009",
+            journal: "Superconductor Science and Technology",
+            volume: "22(1), 015017 (2009)",
+            category: "Superconductor Science and Technology",
+            abstract: "本研究通过对铁基四元化合物 CeO<sub>1-x</sub>F<sub>x</sub>FeAs 和 LaO<sub>1-x</sub>F<sub>x</sub>FeAs 进行拉曼光谱测量及第一性原理计算，指认了声子模式，发现 F 掺杂主要抑制 La 系中与 La 相关的 E<sub>g</sub> 和 A<sub>1g</sub> 模，而在 Ce 系中观测到位于 450 cm<sup>-1</sup> 附近的尖锐氧 E<sub>g</sub> 模，且 500 cm<sup>-1</sup> 以上的高能特征可能源于多声子过程、磁涨落或 d 轨道带间跃迁。",
+            links: {
+                pdf: "https://iopscience.iop.org/article/10.1088/0953-2048/22/1/015017",
+                arxiv: "https://arxiv.org/pdf/0806.0885",
+                code: null
+            }
+        },
+        {
+            id: 176,
+            title: "Iron-based layered compound LaFeAsO is an antiferromagnetic semimetal",
+            authors: "Fengjie Ma and Zhong-Yi Lu",
+            year: "2008",
+            journal: "Physical Review B",
+            volume: "78(3), 033111 (2008)",
+            category: "prb",
+            abstract: "本研究表明铁基超导母体 LaFeAsO 是一种准二维反铁磁半金属，其源于费米面嵌套的公度自旋密度波导致 Fe 原子具有 2.3 &mu;<sub>B</sub> 的磁矩，且 F 掺杂后的超导电性被认为是由自旋涨落介导的新机制。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.78.033111",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 177,
+            title: "Arsenic-bridged antiferromagnetic superexchange interactions in LaFeAsO",
+            authors: "Fengjie Ma, Zhong-Yi Lu, and Tao Xiang",
+            year: "2008",
+            journal: "Physical Review B",
+            volume: "78(22), 224517 (2008)",
+            category: "prb",
+            abstract: "本研究通过第一性原理计算发现 LaFeAsO 中每个 Fe 离子具有约 2.6 &mu;<sub>B</sub> 的大磁矩，且由 As 原子介导的强最近邻和次近邻超交换相互作用导致了基态的共线反铁磁序及磁驱动的结构相变，进而揭示了反铁磁涨落在该类材料超导配对机制中的重要作用。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.78.224517",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 178,
+            title: "Publisher's Note: Arsenic-bridged antiferromagnetic superexchange interactions in LaFeAsO [Phys. Rev. B 78, 224517 (2008)]",
+            authors: "Fengjie Ma, Zhong-Yi Lu, and Tao Xiang",
+            year: "2009",
+            journal: "Physical Review B",
+            volume: "79(1), 019901 (2009)",
+            category: "prb",
+            abstract: "本文于 2008 年 12 月 18 日在线发表时图 6 和图 7 存在错误，随后于 12 月 30 日完成更正，且印刷版本中的图片均正确无误。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.79.019901",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 179,
+            title: "Multichannel interaction mechanism in a molecule-metal interface",
+            authors: "Wei Ji, Zhong-Yi Lu, and Hong-Jun Gao",
+            year: "2008",
+            journal: "Physical Review B",
+            volume: "77(11), 113406 (2008)",
+            category: "prb",
+            abstract: "本研究利用第一性原理密度泛函理论计算揭示了 PTCDA 与 Ag(111) 界面特征为多通道分子轨道相互作用，其中通过占据电子态的相互作用主要位于 PTCDA 边缘，而通过未占据态的相互作用则位于中心，从而为解释相关实验现象提供了统一图像并探讨了受限二维类自由电子界面态。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.77.113406",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 180,
+            title: "Electron core-hole interaction and its induced ionic structural relaxation in molecular systems under x-ray irradiation",
+            authors: "Wei Ji, Zhong-Yi Lu, and Hongjun Gao",
+            year: "2006",
+            journal: "Physical Review Letters",
+            volume: "97(24), 246101 (2006)",
+            category: "prl",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+
+        // The following are repeated entries for testing purposes
+        {
+            id: 181,
+            title: "First-principles theory of quantum well resonance in double barrier magnetic tunnel junctions",
+            authors: "Yan Wang, Zhong-Yi Lu, X.-G. Zhang, and X.-F. Han",
+            year: "2006",
+            journal: "Physical Review Letters",
+            volume: "97(8), 087210 (2006)",
+            category: "prl",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 182,
+            title: "First-principles theory of tunneling currents in metal-oxide-semiconductor structures",
+            authors: "X.-G. Zhang, Zhong-Yi Lu, and S. T. Pantelides",
+            year: "2006",
+            journal: "Applied Physics Letters",
+            volume: "89(3), 032112 (2006)",
+            category: "apl",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 183,
+            title: "Spin-dependent resonant tunneling through quantum-well states in magnetic metallic thin films",
+            authors: "Zhong-Yi Lu, X.G. Zhang, and S. Pantelides",
+            year: "2005",
+            journal: "Physical Review Letters",
+            volume: "94(20), 207210 (2005)",
+            category: "prl",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 184,
+            title: "A first-principles study of Group IV dimer chains on Si(100)",
+            authors: "T. L. Chan, C. Z. Wang, Zhong-Yi Lu, and K.M. Ho",
+            year: "2005",
+            journal: "Physical Review B",
+            volume: "72(4), 045405 (2005)",
+            category: "prb",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 185,
+            title: "First-principles studies of structures and stabilities of Pb/Si(111)",
+            authors: "T. L. Chan, C. Z. Wang, M. Hupalo, M. C. Tringides, Zhong-Yi Lu, and K. M. Ho",
+            year: "2003",
+            journal: "Physical Review B",
+            volume: "68(4), 045410 (2003)",
+            category: "prb",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.68.045410",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 186,
+            title: "Mixed PbSi dimer chains on Si(100): a first-principles study",
+            authors: "T. L. Chan, C. Z. Wang, Zhong-Yi Lu, and K. M. Ho",
+            year: "2003",
+            journal: "Surface Science",
+            volume: "542(3), L649 (2003)",
+            category: "surf. sci.",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 187,
+            title: "Structure, properties, and dynamics of oxygen vacancies in amorphous SiO<sub>2</sub>",
+            authors: "Zhong-Yi Lu, C. J. Nicklaw, D. M. Fleetwood, R. D. Schrimpf, and S. T. Pantelides",
+            year: "2002",
+            journal: "Physical Review Letters",
+            volume: "89(28), 285505 (2002)",
+            category: "prl",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.89.285505",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 188,
+            title: "Unified model of hole trapping, 1/f noise, and thermally stimulated current in MOS devices",
+            authors: "D. M. Fleetwood, H. D. Xiong, Zhong-Yi Lu, C. J. Nicklaw, J. A. Felix, R. D. Schrimpf, and S. T. Pantelides",
+            year: "2002",
+            journal: "IEEE Transactions on Nuclear Science",
+            volume: "49(6), 2674 (2002)",
+            category: "IEEE Transactions on Nuclear Science",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 189,
+            title: "Mixed SiGe ad-dimer on Si(001):diffusion triggers intermixing",
+            authors: "Zhong-Yi Lu, C. Z. Wang, and K.M. Ho",
+            year: "2002",
+            journal: "Surface Science",
+            volume: "506(3), L282 (2002)",
+            category: "surf. sci.",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 190,
+            title: "The structure, properties, and dynamics of oxygen vacancies in amorphous SiO<sub>2</sub>",
+            authors: "C. J. Nicklaw, Zhong-Yi Lu, D. M. Fleetwood, R. D. Schrimpf, and S. T. Pantelides",
+            year: "2002",
+            journal: "IEEE Transactions on Nuclear Science",
+            volume: "49(6), 2667 (2002)",
+            category: "IEEE Transactions on Nuclear Science",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 191,
+            title: "The anisotropic free energy of the solid-liquid phase boundary in Al",
+            authors: "J. R. Morris, Zhong-Yi Lu, Y. Y. Ye, and K.M. Ho",
+            year: "2002",
+            journal: "Interface Science",
+            volume: "10(2-3), 143 (2002)",
+            category: "Interface Science",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 192,
+            title: "Dimer-flipping-assisted diffusion on a Si(001) surface",
+            authors: "J. Zi, B. J. Min, Zhong-Yi Lu, C. Z. Wang, and K. M. Ho",
+            year: "2000",
+            journal: "Applied Physics Letters",
+            volume: "77(25), 4184 (2000)",
+            category: "apl",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 193,
+            title: "Unique Dynamic Appearance of a Ge-Si Ad-Dimer on Si(001)",
+            authors: "Zhong-Yi Lu, Feng Liu, C. Z. Wang, X.R. Qin, B. S. Swartzentruber, M. G. Lagally, and K.M. Ho",
+            year: "2000",
+            journal: "Physical Review Letters",
+            volume: "85(26), 5603 (2000)",
+            category: "prl",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.85.5603",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 194,
+            title: "Correlated piecewise diffusion of a Ge addimer on Si(001) surface",
+            authors: "Zhong-Yi Lu, C. Z. Wang, and K. M. Ho",
+            year: "2000",
+            journal: "Physical Review B",
+            volume: "62(12), 8104 (2000)",
+            category: "prb",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.62.8104",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 195,
+            title: "Structures and dynamical properties of C-n, Si-n, Ge-n, and Sn-n clusters with n up to 13",
+            authors: "Zhong-Yi Lu, C. Z. Wang, and K. M. Ho",
+            year: "2000",
+            journal: "Physical Review B",
+            volume: "61(3), 2329 (2000)",
+            category: "prb",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.61.2329",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 196,
+            title: "Addimer diffusion along the trough between dimer rows on Si(001)",
+            authors: "G. D. Lee, C. Z. Wang, Zhong-Yi Lu, and K. M. Ho",
+            year: "1999",
+            journal: "Surface Science",
+            volume: "426(2), L427 (1999)",
+            category: "surf. sci.",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 197,
+            title: "Addimer Diffusion on the Si(100) Surface",
+            authors: "G. D. Lee, C. Z. Wang, Zhong-Yi Lu, and K. M. Ho",
+            year: "1999",
+            journal: "Surface Review and Letters",
+            volume: "6(6), 1015 (1999)",
+            category: "Surface Review and Letters",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 198,
+            title: "Structures of Germanium Clusters: Where the Growth Patterns of Silicon and Germanium Clusters Diverge",
+            authors: "A. A. Shvartsburg, B. Liu, Zhong-Yi Lu, C. Z. Wang, M. F. Jarrold, and K. M. Ho",
+            year: "1999",
+            journal: "Physical Review Letters",
+            volume: "83(11), 2167 (1999)",
+            category: "prl",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.83.2167",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 199,
+            title: "Addimer diffusions on Si(001) surface",
+            authors: "G. D. Lee, C. Z. Wang, Zhong-Yi Lu, and K. M. Ho",
+            year: "1999",
+            journal: "Journal of Korean Physical Society",
+            volume: "35(1), S27 (1999)",
+            category: "Journal of Korean Physical Society",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 200,
+            title: "Theory of the 2×2 and 3×3 reconstructions of the alpha-Sn(111) surface",
+            authors: "Zhong-Yi Lu, G. L. Chiarotti, S. Scandolo, and E. Tosatti",
+            year: "1998",
+            journal: "Il Nuovo Cimento D",
+            volume: "20(7-8), 1013 (1998)",
+            category: "Il Nuovo Cimento D",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 201,
+            title: "First-principles determination of the Sigma＝13 [510] symmetric tilt boundary structure in silicon and germanium",
+            authors: "J. R. Morris, Zhong-Yi Lu, D. M. Ring, J. B. Xiang, K. M. Ho, C. Z. Wang, and c. L. Fu",
+            year: "1998",
+            journal: "Physical Review B",
+            volume: "58(17), 11241 (1998)",
+            category: "prb",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.58.11241",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 202,
+            title: "Ad-Dimer Diffusion between Trough and Dimer Row on Si(100)",
+            authors: "G. D. Lee, C. Z. Wang, Zhong-Yi Lu, and K. M. Ho",
+            year: "1998",
+            journal: "Physical Review Letters",
+            volume: "81(26), 5872 (1998)",
+            category: "prl",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.81.5872",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 203,
+            title: "Dissociation Energies of Silicon Clusters: A Depth Gauge for the Global Minimum on the Potential Energy Surface",
+            authors: "A. A. Shvartsburg, M. F. Jarrold, B. Liu, Zhong-Yi Lu, C. Z. Wang, and K. M. Ho",
+            year: "1998",
+            journal: "Physical Review Letters",
+            volume: "81(21), 4616 (1998)",
+            category: "prl",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.81.4616",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 204,
+            title: "Ionization of medium-sized silicon clusters and the geometries of the cations",
+            authors: "B. Liu, Zhong-Yi Lu, B. Pan, C. Z. Wang, K. M. Ho, A. A. Shvartsburg, and M. F. Jarrold",
+            year: "1998",
+            journal: "Journal of Chemical Physics",
+            volume: "109(21), 9401 (1998)",
+            category: "jcp",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 205,
+            title: "Structures of medium-sized silicon clusters",
+            authors: "K. M. Ho, A. Shvartsburg, B. Pan, Zhong-Yi Lu, C. Z. Wang, J. Wacker, J. L. Fye, and M. F. Jarrold",
+            year: "1998",
+            journal: "Nature",
+            volume: "392(1), 582 (1998)",
+            category: "nature",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 206,
+            title: "Atomic and electronic structure of ideal and reconstructed alpha-Sn (100) surfaces",
+            authors: "Zhong-Yi Lu, G. L. Chiarotti, S. Scandolo, and E. Tosatti",
+            year: "1998",
+            journal: "Physical Review B",
+            volume: "58(20), 13698 (1998)",
+            category: "prb",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.58.13698",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 207,
+            title: "Atomic and electronic structure of ideal and reconstructed alpha-Sn (111) surface",
+            authors: "Zhong-Yi Lu, G. L. Chiarotti, S. Scandolo, and E. Tosatti",
+            year: "1996",
+            journal: "Physical Review B",
+            volume: "54(16), 11769 (1996)",
+            category: "prb",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.54.11769",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 208,
+            title: "Impurity energy level in the Haldane gap",
+            authors: "Wei Wang, Shaojin Qin, Zhong-Yi Lu, Lu Yu, and Zhaobin Su",
+            year: "1996",
+            journal: "Physical Review B",
+            volume: "53(1), 40 (1996)",
+            category: "prb",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.53.40",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 209,
+            title: "Doping Induced Quantum Bound States within the Haldane Gap",
+            authors: "Zhong-Yi Lu, Zhao-Bin Su, and Lu Yu",
+            year: "1995",
+            journal: "Physical Review Letters",
+            volume: "74(21), 4297 (1995)",
+            category: "prl",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4297",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 210,
+            title: "Doping Effect on Spin-Peierls Instability",
+            authors: "Zhong-Yi Lu, Zhao-Bin Su, and Lu Yu",
+            year: "1994",
+            journal: "Physical Review Letters",
+            volume: "72(8), 1276 (1994)",
+            category: "prl",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 211,
+            title: "Haldane Energy Gap of A Doped Linear-Chain Heisenberg Antiferromagnet",
+            authors: "Zhong-Yi Lu, Zhao-Bin Su, and Lu Yu",
+            year: "1993",
+            journal: "Physical Review B",
+            volume: "47(18), 12276 (1993)",
+            category: "prb",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.47.12276",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 212,
+            title: "The q-Deformed SU(2) Quantum Antiferromagnetic Model",
+            authors: "Zhong-Yi Lu and Hong Yan",
+            year: "1993",
+            journal: "Communications in Theoretical Physics",
+            volume: "19(3), 303 (1993)",
+            category: "ctp",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 213,
+            title: "The q-Deformed SU(2) Quantum Ferromagnetic Model",
+            authors: "Zhong-Yi Lu and Hong Yan",
+            year: "1993",
+            journal: "Communications in Theoretical Physics",
+            volume: "19(2), 169 (1993)",
+            category: "ctp",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        },
+        {
+            id: 214,
+            title: "The Superfluidity of The Charged Bosons' Systems",
+            authors: "Zhong-Yi Lu",
+            year: "1993",
+            journal: "Communications in Theoretical Physics",
+            volume: "19(1), 43 (1993)",
+            category: "ctp",
+            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            links: {
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                arxiv: null,
+                code: null
+            }
+        }
         // 在这里添加更多论文...
     ];
 
@@ -1129,26 +2720,45 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==============================
     const journalMap = {
         'prl': { name: 'Physical Review Letters', icon: 'fas fa-star', color: '#e74c3c' },
-        'prb': { name: 'Physical Review B', icon: 'fas fa-book', color: '#3498db' },
-        'prx': { name: 'Physical Review X', icon: 'fas fa-atom', color: '#2ecc71' },
-        'nat-phys': { name: 'Nature Physics', icon: 'fas fa-globe', color: '#9b59b6' },
-        'npj': { name: 'npj Computational Materials', icon: 'fas fa-cube', color: '#1abc9c' },
-        'nl': { name: 'Nano Letters', icon: 'fas fa-microscope', color: '#f39c12' },
-        'sci-bull': { name: 'Science Bulletin', icon: 'fas fa-flag', color: '#e67e22' },
-        'jpcc': { name: 'Journal of Physical Chemistry C', icon: 'fas fa-flask', color: '#8e44ad' },
-        'mat-fut': { name: 'Materials Futures', icon: 'fas fa-layer-group', color: '#d35400' },
-        'scpma': { name: 'Science China Physics, Mechanics & Astronomy', icon: 'fas fa-rocket', color: '#27ae60' },
-        'prr': { name: 'Physical Review Research', icon: 'fas fa-flask', color: '#d35400' },
-        'prm': { name: 'Physical Review Materials', icon: 'fas fa-layer-group', color: '#8e44ad' },
-        'nanoscale': { name: 'Nanoscale', icon: 'fas fa-microchip', color: '#16a085' },
-        'carbon': { name: 'Carbon', icon: 'fas fa-circle', color: '#2c3e50' },
-        'nature': { name: 'Nature', icon: 'fas fa-globe', color: '#9b59b6' },
-        'sr': { name: 'Scientific Reports', icon: 'fas fa-file-alt', color: '#fd9644' },
-        'scibull': { name: 'Science Bulletin', icon: 'fas fa-bullhorn', color: '#20bf6b' },
-        'cpb': { name: 'Chinese Physics B', icon: 'fas fa-pen-nib', color: '#8854d0' },
-        'cpl': { name: 'Chinese Physics Letters', icon: 'fas fa-mail-bulk', color: '#26de81' },
-        'cpc': { name: 'Computer Physics Communications', icon: 'fas fa-network-wired', color: '#2d98da' },
-        'other': { name: '其他期刊', icon: 'fas fa-file-alt', color: '#f39c12' }
+        'prb': { name: 'Physical Review B', icon: 'fas fa-book', color: '#2980b9' },
+        'prx': { name: 'Physical Review X', icon: 'fas fa-atom', color: '#27ae60' },
+        'nat-phys': { name: 'Nature Physics', icon: 'fas fa-globe-europe', color: '#8e44ad' },
+        'npj': { name: 'npj Computational Materials', icon: 'fas fa-cubes', color: '#16a085' },
+        'nl': { name: 'Nano Letters', icon: 'fas fa-vial', color: '#f1c40f' },
+        'sci-bull': { name: 'Science Bulletin', icon: 'fas fa-bullhorn', color: '#e67e22' },
+        'jpcc': { name: 'Journal of Physical Chemistry C', icon: 'fas fa-flask', color: '#d35400' },
+        'jpc': { name: 'Journal of Physics: Condensed Matter', icon: 'fas fa-flask', color: '#3dcc20ff' },
+        'mat-fut': { name: 'Materials Futures', icon: 'fas fa-layer-group', color: '#c0392b' },
+        'scpma': { name: 'Science China Phys ics, Mechanics & Astronomy', icon: 'fas fa-rocket', color: '#2ecc71' },
+        'prr': { name: 'Physical Review Research', icon: 'fas fa-search', color: '#e17055' },
+        'prm': { name: 'Physical Review Materials', icon: 'fas fa-cube', color: '#00b894' },
+        'nanoscale': { name: 'Nanoscale', icon: 'fas fa-microchip', color: '#fdcb6e' },
+        'carbon': { name: 'Carbon', icon: 'fas fa-circle', color: '#636e72' },
+        'nature': { name: 'Nature', icon: 'fas fa-leaf', color: '#00b894' },
+        'nat-comm': { name: 'Nature Communications', icon: 'fas fa-comments', color: '#fd79a8' },
+        'sr': { name: 'Scientific Reports', icon: 'fas fa-file-alt', color: '#6c5ce7' },
+        'cpb': { name: 'Chinese Physics B', icon: 'fas fa-pen-nib', color: '#e17055' },
+        'Surface Review and Letters': {name: 'Surface Review and Letters', icon: 'fas fa-ruler-combined', color: '#e84393'},
+        'cpl': { name: 'Chinese Physics Letters', icon: 'fas fa-mail-bulk', color: '#00b894' },
+        'cpc': { name: 'Computer Physics Communications', icon: 'fas fa-network-wired', color: '#0984e3' },
+        'Journal of Korean Physical Society': {name: 'Journal of Korean Physical Society', icon: 'fas fa-flag', color: '#fd79a8'},
+        'Acta Physica Sinica': {name: 'Acta Physica Sinica', icon: 'fas fa-balance-scale', color: '#6ab04c'},
+        'Il Nuovo Cimento D': {name: 'Il Nuovo Cimento D', icon: 'fas fa-dna', color: '#4834d4'},
+        'Journal of Physics: Condensed Matter': {name: 'Journal of Physics: Condensed Matter', icon: 'fas fa-thermometer-half', color: '#f9ca24'},
+        'cms': {name: 'Computational Materials Science', icon: 'fas fa-database', color: '#00b894'},
+        'Journal of Physics and Chemistry of Solids': {name: 'Journal of Physics and Chemistry of Solids', icon: 'fas fa-gem', color: '#fdcb6e'},
+        'epl': {name: 'epl', icon: 'fas fa-lightbulb', color: '#00b894'},
+        'ctp': {name: 'Communications in Theoretical Physics', icon: 'fas fa-comments', color: '#e17055'},
+        'jcp': {name: 'Journal of Chemical Physics', icon: 'fas fa-vials', color: '#6c5ce7'},
+        'jacs': {name: 'jacs', icon: 'fas fa-atom', color: '#fd79a8'},
+        'IEEE-ACM Transactions on Audio, Speech, and Language Processing': {name: 'IEEE-ACM Transactions on Audio, Speech, and Language Processing', icon: 'fas fa-headphones', color: '#00b894'},
+        'Frontiers of Physics in China': {name: 'Frontiers of Physics in China', icon: 'fas fa-archway', color: '#00b894'},
+        'apl': {name: 'apl', icon: 'fas fa-magnet', color: '#e17055'},
+        'surf. sci.': {name: 'Surface Science', icon: 'fas fa-water', color: '#00b894'},
+        'Interface Science': {name: 'Interface Science', icon: 'fas fa-project-diagram', color: '#fdcb6e'},
+        'IEEE Transactions on Nuclear Science': {name: 'IEEE Transactions on Nuclear Science', icon: 'fas fa-radiation', color: '#636e72'},
+        'Superconductor Science and Technology': {name: 'Superconductor Science and Technology', icon: 'fas fa-bolt', color: '#e17055'},
+        'other': { name: '其他期刊', icon: 'fas fa-question', color: '#b2bec3' }
     };
 
     // ==============================
@@ -1290,7 +2900,7 @@ document.addEventListener('DOMContentLoaded', function() {
         totalPapersEl.textContent = publications.length;
         
         // PRL/PRX论文数
-        const prlPrxCount = publications.filter(p => p.category === 'prl' || p.category === 'prx').length;
+        const prlPrxCount = publications.filter(p => p.category === 'prl' || p.category === 'prx'|| p.category === 'nature').length;
         prlPapersEl.textContent = prlPrxCount;
         
         // 最新年份
