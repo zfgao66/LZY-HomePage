@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             year: "2025",
             journal: "National Science Review",
             volume: "12(4), nwaf066 (2025)",
-            category: "National Science Review",
+            category: "nsr",
             abstract: "本工作提出一种由人工智能搜索引擎驱动的自动化发现流程，通过预训练图神经网络学习晶体结构特征并在少量正样本上微调分类器，从而高效预测材料的altermagnetism属性。研究成功发现了50种新的交变磁材料，覆盖金属、半导体与绝缘体，其中包括首次报道的四种i-wave altermagnets。新材料展现出丰富的新奇物性，如反常霍尔效应、反常克尔效应及拓扑特性，体现了AI在加速功能材料发现方面的巨大潜力。",
             links: {
                 pdf: "https://academic.oup.com/nsr/article-pdf/12/4/nwaf066/62054665/nwaf066.pdf",
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
             year: "2025",
             journal: "npj Computational Materials",
             volume: "11(1), 86 (2025)",
-            category: "Computational Materials Science",
+            category: "npj",
             abstract: "本研究提出了名为 Zen 的从头算多体计算工具包，将DFT与单点DMFT无缝结合，并配备零温的自然轨道重整化组求解器与有限温的杂化展开CT-QMC求解器。通过对SrVO₃、La₃Ni₂O₇和MnO三个典型强关联材料的测试，结果与已有实验和理论高度一致。研究表明Zen工具包能够准确刻画d电子强关联体系的电子结构。",
             links: {
                 pdf: "https://doi.org/10.1038/s41524-025-01586-6",
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
             year: "2024",
             journal: "Chinese Physics B",
             volume: "33(11), 117504 (2024)",
-            category: "Chinese Physics B",
+            category: "cpb",
             abstract: "本文提出了一种将 Green's function Monte Carlo（GFMC）与 PEPS 张量网络方法相结合的混合策略，其中 PEPS 同时作为试探态与引导波函数。该方法在处理受挫量子自旋体系时兼具高精度与高效率，并在平方晶格的受挫 J<sub>1</sub>–J<sub>2</sub> 海森堡模型基态能量计算中展现出与其他数值方法相当甚至更优的精度。文章系统总结并拓展了作者在 Phys. Rev. B 109, 235133 (2024) 的相关工作。",
             links: {
                 pdf: "https://cpb.iphy.ac.cn/EN/abstract/article_127221.shtml",
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
             year: "2024",
             journal: "Science China Physics, Mechanics & Astronomy",
             volume: "67(8), 287411 (2024)",
-            category: "Science China Physics, Mechanics & Astronomy",
+            category: "scpma",
             abstract: "本文基于第一性原理从声子角度研究了无限层铜氧化物 SrCuO<sub>2</sub> 的电子与磁性质，发现其声子振动可在掺空穴后诱发电荷、电偶极及局域磁矩的强烈涨落。其中，A<sub>1g</sub> 模式会导致 Cu–O 间显著电荷重分布，并呈现与超导 Tc 类似的“穹顶”演化。进一步分析表明在最优掺杂附近出现 A<sub>1g</sub> 模式频率软化及近费米能级的范霍夫奇点，提示可能存在电子–声子耦合。",
             links: {
                 pdf: "https://doi.org/10.1007/s11433-024-2388-y",
@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', function() {
             year: "2024",
             journal: "Carbon",
             volume: "223, 118971 (2024)",
-            category: "Carbon",
+            category: "carbon",
             abstract: "该工作基于紧束缚模型与第一性原理计算，提出(4,0)碳纳米管衍生物可作为研究拓扑态与拓扑相变的理想平台。其在1D、2D 与 3D 体系中分别实现了多种典型拓扑半金属态，并通过能带与表面态计算确认其拓扑非平庸性质。研究为拓扑碳材料体系提供了新的重要成员。",
             links: {
                 pdf: "https://www.sciencedirect.com/science/article/pii/S0008622324001908",
@@ -386,7 +386,7 @@ document.addEventListener('DOMContentLoaded', function() {
             year: "2023",
             journal: "Applied Physics Express",
             volume: "16(6), 063003 (2023)",
-            category: "Applied Physics Express",
+            category: "ape",
             abstract: "基于第一性原理计算，研究者系统分析了立方相金属碳同素体 sc-C<sub>20</sub> 的声子介导超导性。通过 Wannier 插值精确计算电子-声子耦合，并求解 Eliashberg 方程，预测其为无需掺杂或引入客体原子的本征碳超导体，转变温度约为 24 K。本研究丰富了碳基超导材料家族。",
             links: {
                 pdf: "https://doi.org/10.35848/1882-0786/acdc02",
@@ -416,7 +416,7 @@ document.addEventListener('DOMContentLoaded', function() {
             year: "2023",
             journal: "National Science Review",
             volume: "10(5), nwad034 (2023)",
-            category: "National Science Review",
+            category: "nsr",
             abstract: "该研究在高压下发现 MoB<sub>2</sub> 的超导转变温度可达 32 K，为过渡金属硼化物中目前最高的 Tc。理论分析表明其超导性由 Mo 的 d 电子与面外声子模的强耦合驱动。该工作为寻找高 Tc 过渡金属硼化物提供了新思路。",
             links: {
                 pdf: "https://academic.oup.com/nsr/article-pdf/10/5/nwad034/50489440/nwad034.pdf",
@@ -446,7 +446,7 @@ document.addEventListener('DOMContentLoaded', function() {
             year: "2023",
             journal: "Chinese Physics B",
             volume: "32(5), 057505 (2023)",
-            category: "Chinese Physics B",
+            category: "cpb",
             abstract: "基于第一性原理计算，研究者预测出具有畸变方形结构的 LiCrTe<sub>2</sub> 单层是一种二维半金属铁磁体，具有高稳定性、宽自旋带隙、大磁矩以及极高的居里温度。在 −5% 至 +5% 的双轴应变下，其铁磁性与半金属性依然保持良好。拉伸与压缩应变均能显著提高磁晶各向异性能，并且在超过 1% 压缩应变时，易磁化方向会从面内转变为面外。该材料在自旋电子学中具有潜在重要应用。",
             links: {
                 pdf: "https://doi.org/10.1088/1674-1056/acbe2e",
@@ -461,7 +461,7 @@ document.addEventListener('DOMContentLoaded', function() {
             year: "2023",
             journal: "Chinese Physics B",
             volume: "32(3), 037501 (2023)",
-            category: "Chinese Physics B",
+            category: "cpb",
             abstract: "基于第一性原理计算，本文提出二维铁磁半导体 Li<sub>2</sub>NiSe<sub>2</sub>，其居里温度超过 200 K，且结构动力学稳定。该材料可视为 Li 修饰的 1T 型 NiSe<sub>2</sub>，其铁磁性主要来自符合 GKA 规则的 Ni–Se–Ni 超交换作用。系统研究表明，Li<sub>2</sub>NiSe<sub>2</sub> 在自旋电子学领域具有潜在应用价值，并为设计二维铁磁半导体提供了新的材料体系。",
             links: {
                 pdf: "https://doi.org/10.1088/1674-1056/aca39f",
@@ -491,7 +491,7 @@ document.addEventListener('DOMContentLoaded', function() {
             year: "2023",
             journal: "npj Computational Materials",
             volume: "9(1), 70 (2023)",
-            category: "Computational Materials Science",
+            category: "npj",
             abstract: "该工作提出了一个包含反铁磁序的四能带模型，证明了共线反铁磁材料中也能出现量子反常霍尔效应。研究发现，单层CrO在应变作用下可从AFM Weyl半金属转变为AFM QAH绝缘体，为寻找高温QAH材料提供了新机制。",
             links: {
                 pdf: "https://doi.org/10.1038/s41524-023-01025-4",
@@ -1631,7 +1631,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "year": "2018",
         "journal": "npj Quantum Materials",
         "volume": "3(1), 43 (2018)",
-        "category": "npj",
+        "category": "npj Quantum Materials",
         "abstract": "本文通过角分辨光电子能谱结合第一性原理计算，从体态与表面两方面为ZrB<sub>2</sub>中的节线半金属态提供了确凿的实验证据，表明ZrB<sub>2</sub>可作为探索节线费米子诱导新奇物理现象的重要平台。",
         "badges":  [],
         "links": {
@@ -1647,7 +1647,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "year": "2018",
         "journal": "npj Quantum Materials",
         "volume": "3(1), 50 (2018)",
-        "category": "npj",
+        "category": "npj Quantum Materials",
         "abstract": "本文通过角分辨光电子能谱结合第一性原理计算，从体态与表面两方面为ZrB<sub>2</sub>中的节线半金属态提供了确凿的实验证据，表明ZrB<sub>2</sub>可作为探索节线费米子诱导新奇物理现象的重要平台。",
         "badges":  [],
         "links": {
@@ -2739,8 +2739,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 code: null
             }
         },
-
-        // The following are repeated entries for testing purposes
         {
             id: 181,
             title: "First-principles theory of quantum well resonance in double barrier magnetic tunnel junctions",
@@ -2749,9 +2747,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review Letters",
             volume: "97(8), 087210 (2006)",
             category: "prl",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "本研究从第一性原理出发，计算了 Fe(001)/MgO/Fe/MgO/Fe 双势垒磁性隧道结中的量子阱（QW）共振。表明在低温下主要的展宽来源是库仑阻塞能的变化。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.087210",
                 arxiv: null,
                 code: null
             }
@@ -2764,9 +2762,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Applied Physics Letters",
             volume: "89(3), 032112 (2006)",
             category: "apl",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "我们证明，在极小偏压下的电导是基态性质，可利用密度泛函理论以及交换和关联的局域密度近似进行精确计算。在有限偏压下，必须恰当考虑交换关联势的不连续性。同时指出了理论和实验所面临的挑战。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://pubs.aip.org/aip/apl/article-abstract/89/3/032112/917174/First-principles-theory-of-tunneling-currents-in?redirectedFrom=fulltext",
                 arxiv: null,
                 code: null
             }
@@ -2779,10 +2777,10 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review Letters",
             volume: "94(20), 207210 (2005)",
             category: "prl",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "我们证明，在共振状态下，电流会增加 1 到 2 个数量级。隧道磁阻比在简单自旋隧道结中要大得多，并且对于多数自旋（少数自旋）共振，其值为正（负），正负偏压之间存在很大的不对称性。这些结果可作为新型自旋电子器件的基础。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
-                arxiv: null,
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.94.207210",
+                arxiv: "https://arxiv.org/pdf/cond-mat/0411233",
                 code: null
             }
         },
@@ -2794,9 +2792,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review B",
             volume: "72(4), 045405 (2005)",
             category: "prb",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "本研究表明，混合二聚体的形成取决于可用于铅和锡进行相互混合的硅原子的来源。只有当硅原子与铅或锡共沉积，或者二聚体链形成在硅（100）衬底的台阶边缘附近时，混合二聚体链在能量上才比纯二聚体链更有利。在硅（100）表面，类似于锗与硅相互掺杂的这种机制对于铅和锡来说并不受青睐。",
             links: {
-                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.246101",
+                pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.72.045405",
                 arxiv: null,
                 code: null
             }
@@ -2809,7 +2807,7 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review B",
             volume: "68(4), 045410 (2003)",
             category: "prb",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "本研究表明，我们比较了不同结构的晶胞能量，以推断出能量更有利的结构。由非常平坦的 Pb 层覆盖构成的结构比缺失顶层结构或具有堆垛缺陷的结构具有更低的能量。这与测量到在α相上具有高 Pb 传输率的实验结果非常吻合。",
             links: {
                 pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.68.045410",
                 arxiv: null,
@@ -2824,9 +2822,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Surface Science",
             volume: "542(3), L649 (2003)",
             category: "surf. sci.",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "我们发现铅原子与硅原子混合形成混合二聚体链在能量上是更有利的，这与之前的研究所假设的铅-铅二聚体链不同。在铅覆盖度达到 0.125 麦克尔逊当量时，混合的铅-硅二聚体链每个铅原子的能量比铅二聚体链低 0.19 电子伏特。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0039602803009932",
                 arxiv: null,
                 code: null
             }
@@ -2839,7 +2837,7 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review Letters",
             volume: "89(28), 285505 (2002)",
             category: "prl",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "我们发现，绝大多数的氧空位在捕获一个空穴后不会发生扭曲，而是成为浅层陷阱。剩余的空位则表现出两种不同的扭曲类型。当捕获一个电子时，一种类型会形成一种亚稳态偶极子，而另一种则会坍缩成一个二聚体。",
             links: {
                 pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.89.285505",
                 arxiv: null,
@@ -2854,9 +2852,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "IEEE Transactions on Nuclear Science",
             volume: "49(6), 2674 (2002)",
             category: "IEEE Transactions on Nuclear Science",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "DFT 结果表明 MOS 器件中的 1/f 噪声主要源于界面附近两类氧空位缺陷（Eδ′ 二聚体与两种构型的 Eγ′ 中心）的载流子俘获与释放过程，并能一致解释氧化物陷阱、电荷噪声及 TSC 实验中的空穴发射现象。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://ieeexplore.ieee.org/abstract/document/1134203/",
                 arxiv: null,
                 code: null
             }
@@ -2869,9 +2867,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Surface Science",
             volume: "506(3), L282 (2002)",
             category: "surf. sci.",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "我们通过第一性原理的总能量计算来研究该系统中扩散和混合的原子级机制。我们的计算表明，混合是由表面的吸附二聚体的扩散所引发的。从我们的计算中得出的扩散和混合事件的能量障碍与实验结果高度吻合。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0039602802014966",
                 arxiv: null,
                 code: null
             }
@@ -2884,9 +2882,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "IEEE Transactions on Nuclear Science",
             volume: "49(6), 2667 (2002)",
             category: "IEEE Transactions on Nuclear Science",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "无定形 SiO<sub>2</sub>中不同局域结构导致氧空位缺陷态分布，并存在可解释反偏置切换行为的五配位弯曲构型 Eγ⁵′，其能级分布与实验的浅、深空穴俘获一致，且大多数氧空位在俘获空穴后形成二聚体，其余则在可形成或不可形成偶极的弯曲构型间近乎均分。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://ieeexplore.ieee.org/abstract/document/1134202",
                 arxiv: null,
                 code: null
             }
@@ -2899,9 +2897,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Interface Science",
             volume: "10(2-3), 143 (2002)",
             category: "Interface Science",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "我们发现，界面自由能γ(θ)可以用形式γ(θ) = γ0(1 + ε cos 4θ)来很好地表示，其中θ表示相对于[100]界面的角度，且该角度围绕[001]方向旋转。我们得出γ0的值为120 ± 6 mJ/m²，ε的值为1.3 ± 0.4%，这与之前的估计值和当前的实验结果相符。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://link.springer.com/article/10.1023/A:1015800629100",
                 arxiv: null,
                 code: null
             }
@@ -2914,9 +2912,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Applied Physics Letters",
             volume: "77(25), 4184 (2000)",
             category: "apl",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "通过结合环境依赖型硅势能的紧束缚方法以及采用卡-帕里内洛方法的从头算计算，对硅原子在重构的硅（001）表面上的结合位点和扩散路径进行了研究。发现了一种由二聚体翻转驱动的沿凹槽边缘的新的扩散路径，其势垒为 0.74 电子伏特，与沿二聚体行顶部的 0.68 电子伏特的势垒相当。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://pubs.aip.org/aip/apl/article-abstract/77/25/4184/515637/Dimer-flipping-assisted-diffusion-on-a-Si-001",
                 arxiv: null,
                 code: null
             }
@@ -2929,7 +2927,7 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review Letters",
             volume: "85(26), 5603 (2000)",
             category: "prl",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "我们通过第一性原理计算，对硅（001）表面二维链上相邻的硅-硅、锗-锗和锗-硅二聚体的能态和动力学特性进行了对比研究。锗-硅二聚体的动态表现与硅-硅或锗-锗二聚体有显著差异，这为通过扫描隧道显微镜（STM）对其进行识别提供了一种独特的方法。在扫描隧道显微镜中观察到的“摆动”运动实际上反映了二聚体的 180°旋转，涉及分段旋转机制。计算得出的 0.74 电子伏特的能量屏障与实验值 0.82 电子伏特非常吻合。",
             links: {
                 pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.85.5603",
                 arxiv: null,
@@ -2944,7 +2942,7 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review B",
             volume: "62(12), 8104 (2000)",
             category: "prb",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "我们进行了大量的第一性原理计算，以研究锗二聚体在硅（001）表面的结合与扩散情况。发现锗二聚体沿着最低能量障碍路径的扩散是分段式的，但具有很强的相关性，其能量障碍为 0.77 电子伏特。在硅（001）表面，硅二聚体也发现了这种相关的分段式扩散路径，其能量障碍为 1.02 电子伏特，与实验测量结果高度吻合。",
             links: {
                 pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.62.8104",
                 arxiv: null,
@@ -2959,7 +2957,7 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review B",
             volume: "61(3), 2329 (2000)",
             category: "prb",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "对 Si𝑛、Ge𝑛 和 Sn𝑛（𝑛 <~1⁢3）的团簇进行了卡-帕里内洛分子动力学模拟退火计算。我们研究了这些团簇从“液态”相转变为“固态”相，以及从“固态”相转变为基态结构的温度区间。此外，还对选定为小碳团簇原型的 C13 团簇进行了额外的模拟退火计算。除了发现 Sn 和 Ge 团簇的结构外，我们的模拟结果还为团簇的形成动力学提供了见解。",
             links: {
                 pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.61.2329",
                 arxiv: null,
@@ -2974,9 +2972,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Surface Science",
             volume: "426(2), L427 (1999)",
             category: "surf. sci.",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "通过使用环境依赖型紧束缚硅势能以及基于从头算方法的计算，对硅（001）表面波谷处的扩散路径进行了研究。发现了一条新的扩散路径，该路径由加元的旋转构成。计算得出每个二聚体的能量势垒为 1.22 电子伏特，与实验结果高度吻合。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0039602899003507",
                 arxiv: null,
                 code: null
             }
@@ -2989,9 +2987,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Surface Review and Letters",
             volume: "6(6), 1015 (1999)",
             category: "Surface Review and Letters",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "通过使用环境依赖型紧束缚硅势能模型进行的紧束缚分子动力学计算，以及采用卡-帕里内洛方法进行的从头算计算，对硅加米器沿凹槽扩散以及从凹槽扩散至硅(100)表面二聚体行列顶部的过程进行了研究。研究发现了由加米器旋转构成的新扩散路径。这些新路径的能量障碍与实验数据高度吻合，并且比之前研究的其他扩散路径更具能量优势。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://www.worldscientific.com/doi/abs/10.1142/S0218625X99001098",
                 arxiv: null,
                 code: null
             }
@@ -3004,7 +3002,7 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review Letters",
             volume: "83(11), 2167 (1999)",
             category: "prl",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "我们利用密度泛函理论 - 局部密度近似和梯度校正方法，对 n≤16 量级的锗中性原子和阳离子的基态几何结构进行了系统搜索。与硅的类似物一样，中等大小的锗簇是由三棱锥三角柱子单元堆叠而成的。然而，对于 n = 13 和 n ≥ 15 的情况，锗 n 型和硅 n 型的结构在细节上有所不同。通过测量气相离子迁移率、裂解途径和解离能，证实了硅和锗簇生长模式之间结构差异的出现。",
             links: {
                 pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.83.2167",
                 arxiv: null,
@@ -3019,9 +3017,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Journal of Korean Physical Society",
             volume: "35(1), S27 (1999)",
             category: "Journal of Korean Physical Society",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "通过扫描隧道显微镜定量测定了硅原子在硅（001）表面上的表面扩散系数。该方法基于在给定沉积剂量、给定沉积速率下，针对不同衬底温度计算所形成的岛的数量。在最简单的情况下，扩散系数与岛的密度有关，与台阶处剥落区域的宽度有关，其关系式分别为：.扩散的活化能为 Ea = 0.67±0.08 电子伏特，扩散常数 D0 ≅ 10−3±1 平方厘米。这种扩散具有高度的各向异性，其快速方向沿二聚体行排列方向。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://www.sciencedirect.com/science/article/abs/pii/003960289290968C",
                 arxiv: null,
                 code: null
             }
@@ -3034,9 +3032,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Il Nuovo Cimento D",
             volume: "20(7-8), 1013 (1998)",
             category: "Il Nuovo Cimento D",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "本研究对于α-Sn（111）表面（在InSb（111）上进行的外延生长），已有两种主要的重构模式被报道，即2×2和一种亚稳态的3×3。我们基于我们团队进行的第一性原理电子结构计算，探讨了这些重构的可能性质。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://link.springer.com/article/10.1007/BF03185506",
                 arxiv: null,
                 code: null
             }
@@ -3049,7 +3047,7 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review B",
             volume: "58(17), 11241 (1998)",
             category: "prb",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "我们通过紧束缚模型和第一性原理计算，对硅和锗中的{510}对称倾斜边界结构进行了多种研究。这些计算表明，在硅中所观察到的结构是能量最低的结构，尽管它比保持四重配位所需的结构更为复杂。与使用泰索夫势的计算结果相反，第一性原理计算表明能量取决于结构。",
             links: {
                 pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.58.11241",
                 arxiv: null,
@@ -3064,7 +3062,7 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review Letters",
             volume: "81(26), 5872 (1998)",
             category: "prl",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "通过使用环境依赖型紧束缚硅势能以及采用卡-帕里内洛方法的从头算计算，对硅（100）表面凹槽与二聚体行之间的扩散路径进行了研究。研究发现了一种新的扩散路径，该路径由吸附二聚体的旋转构成。计算得到的能量势垒与实验结果高度吻合，并且比平行和垂直吸附二聚体的其他扩散路径在能量上更具优势。",
             links: {
                 pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.81.5872",
                 arxiv: null,
@@ -3079,7 +3077,7 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review Letters",
             volume: "81(21), 4616 (1998)",
             category: "prl",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "我们对 n≤26 范围内的硅中性粒子和阳离子的解离过程进行了建模。假设为统计分解过程，我们计算了 n = 26 之前的裂解路径以及 n = 20 之前的解离能量。对于阳离子的结果与测量值高度吻合。这表明我们在这一尺寸范围内的硅团簇的构型空间搜索确实找到了全局最小值——一组“堆叠的 Si9 三顶角三棱柱”。这是首次将解离能量用于检验全局优化的结果。",
             links: {
                 pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.81.4616",
                 arxiv: null,
@@ -3094,9 +3092,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Journal of Chemical Physics",
             volume: "109(21), 9401 (1998)",
             category: "jcp",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "本研究表明，中等尺寸 Si⁺ₙ 的基态结构总体呈细长的三帽三棱柱堆叠形，但若干 n 值（8、11、12、13）存在显著差异；GGA 使这些细长构型与近球形构型能量几乎相当，并在移动性与电离能趋势上与实验一致，从而支持将“细长”硅簇解释为三棱柱堆叠结构。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://pubs.aip.org/aip/jcp/article-abstract/109/21/9401/183186/Ionization-of-medium-sized-silicon-clusters-and",
                 arxiv: null,
                 code: null
             }
@@ -3109,9 +3107,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Nature",
             volume: "392(1), 582 (1998)",
             category: "nature",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "本研究表明：对中等尺寸硅簇进行遗传算法全局搜索并以迁移率实验验证，其稳定结构并非块体片段，而是 n=12–18 时由 Si₉ 三帽三棱柱堆叠组成、n≥19 时转变为近球形笼状构型，且实验迁移率与计算结果高度一致但转变位置略受熵影响。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://www.nature.com/articles/33369",
                 arxiv: null,
                 code: null
             }
@@ -3124,7 +3122,7 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review B",
             volume: "58(20), 13698 (1998)",
             category: "prb",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "本研究表明，α‑Sn(100) 表面会形成强烈起伏（约 1.0 Å）的反铁序排列表面二聚体，使表面能大幅降低，并呈现近简并的 c(4×2) 与 p(2×2) 重构，其振动与能级特征与实验观测高度相关。",
             links: {
                 pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.58.13698",
                 arxiv: null,
@@ -3139,7 +3137,7 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review B",
             volume: "54(16), 11769 (1996)",
             category: "prb",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "本研究表明，α‑Sn(111) 的理想表面极不稳定，其稳定结构在多种重构间竞争，若无加成原子则以 2×1 π 键链重构为主，若有加成原子则倾向于 c(4×2)/(2×2) 重构，并伴随比 Si、Ge 更强的表面起伏和电荷转移。",
             links: {
                 pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.54.11769",
                 arxiv: null,
@@ -3154,7 +3152,7 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review B",
             volume: "53(1), 40 (1996)",
             category: "prb",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "数值密度矩阵重整化分析表明：在一维反铁磁自旋‑1 链中，杂质键 J′ 会在 Haldane 能隙内形成束缚态，且当 J′<J 时能级随偏差连续从隙边移动到基态，而当 J′≳J 时需偏差超过约 0.3 才出现该束缚态。",
             links: {
                 pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.53.40",
                 arxiv: null,
@@ -3169,7 +3167,7 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review Letters",
             volume: "74(21), 4297 (1995)",
             category: "prl",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "采用齐塔茨塔尔和穆勒-哈特曼提出的方法，我们明确地证明，在哈德曼能隙的中心存在量子束缚态，这些束缚态可以通过在一种自旋为 1 的线性链海森堡反铁磁体中掺杂来产生。我们计算了由这些束缚态引起的动态结构因子 𝑆⁡(𝑞，𝜔) ，并利用它来解释最近对掺杂的 Y2⁢BaNiO5 的中子散射实验。",
             links: {
                 pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4297",
                 arxiv: null,
@@ -3184,9 +3182,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review Letters",
             volume: "72(8), 1276 (1994)",
             category: "prl",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "我们利用单模平均场理论研究了掺杂对自旋佩尔利斯（SP）系统的影响。杂质自旋会改变单重价键场，并使磁性激发发生重整化。SP 转变温度和磁性激发的能量间隙分别会因因子 ∼𝑛𝑖 和 ∼𝑛2/3𝑖 而降低，其中 𝑛?? 为杂质密度。在某些 𝑛𝑖 值下，会出现无能隙的 SP 相，并且杂质之间的相互作用会变得类似于 RKKY 形式。最近观察到的掺杂导致的 SP 转变温度降低以及出现自旋玻璃相的现象，可以用所提出的理论来解释。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.72.1276",
                 arxiv: null,
                 code: null
             }
@@ -3199,7 +3197,7 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Physical Review B",
             volume: "47(18), 12276 (1993)",
             category: "prb",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "基于 VBS 与 Schwinger‑boson 平均场分析，自旋‑1 链的 Haldane 能隙会因不同自旋的杂质掺杂而缩小，并按约 nᵢ^(2/3) 的规律衰减，在 nᵢ≈1/ξ 时完全塌缩，这一预测可由中子散射实验验证。",
             links: {
                 pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.47.12276",
                 arxiv: null,
@@ -3214,9 +3212,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Communications in Theoretical Physics",
             volume: "19(3), 303 (1993)",
             category: "ctp",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "在本文中，我们建立了一个 q 类似的霍尔斯坦-普里马科夫变换（HPT），并得到了 q 改变的自旋波解。我们采用了平均场处理方法，该方法旨在保留哈密顿量的一些非线性特性，结果非常有趣，例如，发现了具有间隔的基元激发谱，这与常规模型的自旋波结果不同，并且因此热容也发生了很大变化。我们研究了奈尔态和基态的性质。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://iopscience.iop.org/article/10.1088/0253-6102/19/3/303/meta",
                 arxiv: null,
                 code: null
             }
@@ -3229,9 +3227,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Communications in Theoretical Physics",
             volume: "19(2), 169 (1993)",
             category: "ctp",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "在构建 q 变形 SU(2) Heisenberg 自旋模型并得到 q 变形自旋波解后可知：其基态仍为通常铁磁态但与激发态间存在能隙，且非线性参数 γ 会使比热出现 ∝T^1/2 γ² 的新项并修正磁化强度。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://iopscience.iop.org/article/10.1088/0253-6102/19/2/169/meta",
                 arxiv: null,
                 code: null
             }
@@ -3244,9 +3242,9 @@ document.addEventListener('DOMContentLoaded', function() {
             journal: "Communications in Theoretical Physics",
             volume: "19(1), 43 (1993)",
             category: "ctp",
-            abstract: "本研究表明，虽然第一性原理基态计算难以重现 Ag(111) 表面 PTCDA 和 16FCuPc 的垂直入射 X 射线驻波实验结果，但在考虑了包含价电子屏蔽核心孔及离子结构弛豫的初态和终态效应后，理论计算能很好地拟合实验数据，从而证明了屏蔽效应在此类表面分子表征中的重要性。",
+            abstract: "我们构建了一个玻色子模型，在该模型中，一个玻色子带有电荷 - \(|\epsilon|\) ，并且存在一个正且均匀的背景，使得整个系统呈电中性状态。我们证明，在该模型的非常普遍条件下，超流性可能会出现，这为一些基于两个电子形成玻色子束缚态而产生的超导理论提供了支持。",
             links: {
-                pdf: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.246101",
+                pdf: "https://ui.adsabs.harvard.edu/abs/1993CoTPh..19...43L/abstract",
                 arxiv: null,
                 code: null
             }
@@ -3319,9 +3317,12 @@ document.addEventListener('DOMContentLoaded', function() {
         'nanoscale': { name: 'Nanoscale', icon: 'fas fa-microchip', color: '#fdcb6e' },
         'carbon': { name: 'Carbon', icon: 'fas fa-circle', color: '#636e72' },
         'nature': { name: 'Nature', icon: 'fas fa-leaf', color: '#00b894' },
+        'ape': { name: 'Applied Physics Express', icon: 'fas fa-bolt', color: '#d35400' },
+        'nsr': { name: 'National Science Review', icon: 'fas fa-book-open', color: '#0984e3' },
         'nat-comm': { name: 'Nature Communications', icon: 'fas fa-comments', color: '#fd79a8' },
         'sr': { name: 'Scientific Reports', icon: 'fas fa-file-alt', color: '#6c5ce7' },
         'cpb': { name: 'Chinese Physics B', icon: 'fas fa-pen-nib', color: '#e17055' },
+        'Advanced Materials':{name:'Advanced Materials', icon: 'fas fa-thumbs-up', color: '#0984e3'},
         'Surface Review and Letters': {name: 'Surface Review and Letters', icon: 'fas fa-ruler-combined', color: '#e84393'},
         'cpl': { name: 'Chinese Physics Letters', icon: 'fas fa-mail-bulk', color: '#00b894' },
         'cpc': { name: 'Computer Physics Communications', icon: 'fas fa-network-wired', color: '#0984e3' },
@@ -3335,6 +3336,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'ctp': {name: 'Communications in Theoretical Physics', icon: 'fas fa-comments', color: '#e17055'},
         'jcp': {name: 'Journal of Chemical Physics', icon: 'fas fa-vials', color: '#6c5ce7'},
         'jacs': {name: 'jacs', icon: 'fas fa-atom', color: '#fd79a8'},
+        'npj Quantum Materials': {name: 'npj Quantum Materials', icon: 'fas fa-microscope', color: '#0984e3'},
         'IEEE-ACM Transactions on Audio, Speech, and Language Processing': {name: 'IEEE-ACM Transactions on Audio, Speech, and Language Processing', icon: 'fas fa-headphones', color: '#00b894'},
         'Frontiers of Physics in China': {name: 'Frontiers of Physics in China', icon: 'fas fa-archway', color: '#00b894'},
         'apl': {name: 'apl', icon: 'fas fa-magnet', color: '#e17055'},
