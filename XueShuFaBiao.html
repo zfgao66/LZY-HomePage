@@ -139,6 +139,56 @@
             outline: none;
             border-color: #3498db;
         }
+         /* 快速过滤按钮 */
+        .quick-filters {
+            background: white;
+            border-radius: 12px;
+            padding: 20px 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .quick-filters h3 {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .filter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .filter-tag {
+            padding: 8px 18px;
+            background: #f8f9fa;
+            border: 2px solid #eaeaea;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: #555;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .filter-tag:hover {
+            background: #edf2f7;
+            border-color: #cbd5e0;
+        }
+        
+        .filter-tag.active {
+            background: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+        
+        .filter-tag.active i {
+            color: white;
+        }
         
         /* 发表列表区域 */
         .publications-section {
@@ -753,17 +803,17 @@
             </div>
             <div class="stat-card">
                 <div class="icon">
-                    <i class="fas fa-calendar-check"></i>
+                    <i class="fas fa-calendar-plus"></i>
                 </div>
-                <div class="stat-number" id="recentYear">2023</div>
-                <div class="stat-label">最新发表年份</div>
+                <div class="stat-number" id="currentYearPapers">0</div>
+                <div class="stat-label">今年发表论文数</div>
             </div>
             <div class="stat-card">
                 <div class="icon">
-                    <i class="fas fa-book-open"></i>
+                    <i class="fas fa-calendar-week"></i>
                 </div>
-                <div class="stat-number" id="totalJournals">0</div>
-                <div class="stat-label">发表期刊种类</div>
+                <div class="stat-number" id="recentFiveYearsPapers">0</div>
+                <div class="stat-label">近五年发表论文数</div>
             </div>
         </section>
 
@@ -783,6 +833,16 @@
                         <option value="all">所有期刊</option>
                     </select>
                 </div>
+            </div>
+            <!-- Highlight Paper 筛选 -->
+            <div class="filter-group">
+                <label class="filter-label" for="highlightFilter" style="display:flex;align-items:center;gap:8px;cursor:pointer;">
+                    <input type="checkbox" id="highlightFilter" style="accent-color:#e74c3c;width:18px;height:18px;margin-right:8px;vertical-align:middle;">
+                    <span style="display:inline-flex;align-items:center;font-weight:600;color:#e74c3c;font-size:1rem;background:#fdecea;padding:4px 12px;border-radius:16px;gap:6px;">
+                        <i class="fas fa-star" style="color:#e67e22;"></i> Highlight Paper
+                    </span>
+                </label>
+            </div>
             </div>
         </section>
 

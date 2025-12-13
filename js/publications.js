@@ -3262,7 +3262,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 pdf: "https://doi.org/10.1038/s41524-025-01830-z",
                 arxiv: null,
                 code: null
-            }
+            },
+            badges: ["highlight"]
         },
         {
             id: 216,
@@ -3277,7 +3278,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 pdf: "http://cpl.iphy.ac.cn/en/article/doi/10.1088/0256-307X/42/4/047301",
                 arxiv: null,
                 code: null
-            }
+            },
+            badges: ["highlight"]
         },
         {
             id: 217,
@@ -3292,7 +3294,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 pdf: "https://cpb.iphy.ac.cn/EN/abstract/article_127930.shtml",
                 arxiv: null,
                 code: null
-            }
+            },
+            badges: ["highlight"]
         }
         // 在这里添加更多论文...
     ];
@@ -3358,6 +3361,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const noResults = document.getElementById('noResults');
     const journalsGrid = document.getElementById('journalsGrid');
     const resultCount = document.getElementById('resultCount');
+        // Highlight Paper 筛选checkbox
+        const highlightFilter = document.getElementById('highlightFilter');
     
     // 翻页元素
     const pagination = document.getElementById('pagination');
@@ -3369,8 +3374,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // 统计元素
     const totalPapersEl = document.getElementById('totalPapers');
     const prlPapersEl = document.getElementById('prlPapers');
-    const recentYearEl = document.getElementById('recentYear');
-    const totalJournalsEl = document.getElementById('totalJournals');
+    const currentYearPapersEl = document.getElementById('currentYearPapers');
+    const recentFiveYearsPapersEl = document.getElementById('recentFiveYearsPapers');
 
     // ==============================
     // 4. 状态管理
@@ -3379,7 +3384,8 @@ document.addEventListener('DOMContentLoaded', function() {
         search: '',
         year: 'all',
         journal: 'all',
-        tag: 'all'
+        tag: 'all',
+        highlight: false
     };
 
     // 分页状态
@@ -3403,6 +3409,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // 6. 事件监听器设置
     // ==============================
     function setupEventListeners() {
+                // Highlight Paper 筛选checkbox
+                if (highlightFilter) {
+                    highlightFilter.addEventListener('change', function() {
+                        currentFilters.highlight = this.checked;
+                        currentPage = 1;
+                        renderPublications();
+                    });
+                }
         // 搜索框输入
         if (searchInput) {
             searchInput.addEventListener('input', debounce(function() {
@@ -3488,15 +3502,16 @@ document.addEventListener('DOMContentLoaded', function() {
         // PRL/PRX论文数
         const prlPrxCount = publications.filter(p => p.category === 'prl' || p.category === 'prx'|| p.category === 'nature').length;
         prlPapersEl.textContent = prlPrxCount;
-        
-        // 最新年份
-        const years = publications.map(p => parseInt(p.year));
-        const latestYear = Math.max(...years);
-        recentYearEl.textContent = latestYear;
-        
-        // 期刊种类
-        const uniqueJournals = new Set(publications.map(p => p.journal));
-        totalJournalsEl.textContent = uniqueJournals.size;
+
+        // 今年发表论文数
+        const thisYear = new Date().getFullYear();
+        const thisYearCount = publications.filter(p => parseInt(p.year) === thisYear).length;
+        currentYearPapersEl.textContent = thisYearCount;
+
+        // 近五年发表论文数
+        const fiveYearsAgo = thisYear - 4;
+        const fiveYearsCount = publications.filter(p => parseInt(p.year) >= fiveYearsAgo).length;
+        recentFiveYearsPapersEl.textContent = fiveYearsCount;
     }
 
     // ==============================
@@ -3633,6 +3648,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==============================
     function filterPublications(pubs) {
         return pubs.filter(pub => {
+            // Highlight Paper筛选
+            if (currentFilters.highlight && (!pub.badges || !pub.badges.includes('highlight'))) {
+                return false;
+            }
             // 搜索过滤
             if (currentFilters.search) {
                 const searchTerm = currentFilters.search;
@@ -3714,6 +3733,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <span class="card-badge badge-journal">
                         <i class="${journalInfo.icon}"></i> ${pub.journal}
                     </span>
+                    ${pub.badges && pub.badges.includes('highlight') ? `<span class="card-badge badge-highlight" style="margin-left:10px;"><i class="fas fa-star"></i> Highlight Paper</span>` : ''}
                 </div>
                 <div class="card-content">
                     <p class="card-authors">${pub.authors}</p>
