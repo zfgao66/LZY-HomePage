@@ -215,3 +215,39 @@
     display: none;
 }
 
+/* 面包屑导航（集中样式） */
+.breadcrumb {
+	background-color: #f1f5f9;
+	padding: 15px 0;
+	margin-bottom: 30px;
+}
+.breadcrumb .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.breadcrumb-links {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+.breadcrumb-links li {
+	margin-right: 10px;
+	font-size: 0.95rem;
+	color: #4a5568;
+}
+.breadcrumb-links li a {
+	color: #4a5568;
+}
+.breadcrumb-links li a:hover {
+	color: #b31b1b;
+}
+.breadcrumb-links li:not(:last-child)::after {
+	content: ">";
+	margin-left: 10px;
+	color: #a0aec0;
+}
+
+

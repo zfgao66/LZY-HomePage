@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>团队介绍 - 智能计算与数据挖掘实验室</title>
+    <title>团队介绍-卢仲毅教授研究组-AI驱动的计算物理与量子材料实验室</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -32,94 +32,9 @@
             padding: 0 20px;
         }
         
-        /* 顶部导航 */
-        .site-header {
-            background-color: #fff;
-            border-bottom: 3px solid #b31b1b;
-            padding: 15px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
+        /* 顶部导航样式已统一到 styles.css：不要在页面内重复定义 */
         
-        .header-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .lab-info h1 {
-            font-size: 1.8rem;
-            color: #b31b1b;
-            margin-bottom: 5px;
-        }
-        
-        .lab-info p {
-            color: #666;
-            font-size: 1rem;
-        }
-        
-        .main-nav {
-            background-color: #2c3e50;
-        }
-        
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-links li a {
-            display: block;
-            color: #ecf0f1;
-            padding: 18px 22px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        .nav-links li a:hover {
-            background-color: #34495e;
-        }
-        
-        /* .team-logo: moved to styles.css */
-        
-        .nav-links li a.active {
-            background-color: #b31b1b;
-        }
-        
-        /* 面包屑导航 */
-        .breadcrumb {
-            background-color: #f1f5f9;
-            padding: 15px 0;
-            margin-bottom: 30px;
-        }
-        
-        .breadcrumb-links {
-            list-style: none;
-            display: flex;
-        }
-        
-        .breadcrumb-links li {
-            margin-right: 10px;
-            font-size: 0.95rem;
-        }
-        
-        .breadcrumb-links li a {
-            color: #4a5568;
-        }
-        
-        .breadcrumb-links li a:hover {
-            color: #b31b1b;
-        }
-        
-        .breadcrumb-links li:not(:last-child)::after {
-            content: ">";
-            margin-left: 10px;
-            color: #a0aec0;
-        }
+        /* breadcrumb 样式在 styles.css 中维护 */
         
         /* 页面标题 */
         .page-header {
@@ -414,28 +329,13 @@
         }
         
         @media (max-width: 768px) {
-            .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            
-            .nav-links li a {
-                padding: 12px 15px;
-                font-size: 0.95rem;
-            }
+            /* nav 样式在 styles.css 中维护 */
             
             .page-header h1 {
                 font-size: 2rem;
             }
-            
-            .team-intro, .alumni-section, .join-us {
-                padding: 25px;
-            }
-            
-            .category-title {
-                font-size: 1.5rem;
-            }
-            
+                /* nav 样式在 styles.css 中维护 */
+                /* nav 样式在 styles.css 中维护 */
             .member-body {
                 padding: 20px;
             }
@@ -456,6 +356,125 @@
             }
             /* logo responsive rules moved to styles.css */
         }
+
+        /* 博士研究生卡片样式 */
+        .phd-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        
+        .phd-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .phd-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 4px solid white;
+            background-color: #ecf0f1;
+            margin: 0 auto 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #7f8c8d;
+        }
+        
+        .phd-info {
+            padding: 15px;
+        }
+        
+        .phd-name {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .phd-field {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        .phd-email {
+            font-size: 0.9rem;
+            color: #3498db;
+        }
+
+        @media (max-width: 768px) {
+            .phd-card {
+                width: calc(33.333% - 20px);
+                margin: 0 10px 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .phd-card {
+                width: 100%;
+            }
+        }
+
+        /* 博士生卡片专用样式 */
+        .phd-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        .phd-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 18px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 0;
+        }
+        .phd-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            background: #f1f5f9;
+        }
+        .phd-info {
+            text-align: center;
+        }
+        .phd-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 4px;
+        }
+        .phd-field {
+            font-size: 0.95rem;
+            color: #4a5568;
+            margin-bottom: 4px;
+        }
+        .phd-email {
+            font-size: 0.92rem;
+            color: #3498db;
+            word-break: break-all;
+        }
+        @media (max-width: 900px) {
+            .phd-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .phd-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -475,7 +494,7 @@
         <div class="nav-container">
             <ul class="nav-links">
                 <li><a href="./Main.html">首页</a></li>
-                <li><a href="./TuanDuiJieShao.html">团队介绍</a></li>
+                <li><a href="./TuanDuiJieShao.html" class="active">团队介绍</a></li>
                 <li><a href="./YanJiuFangXiang.html">研究方向</a></li>
                 <li><a href="./XueShuFaBiao.html">学术发表</a></li>
                 <li><a href="./XiangMuKeTi.html">项目课题</a></li>
@@ -484,16 +503,6 @@
             </ul>
         </div>
     </nav>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const links = document.querySelectorAll('.nav-links a');
-        const current = location.pathname.split('/').pop() || 'Main.html';
-        links.forEach(a => {
-            a.classList.toggle('active', a.getAttribute('href') === current);
-        });
-    });
-    </script>
 
     <!-- 面包屑导航 -->
     <div class="breadcrumb">
@@ -517,7 +526,7 @@
         <section class="team-intro">
             <h2>实验室概况</h2>
             <p>AI驱动的计算物理与量子材料实验室由卢仲毅教授牵头成立，依托中国人民大学物理学院建设与发展。实验室面向量子材料科学与智能计算的前沿需求，重点开展人工智能驱动的量子材料结构与性能逆向设计、面向科学实验场景的垂域大语言模型与智能代理训练、量子多体理论方法的发展与应用，以及基于第一性原理的电子结构精确计算等方向的系统研究。团队以交叉融合为特色，致力于通过先进算法、量子理论与高性能计算的深度结合，加速新型量子材料的理论预测与机制揭示，推动材料科学智能化研究范式的形成。</p>
-            <p>实验室目前有教授2名，副教授1名，讲师1名，博士研究生15名，硕士研究生10名，形成了结构合理、富有创新精神的研究团队。团队成员在国际顶级会议和期刊上发表了200余篇学术论文，承担了国家自然科学基金重点项目、国家重点研发计划等多项国家级科研项目。实验室与国内外多所知名高校和研究机构建立了长期合作关系，包括清华大学、北京大学、中国科学院、深势科技等，定期开展学术交流与合作研究。</p>
+            <p>实验室目前有教授2名，副教授1名，讲师1名，博士研究生15名，形成了结构合理、富有创新精神的研究团队。团队成员在国际顶级会议和期刊上发表了200余篇学术论文，承担了国家自然科学基金重点项目、国家重点研发计划等多项国家级科研项目。实验室与国内外多所知名高校和研究机构建立了长期合作关系，包括清华大学、北京大学、中国科学院、深势科技等，定期开展学术交流与合作研究。</p>
         </section>
         <!-- 指导教授 -->
         <section class="team-category">
@@ -566,7 +575,7 @@
                             </div>
                         </div>
                         <p class="member-bio">
-                            中国人民大学物理学院院长、教授、博士生导师，意大利国际高等研究院凝聚态物理学哲学博士。2007年获获国家杰出青年科学基金，2012年入选教育部长江学者特聘教授，2020年以第一完成人获国家自然科学二等奖（铁基超导电子结构与磁相互作用研究） 。研究方向涵盖电子结构计算、分子动力学模拟及强关联材料理论，开发DFT+DMFT开源软件包。
+                            中国人民大学物理学院院长、教授、博士生导师。2007年获国家杰出青年科学基金，2012年入选教育部长江学者特聘教授，2019年以第一完成人获国家自然科学奖二等奖（铁基超导电子结构与磁相互作用的理论研究）。研究方向涵盖量子多体理论、量子材料电子结构计算、强关联材料超快动力学理论研究、人工智能与量子材料及多体理论交叉。
                         </p>
                         <div class="member-links">
                             <a href="http://www.phys.ruc.edu.cn/info/1024/1387.htm" class="member-link" title="个人主页">
@@ -724,10 +733,10 @@
                             </div>
                         </div>
                         <p class="member-bio">
-                            中国人民大学物理学院讲师、副研究员，中国人民大学青年英才。研究方向包括量子物理数值方法、预训练模型压缩以及AI辅助功能性晶体材料发现与生成。围绕矩阵乘积算符表示，开展了神经网络结构设计、语音增强模型压缩与小型化、预训练模型轻量化微调与扩容等研究，并探索利用人工智能加速功能性新材料发现。已发表论文二十余篇，涵盖ACL、NeurIPS、EMNLP、COLING等国际顶会及NSR、Nature Computational Science等重要期刊。相关成果包括获ACL2023最佳论文提名、AI辅助交错磁性材料研究入选WOS高被引与最受关注论文等，成果被剑桥大学、斯坦福大学、Meta等机构专家引用。主持多项科研项目，包括国自然青年、面上、重点项目（子课题）、重点研发计划专项（子课题）、北京市自然科学基金重点项目（子课题）及多项横向课题。
+                            中国人民大学物理学院讲师、副研究员，中国人民大学青年英才。研究方向包括量子物理数值方法、预训练模型压缩以及AI辅助功能性晶体材料发现与生成。围绕矩阵乘积算符表示，开展了神经网络结构设计、语音增强模型压缩与小型化、预训练模型轻量化微调与扩容等研究，并探索利用人工智能加速功能性新材料发现。
                         </p>
                         <div class="member-links">
-                            <a href="http://www.phys.ruc.edu.cn/info/1304/2128.htm" class="member-link" title="个人主页">
+                            <a href="http://www.gaozefeng.tech" class="member-link" title="个人主页">
                                 <i class="fas fa-home"></i>
                             </a>
                             <a href="https://scholar.google.com/citations?user=vB64k4IAAAAJ&hl=zh-CN&oi=ao" class="member-link" title="Google Scholar">
@@ -875,11 +884,11 @@
                                 </div>
                                 <div class="info-text">
                                     <strong>办公室：</strong>立德楼1719
-                                </div>
+                                </div>              
                             </div>
                         </div>
                         <p class="member-bio">
-                            中国人民大学高瓴人工智能学院副院长、长聘教授、博导，国家高层次青年人才，哥伦比亚大学博士、麻省理工学院博士后，曾任美国匹兹堡大学、美国东北大学终身序列助理教授、中国人民大学高瓴人工智能学院长聘副教授。从事智能科学计算理论方法与前沿交叉研究。以第一/通讯作者在Nature Machine Intelligence（2篇）、Nature Computational Science、Nature Communications（3篇）等国际一流期刊和ICLR、NeurIPS、KDD、ICML等计算机顶会发表及录用论文60余篇，发表其他合作论文20余篇。主持国家高层次人才计划青年项目、国家自然科学基金（重大培育、面上）、美国科学基金（重点、面上、专题）等科研项目十余项。先后获得福布斯北美30位30岁以下精英榜（科学类）、美国十大华人杰出青年、中国智能计算科技创新人物、AI100先锋青年等荣誉。
+                            中国人民大学高瓴人工智能学院副院长、长聘教授、博导，国家高层次青年人才，哥伦比亚大学博士、麻省理工学院博士后，曾任美国匹兹堡大学、美国东北大学终身序列助理教授、中国人民大学高瓴人工智能学院长聘副教授。从事智能科学计算理论方法与前沿交叉研究。
                         </p>
                         <div class="member-links">
                             <a href="https://gsai.ruc.edu.cn/haosun" class="member-link" title="个人主页">
@@ -896,16 +905,18 @@
                 <div class="category-icon">
                     <i class="fas fa-user-graduate"></i>
                 </div>
-                <h2 class="category-title">博士后与研究员</h2>
+                <h2 class="category-title">博士后</h2>
             </div>
             
             <div class="members-grid">
+                
                 <div class="member-card">
                     <div class="member-header">
                         <div class="member-avatar">
+                            <img src="./people/faculty/wjq.png" alt="王佳奇" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
                             <i class="fas fa-user-graduate"></i>
                         </div>
-                        <h3 class="member-name">王佳琦</h3>
+                        <h3 class="member-name">王佳奇</h3>
                         <p class="member-role">博士后研究员</p>
                     </div>
                     <div class="member-body">
@@ -915,7 +926,15 @@
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="info-text">
-                                    <strong>研究方向：</strong>多体物理
+                                    <strong>研究方向：</strong>多体物理，人工智能
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>办公室：</strong>物理楼204
                                 </div>
                             </div>
                             <div class="info-item">
@@ -923,16 +942,56 @@
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div class="info-text">
-                                    <strong>邮箱：</strong>wangjiaqi@ruc.edu.cn
+                                    <strong>邮箱：</strong>jqwang@ruc.edu.cn
                                 </div>
                             </div>
                         </div>
                         <p class="member-bio">
-                            2025年于中国人民大学获得博士学位，主要从事量子多体物理与机器学习方面的研究。
+                            2025年于中国人民大学获得博士学位，主要从事量子多体系统中的神经网络量子态研究，包括网络结构表征、基态与激发态计算及含时演化模拟等；深度融合人工智能技术，改进传统算法并探索量子多体物理研究的新范式。
                         </p>
                     </div>
                 </div>
-                
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="member-avatar">
+                            <img src="./people/faculty/chenyin.jpg" alt="陈寅" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3 class="member-name">陈寅</h3>
+                        <p class="member-role">博士后研究员</p>
+                    </div>
+                    <div class="member-body">
+                        <div class="member-info">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>研究方向：</strong>norg+dmft,norg+edmft
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>办公室：</strong>物理楼204
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>邮箱：</strong>15336698809@163.com
+                                </div>
+                            </div>
+                        </div>
+                        <p class="member-bio">
+                            2025年于中国人民大学获得博士学位，主要从事norg+dmft,norg+edmft的相关研究。
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -945,123 +1004,217 @@
                 <h2 class="category-title">博士研究生</h2>
             </div>
             
-            <div class="members-grid">
-                <div class="member-card">
-                    <div class="member-header">
-                        <div class="member-avatar">
-                            <img src="./people/PhD/hanxiaoqi.png" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <h3 class="member-name">韩小琪</h3>
-                        <p class="member-role">博士研究生</p>
+            <div class="members-grid phd-grid">
+                <div class="phd-card">
+                    <img src="./people/PhD/hanxiaoqi.png" alt="韩小琪" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">韩小琪</div>
+                        <div class="phd-field">图神经网络，材料结构设计</div>
+                        <div class="phd-email">hanxiaoqi@ruc.edu.cn</div>
                     </div>
-                    <div class="member-body">
-                        <div class="member-info">
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <div class="info-text">
-                                    <strong>研究方向：</strong>图神经网络，材料结构设计
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="info-text">
-                                    <strong>邮箱：</strong>hanxiaoqi@ruc.edu.cn
-                                </div>
-                            </div>
-                        </div>
-                        <p class="member-bio">
-                            2024年入学，主要研究AI驱动的功能性材料逆向设计。在PRB、CPL等期刊上发表论文6篇，开发InvDesFlow等一些列AI方法加速新材料发现。
-                        </p>
-                        <div class="member-links">
-                            <a href="#" class="member-link" title="个人主页">
-                                <i class="fas fa-home"></i>
-                            </a>
-                            <a href="https://github.com/xqh19970407" class="member-link" title="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
+                </div>
+                <div class="phd-card">
+                    <img src="./people/PhD/wangxinde.png" alt="王馨德" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">王馨德</div>
+                        <div class="phd-field">大语言模型，偏微分方程</div>
+                        <div class="phd-email">xdwang618@ruc.edu.cn</div>
+                    </div>
+                </div>
+                <div class="phd-card">
+                    <img src="./people/PhD/dzh.jpg" alt="丁子豪" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">丁子豪</div>
+                        <div class="phd-field">计算物理与凝聚态理论</div>
+                        <div class="phd-email">zhding@ruc.edu.cn</div>
+                    </div>
+                </div>
+                <div class="phd-card">
+                    <img src="./people/PhD/tanchaoyang.jpg" alt="谭朝杨" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">谭朝杨</div>
+                        <div class="phd-field">计算物理，交错磁性和拓扑</div>
+                        <div class="phd-email">cytan@ruc.edu.cn</div>
+                    </div>
+                </div>
+                <div class="phd-card">
+                    <img src="./people/PhD/fengzhen.png" alt="冯祯" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">冯祯</div>
+                        <div class="phd-field">计算物理</div>
+                        <div class="phd-email">2021000485@ruc.edu.cn</div>
+                    </div>
+                </div>
+                <div class="phd-card">
+                    <img src="./people/PhD/wangjingxuan.png" alt="王靖轩" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">王靖轩</div>
+                        <div class="phd-field">强关联材料计算</div>
+                        <div class="phd-email">jxw@ruc.edu.cn</div>
+                    </div>
+                </div>
+                <div class="phd-card">
+                    <img src="./people/PhD/songyuhui.png" alt="宋玉慧" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">宋玉慧</div>
+                        <div class="phd-field">含时密度泛函理论；激发态动力学</div>
+                        <div class="phd-email">yhsong@ruc.edu.cn</div>
+                    </div>
+                </div>
+                <div class="phd-card">
+                    <img src="./people/PhD/ouyangzhenfeng.jpg" alt="欧阳振峰" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">欧阳振峰</div>
+                        <div class="phd-field">计算物理；超导和强关联</div>
+                        <div class="phd-email">zfoy@ruc.edu.cn</div>
+                    </div>
+                </div>
+                <div class="phd-card">
+                    <img src="./people/PhD/tianyiheng.jpg" alt="田一衡" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">田一衡</div>
+                        <div class="phd-field">高温超导，非平衡物理</div>
+                        <div class="phd-email">ructyh@ruc.edu.cn</div>
                     </div>
                 </div>
                 
-                <div class="member-card">
-                    <div class="member-header">
-                        <div class="member-avatar">
-                            <img src="./people/PhD/wangxinde.png" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <h3 class="member-name">王馨德</h3>
-                        <p class="member-role">博士研究生</p>
+                <div class="phd-card">
+                    <img src="./people/PhD/xushengsong.png" alt="徐晟淞" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">徐晟淞</div>
+                        <div class="phd-field">强关联物理，非平衡dmft计算</div>
+                        <div class="phd-email">xss@ruc.edu.cn</div>
                     </div>
-                    <div class="member-body">
-                        <div class="member-info">
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <div class="info-text">
-                                    <strong>研究方向：</strong>大语言模型，偏微分方程
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="info-text">
-                                    <strong>邮箱：</strong>xdwang618@ruc.edu.cn
-                                </div>
-                            </div>
-                        </div>
-                        <p class="member-bio">
-                            2022年入学，主要研究针对材料设计的垂域大语言模型与偏微分方程求解。
-                        </p>
-                        <div class="member-links">
-                            <a href="https://github.com/WD928" class="member-link" title="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
+                </div>
+                <div class="phd-card">
+                    <img src="./people/PhD/liwenkao.png" alt="李文考" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">李文考</div>
+                        <div class="phd-field">AI驱动的材料逆向设计</div>
+                        <div class="phd-email"> liwenkao@ruc.edu.cn</div>
                     </div>
                 </div>
             </div>
         </section>
 
+        
+        <!-- 本科生 -->
+        <section class="team-category">
+            <div class="category-header">
+                <div class="category-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h2 class="category-title">本科生</h2>
+            </div>
+            
+            <div class="members-grid phd-grid">
+                <div class="phd-card">
+                    <img src="./people/undergraduate/zyh.jpg" alt="詹怿恒" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">詹怿恒</div>
+                        <div class="phd-field">机器学习力场</div>
+                        <div class="phd-email">2025162821@qq.com</div>
+                    </div>
+                </div>
+                <div class="phd-card">
+                    <img src="./people/undergraduate/wuying.png" alt="吴颖" class="phd-avatar" onerror="this.style.display='none'">
+                    <div class="phd-info">
+                        <div class="phd-name">吴颖</div>
+                        <div class="phd-field">多智能体</div>
+                        <div class="phd-email">xdwang618@ruc.edu.cn</div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- 往届成员 -->
         <section class="alumni-section">
             <h2>往届成员</h2>
             <div class="alumni-list">
                 <div class="alumni-item">
-                    <div class="alumni-name">高淼</div>
-                    <div class="alumni-info">博士，2014年毕业</div>
-                    <div class="alumni-period">2010-2014</div>
-                    <div class="alumni-info">现任：宁波大学物理学院 教授</div>
+                    <div class="alumni-name">马锋杰</div>
+                    <div class="alumni-info">博士，2010年毕业</div>
+                    <div class="alumni-period">2004-2010</div>
+                    <div class="alumni-info">现任：北京师范大学 特聘研究员&副教授</div>
                 </div>
                 <div class="alumni-item">
                     <div class="alumni-name">闫循旺</div>
-                    <div class="alumni-info">博士，2015年毕业</div>
-                    <div class="alumni-period">2011-2015</div>
+                    <div class="alumni-info">博士，2011年毕业</div>
+                    <div class="alumni-period">2007-2011</div>
                     <div class="alumni-info">现任：曲阜师范大学 教授</div>
                 </div>
                 <div class="alumni-item">
+                    <div class="alumni-name">高淼</div>
+                    <div class="alumni-info">博士，2013年毕业</div>
+                    <div class="alumni-period">2007-2013</div>
+                    <div class="alumni-info">现任：宁波大学 教授</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">贺荣强</div>
+                    <div class="alumni-info">博士，2015年毕业</div>
+                    <div class="alumni-period">2011-2015</div>
+                    <div class="alumni-info">现任：中国人民大学 教授</div>
+                </div>
+                <div class="alumni-item">
                     <div class="alumni-name">邬汉青</div>
-                    <div class="alumni-info">博士，2020年毕业</div>
-                    <div class="alumni-period">2016-2020</div>
+                    <div class="alumni-info">博士，2016年毕业</div>
+                    <div class="alumni-period">2010-2016</div>
                     <div class="alumni-info">现任：中山大学 副教授</div>
                 </div>
                 <div class="alumni-item">
-                    <div class="alumni-name">何院耀</div>
-                    <div class="alumni-info">博士，2020年毕业</div>
-                    <div class="alumni-period">2015-2020</div>
-                    <div class="alumni-info">现任：西北大学 教授</div>
+                    <div class="alumni-name">郑汝</div>
+                    <div class="alumni-info">博士，2018年毕业</div>
+                    <div class="alumni-period">2014-2018</div>
+                    <div class="alumni-info">现任：宁波大学 讲师</div>
                 </div>
                 <div class="alumni-item">
-                    <div class="alumni-name">龚本超</div>
+                    <div class="alumni-name">杨焕成</div>
+                    <div class="alumni-info">博士，2018年毕业</div>
+                    <div class="alumni-period">2014-2018</div>
+                    <div class="alumni-info">现任：中国人民大学 高级实验师</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">何院耀</div>
+                    <div class="alumni-info">博士，2018年毕业</div>
+                    <div class="alumni-period">2013-2018</div>
+                    <div class="alumni-info">现任：西北大学 教授</div>
+                </div>
+                
+                <div class="alumni-item">
+                    <div class="alumni-name">彭晨</div>
+                    <div class="alumni-info">博士，2020年毕业</div>
+                    <div class="alumni-period">2016-2020</div>
+                    <div class="alumni-info">现任：河北师范大学 副教授</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">高泽峰</div>
                     <div class="alumni-info">博士，2021年毕业</div>
                     <div class="alumni-period">2016-2021</div>
-                    <div class="alumni-info">现任：江苏科技大学 副教授</div>
+                    <div class="alumni-info">现任：中国人民大学 讲师</div>
+                </div>
+                
+                <div class="alumni-item">
+                    <div class="alumni-name">卢小琴</div>
+                    <div class="alumni-info">博士，2021年毕业</div>
+                    <div class="alumni-period">2014-2021</div>
+                    <div class="alumni-info">现任：广东第二师范学院 讲师</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">徐明珠</div>
+                    <div class="alumni-info">硕士，2021年毕业</div>
+                    <div class="alumni-period">2018-2021</div>
+                    <div class="alumni-info">现任：福州第十五中学 教师</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">高岚</div>
+                    <div class="alumni-info">硕士，2022年毕业</div>
+                    <div class="alumni-period">2019-2022</div>
+                    <div class="alumni-info">现任：北京四中 教师</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">林赫羽</div>
+                    <div class="alumni-info">博士，2022年毕业</div>
+                    <div class="alumni-period">2017-2022</div>
+                    <div class="alumni-info">现任：内蒙古科技大学 讲师</div>
                 </div>
                 <div class="alumni-item">
                     <div class="alumni-name">高炎</div>
@@ -1069,9 +1222,101 @@
                     <div class="alumni-period">2018-2022</div>
                     <div class="alumni-info">现任：燕山大学 副教授</div>
                 </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">肖丽蔓</div>
+                    <div class="alumni-info">博士，2023年毕业</div>
+                    <div class="alumni-period">2015-2023</div>
+                    <div class="alumni-info">现任：北京中医药大学 讲师</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">屈帅</div>
+                    <div class="alumni-info">博士，2025年毕业</div>
+                    <div class="alumni-period">2019-2025</div>
+                    <div class="alumni-info">现任：上海科技大学 博士后研究员</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">侯逍遥</div>
+                    <div class="alumni-info">博士，2025年毕业</div>
+                    <div class="alumni-period">2021-2025</div>
+                    <div class="alumni-info">现任：河南科技大学 讲师</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">王佳明</div>
+                    <div class="alumni-info">博士，2025年毕业</div>
+                    <div class="alumni-period">2020-2025</div>
+                    <div class="alumni-info">现任：罗格斯大学 博士后研究员</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">姚博文</div>
+                    <div class="alumni-info">硕士，2025年毕业</div>
+                    <div class="alumni-period">2022-2025</div>
+                    <div class="alumni-info">现任：中国科学院山西煤炭化学研究所 助理工程师</div>
+                </div>
+
             </div>
         </section>
-
+<!-- 往届成员 -->
+        <section class="alumni-section">
+            <h2>往届成员(联合培养)</h2>
+            <div class="alumni-list">
+                <div class="alumni-item">
+                    <div class="alumni-name">冯馨雯</div>
+                    <div class="alumni-info">硕士，2019年毕业</div>
+                    <div class="alumni-period">2016-2019</div>
+                    <div class="alumni-info">现任：北京市第一六一中学 教师</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">郭朋杰</div>
+                    <div class="alumni-info">博士，2020年毕业</div>
+                    <div class="alumni-period">2013-2020</div>
+                    <div class="alumni-info">现任：中国人民大学 副教授</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">张建丰</div>
+                    <div class="alumni-info">博士，2021年毕业</div>
+                    <div class="alumni-period">2015-2021</div>
+                    <div class="alumni-info">现任：北京高压科学研究中心 副研究员</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">龚本超</div>
+                    <div class="alumni-info">博士，2021年毕业</div>
+                    <div class="alumni-period">2014-2021</div>
+                    <div class="alumni-info">现任：江苏科技大学 讲师</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">许朵</div>
+                    <div class="alumni-info">硕士，2022年毕业</div>
+                    <div class="alumni-period">2019-2022</div>
+                    <div class="alumni-info">现任：徐州市工业和信息化局 四级主任科员</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">邱潇乐</div>
+                    <div class="alumni-info">博士，2022年毕业</div>
+                    <div class="alumni-period">2015-2022</div>
+                    <div class="alumni-info">现任：潍坊学院 副教授</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">赵宁宁</div>
+                    <div class="alumni-info">博士，2023年毕业</div>
+                    <div class="alumni-period">2019-2023</div>
+                    <div class="alumni-info">现任：济南大学 讲师</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">孙培函</div>
+                    <div class="alumni-info">博士，2023年毕业</div>
+                    <div class="alumni-period">2019-2023</div>
+                    <div class="alumni-info">现任：河北科技大学 讲师</div>
+                </div>
+                <div class="alumni-item">
+                    <div class="alumni-name">满潇潇</div>
+                    <div class="alumni-info">博士，2024年毕业</div>
+                    <div class="alumni-period">2018-2024</div>
+                    <div class="alumni-info">现任：山西师范大学 讲师</div>
+                </div>
+                
+                </div>
+            </div>
+        </section>
         <!-- 加入我们 -->
         <section class="join-us">
             <h2>加入我们</h2>
