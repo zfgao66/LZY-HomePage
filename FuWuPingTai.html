@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+            <style>
+                .team-logo { max-height: 64px !important; height: 64px !important; width: auto !important; }
+            </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI服务平台 - 卢仲毅教授研究组 - 中国人民大学物理学院</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 顶部导航 */
+        .site-header {
+            background-color: #fff;
+            border-bottom: 3px solid #b31b1b; /* 人大红 */
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .lab-info h1 {
+            font-size: 1.8rem;
+            color: #b31b1b;
+            margin-bottom: 5px;
+        }
+        
+        .lab-info p {
+            color: #666;
+            font-size: 1rem;
+        }
+        
+        .main-nav {
+            background-color: #2c3e50;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li a {
+            display: block;
+            color: #ecf0f1;
+            padding: 18px 22px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links li a:hover {
+            background-color: #34495e;
+        }
+        
+        .nav-links li a.active {
+            background-color: #b31b1b;
+        }
+        
+        /* 面包屑导航 */
+        .breadcrumb {
+            background-color: #f1f5f9;
+            padding: 15px 0;
+            margin-bottom: 30px;
+        }
+        
+        .breadcrumb-links {
+            list-style: none;
+            display: flex;
+        }
+        
+        .breadcrumb-links li {
+            margin-right: 10px;
+            font-size: 0.95rem;
+        }
+        
+        .breadcrumb-links li a {
+            color: #4a5568;
+        }
+        
+        .breadcrumb-links li a:hover {
+            color: #b31b1b;
+        }
+        
+        .breadcrumb-links li:not(:last-child)::after {
+            content: ">";
+            margin-left: 10px;
+            color: #a0aec0;
+        }
+        
+        /* 页面标题 */
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .page-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* 服务平台概览 */
+        .platform-overview {
+            background: linear-gradient(135deg, #2c3e50 0%, #4a5568 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .overview-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        
+        .overview-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .overview-text p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+        
+        .ai-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        
+        .highlight-item {
+            text-align: center;
+            padding: 25px 15px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .highlight-item:hover {
+            background-color: rgba(255,255,255,0.15);
+            transform: translateY(-5px);
+        }
+        
+        .highlight-icon {
+            font-size: 2.2rem;
+            color: #2ecc71;
+            margin-bottom: 15px;
+        }
+        
+        .highlight-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 5px;
+            line-height: 1;
+        }
+        
+        .highlight-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        /* AI平台导航 */
+        .platform-nav {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+        
+        .platform-nav-title {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .platform-nav-title i {
+            margin-right: 10px;
+            color: #b31b1b;
+        }
+        
+        .platform-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .platform-btn {
+            padding: 12px 24px;
+            background-color: #f1f5f9;
+            border: none;
+            border-radius: 5px;
+            color: #4a5568;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        
+        .platform-btn:hover {
+            background-color: #e2e8f0;
+            color: #2c3e50;
+        }
+        
+        .platform-btn.active {
+            background-color: #b31b1b;
+            color: white;
+        }
+        
+        .platform-btn i {
+            margin-right: 8px;
+        }
+        
+        /* AI服务平台内容区域 */
+        .platform-content {
+            margin-bottom: 60px;
+        }
+        
+        .platform-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            display: none;
+        }
+        
+        .platform-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title i {
+            margin-right: 10px;
+            color: #b31b1b;
+        }
+        
+        .section-badge {
+            background-color: #e8f4fc;
+            color: #3498db;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        /* AI模型卡片 */
+        .ai-models-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .ai-model-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .ai-model-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        }
+        
+        .model-type {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 2;
+        }
+        
+        .type-physics {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .type-materials {
+            background-color: #2ecc71;
+            color: white;
+        }
+        
+        .type-multimodal {
+            background-color: #f39c12;
+            color: white;
+        }
+        
+        .type-framework {
+            background-color: #9b59b6;
+            color: white;
+        }
+        
+        .model-header {
+            padding: 25px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .model-icon {
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #3498db;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .model-name {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .model-subtitle {
+            color: #718096;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        
+        .model-body {
+            padding: 25px;
+        }
+        
+        .model-description {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .model-features {
+            margin-bottom: 20px;
+        }
+        
+        .feature-list {
+            list-style: none;
+        }
+        
+        .feature-item {
+            padding: 8px 0;
+            border-bottom: 1px dashed #e2e8f0;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-icon {
+            color: #2ecc71;
+            margin-right: 10px;
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+        
+        .feature-text {
+            color: #4a5568;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .model-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .model-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 16px;
+            background-color: #f1f5f9;
+            color: #4a5568;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .model-link:hover {
+            background-color: #e2e8f0;
+            color: #2c3e50;
+        }
+        
+        .model-link.demo-link {
+            background-color: #e8f4fc;
+            color: #3498db;
+        }
+        
+        .model-link.demo-link:hover {
+            background-color: #d4eaf9;
+        }
+        
+        .model-link.code-link {
+            background-color: #f0f9f0;
+            color: #2ecc71;
+        }
+        
+        .model-link.code-link:hover {
+            background-color: #e1f5e1;
+        }
+        
+        /* AI应用展示 */
+        .ai-applications {
+            margin-bottom: 40px;
+        }
+        
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .application-card {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            border-left: 5px solid #3498db;
+        }
+        
+        .application-card:hover {
+            background-color: #edf2f7;
+            transform: translateY(-5px);
+        }
+        
+        .application-icon {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+        
+        .application-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .application-desc {
+            color: #718096;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .application-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .application-tag {
+            padding: 4px 10px;
+            background-color: #e2e8f0;
+            color: #4a5568;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+        
+        /* 数据集展示 */
+        .datasets-section {
+            margin-bottom: 40px;
+        }
+        
+        .datasets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+        }
+        
+        .dataset-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid #2ecc71;
+        }
+        
+        .dataset-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .dataset-icon {
+            font-size: 2rem;
+            color: #2ecc71;
+            margin-right: 15px;
+        }
+        
+        .dataset-name {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.2rem;
+        }
+        
+        .dataset-info {
+            color: #718096;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .dataset-stats {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .dataset-stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .stat-label {
+            color: #718096;
+            font-size: 0.85rem;
+        }
+        
+        .dataset-link {
+            display: inline-flex;
+            align-items: center;
+            color: #3498db;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        
+        .dataset-link i {
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .dataset-link:hover i {
+            transform: translateX(5px);
+        }
+        
+        /* 合作伙伴 */
+        .partners-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+        }
+        
+        .partners-section h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .partners-section h2 i {
+            margin-right: 10px;
+            color: #b31b1b;
+        }
+        
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 25px;
+        }
+        
+        .partner-item {
+            text-align: center;
+            padding: 25px 15px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .partner-item:hover {
+            background-color: #edf2f7;
+            transform: translateY(-5px);
+        }
+        
+        .partner-logo {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            font-size: 2rem;
+            color: #3498db;
+        }
+        
+        .partner-name {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .partner-type {
+            font-size: 0.85rem;
+            color: #718096;
+        }
+        
+        /* 页脚 */
+        .site-footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h3 {
+            color: #ecf0f1;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #4a6572;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #fff;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+            font-size: 0.9rem;
+            color: #95a5a6;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 992px) {
+            .overview-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .ai-models-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+            
+            .applications-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .datasets-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .nav-links li a {
+                padding: 12px 15px;
+                font-size: 0.95rem;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .platform-overview, .platform-nav, .platform-section, .partners-section {
+                padding: 25px;
+            }
+            
+            .overview-text h2 {
+                font-size: 1.8rem;
+            }
+            
+            .ai-highlights {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            
+            .platform-buttons {
+                justify-content: center;
+            }
+            
+            .ai-models-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .model-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .model-link {
+                text-align: center;
+            }
+            
+            .partners-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .platform-buttons {
+                flex-direction: column;
+            }
+            
+            .platform-btn {
+                justify-content: center;
+            }
+            
+            .partners-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 网站头部 -->
+    <header class="site-header">
+        <div class="header-container">
+            <img src="./Main-banner/Logo.png" alt="Team Logo" class="team-logo">
+            <div class="lab-info">
+                <h1>卢仲毅 研究组</h1>
+                <p>AI驱动的计算物理与量子材料实验室· 中国人民大学 物理学院</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主导航 -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="./Main.html">首页</a></li>
+                <li><a href="./TuanDuiJieShao.html">团队介绍</a></li>
+                <li><a href="./YanJiuFangXiang.html">研究方向</a></li>
+                <li><a href="./XueShuFaBiao.html">学术发表</a></li>
+                <li><a href="./XiangMuKeTi.html">项目课题</a></li>
+                <li><a href="./ZhaoShengZhaoPin.html">招生招聘</a></li>
+                <li><a href="./LianXiWoMen.html">联系我们</a></li>
+                <li><a href="./FuWuPingTai.html" class="active">服务平台</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 面包屑导航 -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb-links">
+                <li><a href="index.html">首页</a></li>
+                <li>AI服务平台</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 页面主要内容 -->
+    <main class="container">
+        <!-- 页面标题 -->
+        <div class="page-header">
+            <h1>AI服务平台</h1>
+            <p>卢仲毅教授研究组在AI for Science领域的创新成果与服务平台，专注于人工智能与物理科学交叉研究</p>
+        </div>
+
+        <!-- 服务平台概览 -->
+        <section class="platform-overview">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>AI for Science创新平台</h2>
+                    <p>
+                        研究组致力于人工智能与物理科学的交叉研究，开发了一系列先进的AI模型、算法和工具，
+                        用于解决计算物理、量子材料和复杂系统模拟中的关键科学问题。
+                    </p>
+                    <p>
+                        我们的AI服务平台集成了前沿的机器学习方法、深度学习模型和大数据分析技术，
+                        为科学研究提供智能化、自动化的解决方案，推动物理研究的范式变革。
+                    </p>
+                </div>
+                
+                <div class="ai-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="highlight-number">8+</div>
+                        <div class="highlight-label">AI模型与算法</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="highlight-number">4</div>
+                        <div class="highlight-label">科学数据集</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="highlight-number">8+</div>
+                        <div class="highlight-label">开源工具包</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="highlight-number">2000+</div>
+                        <div class="highlight-label">平台用户</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI平台导航 -->
+        <section class="platform-nav">
+            <div class="platform-nav-title">
+                <i class="fas fa-th"></i> 平台功能导航
+            </div>
+            <div class="platform-buttons">
+                <button class="platform-btn active" data-target="ai-models">
+                    <i class="fas fa-robot"></i> AI模型与算法
+                </button>
+                <button class="platform-btn" data-target="datasets">
+                    <i class="fas fa-database"></i> 科学数据集
+                </button>
+                <button class="platform-btn" data-target="applications">
+                    <i class="fas fa-cogs"></i> AI应用展示
+                </button>
+                
+                <button class="platform-btn" data-target="collaboration">
+                    <i class="fas fa-handshake"></i> 合作与使用
+                </button>
+            </div>
+        </section>
+
+        <!-- AI服务平台内容区域 -->
+        <div class="platform-content">
+            <!-- AI模型与算法 -->
+            <section class="platform-section active" id="ai-models">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-robot"></i> AI模型与算法
+                    </h2>
+                    <div class="section-badge">持续更新</div>
+                </div>
+                
+                <p class="model-description" style="margin-bottom: 30px;">
+                    研究组开发了一系列专门用于物理科学研究的AI模型和算法，涵盖从基础理论到实际应用的多个层面。
+                </p>
+                
+                <div class="ai-models-grid">
+                    <!-- 模型1 -->
+                    <div class="ai-model-card">
+                        <div class="model-type type-physics">声子谱预测</div>
+                        <div class="model-header">
+                            <div class="model-icon">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <h3 class="model-name">PhononBench</h3>
+                            <p class="model-subtitle">晶体声子谱分钟级快速计算平台</p>
+                        </div>
+                        <div class="model-body">
+                            <p class="model-description">
+                                用于通过大规模、DFT 精度的声子计算，对AI生成晶体的动力学稳定性进行系统、高通量评估，从而判定其物理可实现性并为生成模型改进提供基准。
+                            </p>
+                            <div class="model-features">
+                                <ul class="feature-list">
+                                    <li class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="feature-text">首个面向动力学稳定性的规模化基准</div>
+                                    </li>
+                                    <li class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="feature-text">高精度与高效率兼顾</div>
+                                    </li>
+                                    <li class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="feature-text">开放性与指导性强</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="model-links">
+                                <a href="http://phononbench.cn" class="model-link demo-link">
+                                    <i class="fas fa-play-circle"></i> 点我使用
+                                </a>
+                                <a href="https://arxiv.org/pdf/2512.21227" class="model-link paper-link">
+                                    <i class="fas fa-file-pdf"></i> 论文
+                                </a>
+    
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 模型2 -->
+                    <div class="ai-model-card">
+                        <div class="model-type type-materials">材料逆向设计</div>
+                        <div class="model-header">
+                            <div class="model-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <h3 class="model-name">InvDesFlow</h3>
+                            <p class="model-subtitle">材料发现与逆向设计平台</p>
+                        </div>
+                        <div class="model-body">
+                            <p class="model-description">
+                                基于深度学习的材料逆向设计平台，发现新的功能性材料，加速功能材料的设计与开发。
+                            </p>
+                            <div class="model-features">
+                                <ul class="feature-list">
+                                    <li class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="feature-text">整合20万+材料数据库</div>
+                                    </li>
+                                    <li class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="feature-text">材料性质预测准确率>90%</div>
+                                    </li>
+                                    <li class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="feature-text">成功预测多种BCS超导材料</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="model-links">
+                                
+                                <a href="https://github.com/xqh19970407/InvDesFlow-AL" class="model-link code-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://www.nature.com/articles/s41524-025-01830-z" class="model-link paper-link">
+                                    <i class="fas fa-file-pdf"></i> 论文
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 模型3 -->
+                    <div class="ai-model-card">
+                        <div class="model-type type-multimodal">材料垂域大模型</div>
+                        <div class="model-header">
+                            <div class="model-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h3 class="model-name">Perovskite‑R1</h3>
+                            <p class="model-subtitle">钙钛矿太阳能电池实验方案设计模型</p>
+                        </div>
+                        <div class="model-body">
+                            <p class="model-description">
+                                该模型用于通过高级推理和文献知识挖掘，智能发现与设计钙钛矿前驱体添加剂，从而加速提升钙钛矿太阳能电池的稳定性和性能。
+                            </p>
+                            <div class="model-features">
+                                <ul class="feature-list">
+                                    <li class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="feature-text">具备高级推理与知识挖掘能力</div>
+                                    </li>
+                                    <li class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="feature-text">具备实验可验证性与实际应用价值</div>
+                                    </li>
+                                    <li class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="feature-text">面向钙钛矿前驱体添加剂的领域专用性强</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="model-links">
+                                <a href="https://github.com/WD928/Perovskite-R1" class="model-link code-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://arxiv.org/abs/2507.16307" class="model-link paper-link">
+                                    <i class="fas fa-file-pdf"></i> 论文
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 模型4 -->
+                    <div class="ai-model-card">
+                        <div class="model-type type-physics">磁性材料预训练模型</div>
+                        <div class="model-header">
+                            <div class="model-icon">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <h3 class="model-name">MatAltMag</h3>
+                            <p class="model-subtitle">交错磁性材料快速筛选模型</p>
+                        </div>
+                        <div class="model-body">
+                            <p class="model-description">
+                                该模型通过基于晶体结构的图神经网络与少样本学习，自动预测并高效发现具有不同电子与拓扑性质的新型交错磁性材料，从而加速面向特定物性的材料探索。
+                            </p>
+                            <div class="model-features">
+                                <ul class="feature-list">
+                                    <li class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="feature-text">基于晶体结构的智能表征能力</div>
+                                    </li>
+                                    <li class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="feature-text">少样本条件下的高效预测能力</div>
+                                    </li>
+                                    <li class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="feature-text">具备强发现能力与物性多样性</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="model-links">
+                                <a href="https://github.com/zfgao66/MatAltMag" class="model-link code-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://academic.oup.com/nsr/article/12/4/nwaf066/8030545" class="model-link paper-link">
+                                    <i class="fas fa-file-pdf"></i> 论文
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- AI应用展示 -->
+            <section class="platform-section" id="applications">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-cogs"></i> AI应用展示
+                    </h2>
+                    <div class="section-badge">实际案例</div>
+                </div>
+                
+                <div class="ai-applications">
+                    <div class="applications-grid">
+                        <div class="application-card">
+                            <div class="application-icon">
+                                <i class="fas fa-temperature-high"></i>
+                            </div>
+                            <h3 class="application-title">高温BCS超导材料筛选</h3>
+                            <p class="application-desc">
+                                利用InvDesFlow平台，我们成功筛选出数百种潜在的高温超导材料，其中Li<sub>2</sub>AuH<sub>6</sub>材料常压下超导转变温度为140K左右。
+                            </p>
+                            <div class="application-tags">
+                                <span class="application-tag">材料发现</span>
+                                <span class="application-tag">超导材料</span>
+                                <span class="application-tag">AI预测</span>
+                            </div>
+                        </div>
+                        
+                        <div class="application-card">
+                            <div class="application-icon">
+                                <i class="fas fa-wave-square"></i>
+                            </div>
+                            <h3 class="application-title">交错磁性材料发现</h3>
+                            <p class="application-desc">
+                                使用MatAltMag框架，MatAltMag模型共发现了50种新的交错磁性材料，其中包括首次发现的4种i波交错磁性材料。
+                            <div class="application-tags">
+                                <span class="application-tag">交错磁性</span>
+                                <span class="application-tag">预训练-微调</span>
+                                <span class="application-tag">高效筛选</span>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="application-card">
+                            <div class="application-icon">
+                                <i class="fas fa-vial"></i>
+                            </div>
+                            <h3 class="application-title">钙钛矿太阳能电池设计</h3>
+                            <p class="application-desc">
+                                系统挖掘并整理了1,232篇高质量钙钛矿相关文献，构建了包含33,269种候选前驱体添加剂材料的领域知识库，并在此基础上提出多种添加剂设计策略，其中多项策略已通过实验验证，证实可显著提升材料稳定性与器件性能。
+                            </p>
+                            <div class="application-tags">
+                                <span class="application-tag">钙钛矿太阳能电池</span>
+                                <span class="application-tag">大语言模型</span>
+                                <span class="application-tag">缺陷钝化</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 科学数据集 -->
+            <section class="platform-section" id="datasets">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-database"></i> 科学数据集
+                    </h2>
+                    <div class="section-badge">开源共享</div>
+                </div>
+                
+                <div class="datasets-section">
+                    <div class="datasets-grid">
+                        <div class="dataset-card">
+                            <div class="dataset-header">
+                                <div class="dataset-icon">
+                                    <i class="fas fa-cube"></i>
+                                </div>
+                                <div class="dataset-name">HTSC-2025</div>
+                            </div>
+                            <p class="dataset-info">
+                                该数据集包含140种常压高温超导材料。用于为人工智能模型提供一个统一、开放的基准，以系统评估和比较其在常压高温超导材料临界温度预测与物理规律学习方面的能力。
+                            </p>
+                            <div class="dataset-stats">
+                                <div class="dataset-stat">
+                                    <div class="stat-number">140</div>
+                                    <div class="stat-label">常压高温超导材料</div>
+                                </div>
+                                <div class="dataset-stat">
+                                    <div class="stat-number">7</div>
+                                    <div class="stat-label">数据类别</div>
+                                </div>
+                                <div class="dataset-stat">
+                                    <div class="stat-number">8</div>
+                                    <div class="stat-label">性质标签</div>
+                                </div>
+                            </div>
+                            <a href="https://in.iphy.ac.cn/eln/link.html#/124/V2s4" class="dataset-link">
+                                访问数据集 <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://huggingface.co/datasets/xiao-qi/HTSC-2025" class="model-link code-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://iopscience.iop.org/article/10.1088/1674-1056/adf042" class="model-link paper-link">
+                                    <i class="fas fa-file-pdf"></i> 论文
+                                </a>
+                        </div>
+                        
+                        <div class="dataset-card">
+                            <div class="dataset-header">
+                                <div class="dataset-icon">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <div class="dataset-name">PhononBench</div>
+                            </div>
+                            <p class="dataset-info">
+                                PhononBench 通过构建包含10万余个 AI 生成晶体、并配备DFT级声子稳定性标注的开放数据集，首次在大规模上系统评估材料生成模型的动力学稳定性与物理可行性。
+                            </p>
+                            <div class="dataset-stats">
+                                <div class="dataset-stat">
+                                    <div class="stat-number">108,843</div>
+                                    <div class="stat-label">AI生成晶体结构</div>
+                                </div>
+                                <div class="dataset-stat">
+                                    <div class="stat-number">28,119</div>
+                                    <div class="stat-label">完全声子稳定的晶体结构</div>
+                                </div>
+                                <div class="dataset-stat">
+                                    <div class="stat-number">10+</div>
+                                    <div class="stat-label">性质标签</div>
+                                </div>
+                            </div>
+                            <a href="https://github.com/xqh19970407/PhononBench" class="dataset-link">
+                                访问数据集 <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            
+            
+            <!-- 合作与使用 -->
+            <section class="platform-section" id="collaboration">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-handshake"></i> 合作与使用
+                    </h2>
+                </div>
+                
+                <div class="ai-applications">
+                    <div class="applications-grid">
+                        <div class="application-card">
+                            <div class="application-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <h3 class="application-title">学术合作</h3>
+                            <p class="application-desc">
+                                欢迎国内外高校和研究机构与我们开展学术合作，共同推进AI for Science领域的研究。
+                            </p>
+                            <div class="application-tags">
+                                <span class="application-tag">联合研究</span>
+                                <span class="application-tag">学生交流</span>
+                                <span class="application-tag">项目合作</span>
+                            </div>
+                        </div>
+                        
+                        <div class="application-card">
+                            <div class="application-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <h3 class="application-title">产业合作</h3>
+                            <p class="application-desc">
+                                与企业合作，将我们的AI模型和工具应用于实际产业问题，推动科技创新和产业升级。
+                            </p>
+                            <div class="application-tags">
+                                <span class="application-tag">技术转化</span>
+                                <span class="application-tag">联合开发</span>
+                                <span class="application-tag">咨询服务</span>
+                            </div>
+                        </div>
+                        
+                        <div class="application-card">
+                            <div class="application-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="application-title">教育推广</h3>
+                            <p class="application-desc">
+                                提供AI for Science相关的培训课程、研讨会和暑期学校，培养交叉学科人才。
+                            </p>
+                            <div class="application-tags">
+                                <span class="application-tag">培训课程</span>
+                                <span class="application-tag">研讨会</span>
+                                <span class="application-tag">暑期学校</span>
+                            </div>
+                        </div>
+                        
+                        <div class="application-card">
+                            <div class="application-icon">
+                                <i class="fas fa-download"></i>
+                            </div>
+                            <h3 class="application-title">平台使用</h3>
+                            <p class="application-desc">
+                                我们的AI模型和工具大部分开源，可通过GitHub获取。部分商业使用需联系我们获取授权。
+                            </p>
+                            <div class="application-tags">
+                                <span class="application-tag">开源代码</span>
+                                <span class="application-tag">在线演示</span>
+                                <span class="application-tag">商业授权</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 合作伙伴 -->
+        <section class="partners-section">
+            <h2><i class="fas fa-handshake"></i> 合作伙伴</h2>
+            <div class="partners-grid">
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="partner-name">中国科学院</div>
+                    <div class="partner-type">科研合作</div>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="partner-name">中国人民大学高瓴人工智能学院</div>
+                    <div class="partner-type">AI算法合作</div>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="partner-name">北京高压科学研究中心</div>
+                    <div class="partner-type">材料计算合作</div>
+                </div>
+  
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="partner-name">中国人民大学物理学院超算平台</div>
+                    <div class="partner-type">计算平台支持</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI驱动的计算物理与量子材料实验室</h3>
+                    <p>中国人民大学物理学院</p>
+                    <p>地址：北京市海淀区中关村大街59号</p>
+                    <p>邮编：100872</p>
+                </div>
+                <div class="footer-section">
+                    <h3>相关链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.ruc.edu.cn">中国人民大学</a></li>
+                        <li><a href="https://www.phys.ruc.edu.cn">物理学院</a></li>
+                        <li><a href="https://lib.ruc.edu.cn">图书馆资源</a></li>
+                        <!-- <li><a href="#">学术数据库</a></li> -->
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>关注我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/zfgao66"><i class="fab fa-github"></i> GitHub</a></li>
+                        <!-- <li><a href="#"><i class="fab fa-weixin"></i> 微信公众号</a></li> -->
+                        <!-- <li><a href="#"><i class="fas fa-rss-square"></i> 学术博客</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 中国人民大学AI驱动的计算物理与量子材料实验室. 保留所有权利.</p>
+                <p>网站维护：AI-Driven QMR Lab | 推荐使用Chrome、Firefox浏览器访问</p>
+                <p>本站总访问量 <span id="busuanzi_value_site_pv"></span> 次，本站访客数 <span id="busuanzi_value_site_uv"></span> 人。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // AI平台导航功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const platformButtons = document.querySelectorAll('.platform-btn');
+            const platformSections = document.querySelectorAll('.platform-section');
+            
+            // 导航按钮点击事件
+            platformButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // 移除所有按钮的active类
+                    platformButtons.forEach(btn => btn.classList.remove('active'));
+                    // 为当前按钮添加active类
+                    this.classList.add('active');
+                    
+                    const target = this.getAttribute('data-target');
+                    
+                    // 显示/隐藏对应的内容区域
+                    platformSections.forEach(section => {
+                        section.classList.remove('active');
+                        if (section.id === target) {
+                            section.classList.add('active');
+                            
+                            // 滚动到该区域
+                            setTimeout(() => {
+                                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }, 100);
+                        }
+                    });
+                });
+            });
+            
+            // AI模型卡片交互效果
+            const aiModelCards = document.querySelectorAll('.ai-model-card');
+            aiModelCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.zIndex = '10';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.zIndex = '1';
+                });
+                
+                // 点击卡片中的链接时不冒泡
+                const links = card.querySelectorAll('.model-link');
+                links.forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                    });
+                });
+            });
+            
+            // 应用卡片悬停效果
+            const applicationCards = document.querySelectorAll('.application-card');
+            applicationCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = 'none';
+                });
+            });
+            
+            // 数据集卡片悬停效果
+            const datasetCards = document.querySelectorAll('.dataset-card');
+            datasetCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.05)';
+                });
+            });
+            
+            // 合作伙伴悬停效果
+            const partnerItems = document.querySelectorAll('.partner-item');
+            partnerItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = 'none';
+                });
+            });
+            
+            // 处理页面URL中的锚点
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                const targetButton = document.querySelector(`.platform-btn[data-target="${hash}"]`);
+                if (targetButton) {
+                    targetButton.click();
+                }
+            }
+            
+            // 高亮统计项动画
+            const highlightItems = document.querySelectorAll('.highlight-item');
+            highlightItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>
